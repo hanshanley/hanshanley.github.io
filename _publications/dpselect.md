@@ -12,4 +12,4 @@ This paper concerns counteracting information leakage in Tor relay selection alg
 
 [Download paper here](http://academicpages.github.io/files/10.2478_popets-2019-0025.pdf)
 
-Recommended citation: Hanley, Hans, et al. "DPSelect: A differential privacy based guard relay selection algorithm for Tor." Proceedings on Privacy Enhancing Technologies 2019.2 (2019).
+Hanley, Hans, et al. "DPSelect: A differential privacy based guard relay selection algorithm for Tor." Proceedings on Privacy Enhancing Technologies 2019.2 (2019).
