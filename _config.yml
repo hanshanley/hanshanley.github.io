@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Hans Hanley"
   avatar           : "hanshanley.jpg"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Computer Science Ph.D. student at Stanford University Security, Privacy, Disinformation, Networks, NLP"
+  location         : "Stanford, CA"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  pubmed           : 
+  googlescholar    : "https://scholar.google.com/citations?user=CcnT5qMAAAAJ"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
