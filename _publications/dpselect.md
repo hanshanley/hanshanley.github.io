@@ -10,6 +10,6 @@ citation: 'Hanley, Hans, Yixin Sun, Sameer Wagh, and Prateek Mittal. "DPSelect: 
 ---
 This paper concerns counteracting information leakage in Tor relay selection algorithms
 
-[Download paper here](http://academicpages.github.io/files/DPSelect.pdf)
+[Download paper here](http://hanshanley.github.io/files/DPSelect.pdf)
 
 Hanley, Hans, Yixin Sun, Sameer Wagh, and Prateek Mittal. "DPSelect: A differential privacy based guard relay selection algorithm for Tor." Proceedings on Privacy Enhancing Technologies 2019, no. 2 (2019)
