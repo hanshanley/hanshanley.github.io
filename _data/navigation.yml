@@ -2,13 +2,14 @@
 main:
   - title: "Publications"
     url: /publications/
-
+    
+  - title: "CV"
+    url: /cv/
+    
   - title: "Talks"
     url: /talks/       
         
   - title: "The Margin of Error Blog"
     url: https://www.themarginoferror.com/
     
-  - title: "CV"
-    url: /cv/
-
+ 
