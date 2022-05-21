@@ -2,7 +2,7 @@
 title: "No Calm in the Storm: Investigating QAnon Website Relationships"
 collection: publications
 permalink: /publication/no-calm-in-the-storm
-excerpt: 'This paper concerns QAnon's role on the Internet and its connection to mainstream and alternative news sources.'
+excerpt: "This paper concerns QAnon's role on the Internet and its connection to mainstream and alternative news sources."
 date: 2022-05-01
 venue: 'ICWSM 2022'
 paperurl: 'http://hanshanley.github.io/files/No_Calm_In_the_Storm.pdf'
