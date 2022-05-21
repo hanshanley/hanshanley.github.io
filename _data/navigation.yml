@@ -4,19 +4,11 @@ main:
     url: /publications/
 
   - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
+    url: /talks/       
         
-  - title: "Blog Posts"
-    url: /year-archive/
+  - title: "The Margin of Error Blog"
+    url: https://www.themarginoferror.com/
     
   - title: "CV"
     url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+
