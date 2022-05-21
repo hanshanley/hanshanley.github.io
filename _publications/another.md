@@ -1,8 +1,8 @@
 ---
-title: "DPSelect: A Differential Privacy Based Guard Relay Selection Algorithm for Tor"
+title: "No Calm in the Storm: Investigating QAnon Website Relationships"
 collection: publications
-permalink: /publication/dpselect-differential-privacy
-excerpt: 'This paper concerns counteracting information leakage in Tor relay selection algorithms.'
+permalink: /publication/no-calm-in-the-storm
+excerpt: 'This paper concerns QAnon's role on the Internet and its connection to mainstream and alternative news sources.'
 date: 2019-07-01
 venue: 'Popets 2019 (2)'
 paperurl: 'http://hanshanley.github.io/files/DPSelect.pdf'
