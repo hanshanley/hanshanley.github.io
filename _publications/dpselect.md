@@ -1,7 +1,7 @@
 ---
 title: "DPSelect: A Differential Privacy Based Guard Relay Selection Algorithm for Tor"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/dpselect
 excerpt: 'This paper concerns counteracting information leakage in Tor relay selection algorithms'
 date: 2019-07-01
 venue: 'Popets 2019 (2)'
