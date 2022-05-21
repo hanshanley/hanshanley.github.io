@@ -6,10 +6,10 @@ excerpt: 'This paper concerns QAnon's role on the Internet and its connection to
 date: 2022-06-06
 venue: 'ICWSM'
 paperurl: 'http://hanshanley.github.io/files/No_Calm_In_the_Storm.pdf'
-citation: 'Hanley, Hans WA, Deepak Kumar, and Zakir Durumeric. "No Calm in The Storm: Investigating QAnon Website Relationships." arXiv preprint arXiv:2106.15715 (2021).'
+citation: 'Hans W. A. Hanley, Deepak Kumar, and Zakir Durumeric. 2022. No Calm in The Storm: Investigating QAnon Website Relationships. ICWSM (2022)'
 ---
 This paper concerns QAnon's role on the Internet and its connection to mainstream and alternative news sources
 
 [Download paper here](http://academicpages.github.io/files/No_Calm_In_the_Storm.pdf)
 
-Hanley, Hans WA, Deepak Kumar, and Zakir Durumeric. "No Calm in The Storm: Investigating QAnon Website Relationships." arXiv preprint arXiv:2106.15715 (2021).
+Hans W. A. Hanley, Deepak Kumar, and Zakir Durumeric. 2022. No Calm in The Storm: Investigating QAnon Website Relationships. ICWSM (2022)
