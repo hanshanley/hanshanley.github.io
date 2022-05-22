@@ -11,22 +11,32 @@ redirect_from:
 
 Education
 ======
-* B.S.E. in Electrical Engineering,  Princeton University , 2018
+* B.S.E. in Electrical Engineering,  Princeton University, 2018
 * MSc in Advanced Computer Science, University of Oxford, 2019
 * MSc in Statistical Science, University of Oxford, 2020
 * PhD in Computer Science, Stanford University, 2025 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2021: Digital Forensic Research Lab Intern 
+  * Atlantic Council 
+  * Washington DC
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Summer 2018: Data Engine Software Intern
+  * Microsoft
+  * Seattle, WA
+
+* Summer 2017: Gmail Security Software Intern
+  * Google
+  * Sunnyvale, CA
+
+* Summer 2016: Google Docs Software Intern
+  * Google
+  * New York, NY
+
+* Summer 2015: NSF REU Declarative Programming
+  * Texas Tech
+  * Lubbock, TX
   
 Skills
 ======
