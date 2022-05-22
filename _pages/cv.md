@@ -11,9 +11,10 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S.E. in Electrical Engineering,  Princeton University , 2018
+* MSc in Advanced Computer Science, University of Oxford, 2019
+* MSc in Statistical Science, University of Oxford, 2020
+* PhD in Computer Science, Stanford University, 2025 (expected)
 
 Work experience
 ======
