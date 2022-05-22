@@ -4,10 +4,7 @@ main:
     url: /publications/
     
   - title: "CV"
-    url: /cv/
-    
-  - title: "Talks"
-    url: /talks/       
+    url: /cv/      
         
   - title: "The Margin of Error Blog"
     url: https://www.themarginoferror.com/
