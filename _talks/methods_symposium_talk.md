@@ -4,6 +4,7 @@ collection: talks
 permalink: /talks/methods-madness-talk
 venue: "Stanford Security Workshop"
 date: 2022-04-06
+type: "Talk"
 location: "Stanford, CA"
 ---
 [Talk Recording](https://www.youtube.com/watch?v=LWl5PYrDra8&list=PLqYw1C4YGfr3uC5jPER2dXiYEF2P_dG-5&index=11)
