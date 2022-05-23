@@ -11,7 +11,7 @@ Hans Hanley
 Atlantic Council Digital Forensic Research Lab
 
 
-* [Misinformation regarding France's COVID-19 "health passes" spread on Twitter](Misinformation regarding France's COVID-19 "health passes" spread on Twitter)\
+* [Misinformation regarding France's COVID-19 "health passes" spread on Twitter](https://medium.com/dfrlab/misinformation-regarding-frances-covid-19-health-passes-spread-on-twitter-ba344920bc16)\
 Hans Hanley
 Atlantic Council Digital Forensic Research Lab
 
