@@ -52,13 +52,13 @@ Publications
   
 Dissertations
 ======
-* <h3 class="archive__item-title" itemprop="headline"><a href="https://hanshanley.github.io/files/generatez_dissertation.pdf">GENerateZ: Automatic De Novo Design of Anticancer Drugs using Transcriptomic Data, Genetic Algorithms, and Variational Autoencoders</a></h3>
+* <h3 class="archive__item-title" itemprop="headline"><a href="https://www.hanshanley.com/files/generatez_dissertation.pdf">GENerateZ: Automatic De Novo Design of Anticancer Drugs using Transcriptomic Data, Genetic Algorithms, and Variational Autoencoders</a></h3>
 <small>University of Oxford, Master of Science in Statistcal Science, 2020</small>
 
-* <h3 class="archive__item-title" itemprop="headline"><a href="https://hanshanley.github.io/files/dpnetwork.pdf">PROMISE: Provably RObust Malware detectIon uSing diffErential privacy</a></h3>
+* <h3 class="archive__item-title" itemprop="headline"><a href="https://www.hanshanley.com/files/dpnetwork.pdf">PROMISE: Provably RObust Malware detectIon uSing diffErential privacy</a></h3>
 <small>University of Oxford, Master of Science in Computer Science, 2019</small>
 
-* <h3 class="archive__item-title" itemprop="headline"><a href="https://hanshanley.github.io/files/DPSelect.pdf">DPSelect: A Differential Privacy Based Guard Relay Selection Algorithm for Tor</a></h3>
+* <h3 class="archive__item-title" itemprop="headline"><a href="https://www.hanshanley.com/files/DPSelect.pdf">DPSelect: A Differential Privacy Based Guard Relay Selection Algorithm for Tor</a></h3>
 <small>Princeton University, BSE Electrical Engineering, 2018</small>
 
 Talks
