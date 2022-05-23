@@ -4,6 +4,7 @@ collection: talks
 permalink: /talks/happenstance-talk
 venue: "Stanford Security Lunch"
 date: 2022-05-11
+type: "Talk"
 location: "Stanford, CA"
 ---
 
