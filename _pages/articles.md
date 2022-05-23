@@ -30,5 +30,5 @@ Hans Hanley\
 Atlantic Council Digital Forensic Research Lab 
 
 * [Nigerian Twitter users flock to VPNs amid dubious legal threats](https://medium.com/dfrlab/nigerian-twitter-users-flock-to-vpns-amid-dubious-legal-threats-395101f95cd3)\
-Jean Le Roux and Hans Hanle\y 
+Jean Le Roux and Hans Hanley \
 Disinfo Africa & Atlantic Council Digital Forensic Research Lab 
