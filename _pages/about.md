@@ -18,4 +18,5 @@ I also have a blog [The Margin of Error](https://www.themarginoferror.com/) wher
 
 News
 ======
+* Preprint of [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit](https://www.hanshanley.com/files/happenstance.pdf)
 * New short video presentation for paper [No Calm in the Storm: Investigating QAnon Website Relationships](https://www.youtube.com/watch?v=TH_pRn6c3X8) 
