@@ -24,19 +24,19 @@ Washington DC\
 
 * Summer 2018: Data Engine Software Intern\
 Microsoft\
-Seattle, WA\
+Seattle, WA
 
 * Summer 2017: Gmail Security Software Intern\
 Google\
-Sunnyvale, CA\
+Sunnyvale, CA
 
 * Summer 2016: Google Docs and Drive Security Software Intern\
 Google\
-New York, NY\
+New York, NY
 
 * Summer 2015: NSF REU Declarative Programming\
 Texas Tech\
-Lubbock, TX\
+Lubbock, TX
   
 Skills
 ======
