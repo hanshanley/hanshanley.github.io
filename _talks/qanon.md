@@ -11,4 +11,6 @@ In this talk, we explore using web crawls seeded from two of the largest QAnon h
 
 [Full Paper](http://hanshanley.github.io/files/No_Calm_In_the_Storm.pdf)
 
+[Short Recorded Talk](https://www.youtube.com/watch?v=TH_pRn6c3X8) 
+
 
