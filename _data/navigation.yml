@@ -5,6 +5,9 @@ main:
     
   - title: "CV"
     url: /cv/      
+    
+  - title: "Talks"
+    url: /talks/
         
   - title: "The Margin of Error Blog"
     url: https://www.themarginoferror.com/
