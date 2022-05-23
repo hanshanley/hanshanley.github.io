@@ -18,8 +18,8 @@ Education
 
 Work experience
 ======
-* Summer 2021: Digital Forensic Research Lab Intern
-Atlantic Council\ 
+* Summer 2021: Digital Forensic Research Lab Intern\
+Atlantic Council\
 Washington DC\
 
 * Summer 2018: Data Engine Software Intern\
