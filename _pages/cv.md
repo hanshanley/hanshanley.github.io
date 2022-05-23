@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S.E. in Electrical Engineering,  Princeton University, 2018
-* MSc in Advanced Computer Science, University of Oxford, 2019
-* MSc in Statistical Science, University of Oxford, 2020
+* B.S.E. in Electrical Engineering,  Princeton University, 2018, Highest Honors
+* MSc in Advanced Computer Science, University of Oxford, 2019, Distinction, Highest Honors
+* MSc in Statistical Science, University of Oxford, 2020, Distinction, Highest Honors
 * PhD in Computer Science, Stanford University, 2025 (expected)
 
 Work experience
@@ -30,7 +30,7 @@ Work experience
   * Google
   * Sunnyvale, CA
 
-* Summer 2016: Google Docs Software Intern
+* Summer 2016: Google Docs and Drive Security Software Intern
   * Google
   * New York, NY
 
@@ -40,12 +40,9 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Mandarin Chinese (HSK 4)
+* Proficient Programming Languages: Java, Python, C, Go, R, Git, TensorFlow, PyTorch
+* Experienced Programming Languages: MATLAB, C#, Answer Set Prolog (ASP)
 
 Publications
 ======
@@ -59,7 +56,18 @@ Talks
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
+Selected Honors
+======
+* Stanford University Computer Science EDGE Fellow
+* University of Oxford Worcester College Prize for Academic Excellence 2019 & 2020
+* Daniel M. Sachs Class of 1960 Graduating Scholarship at Worcester College, Oxford University
+* Princeton University Jame Hayes-Edgar Palmer Prize in Engineering
+* Princeton University Electrical Engineering Charles Ira Young Memorial Tablet & Medal
+* National Science Foundation Graduate Fellowship Winner
+* National Merit Scholar for Academic Excellence
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* 25th ACM CSCW Reviewer (2022)
+* 17th AAAI ICWSM Reviewer (2022)
+* National Society of Black Engineers 
