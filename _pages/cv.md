@@ -58,7 +58,7 @@ Dissertations
 * <h3 class="archive__item-title" itemprop="headline"><a href="https://hanshanley.github.io/files/dpnetwork.pdf">PROMISE: Provably RObust Malware detectIon uSing diffErential privacy</a></h3>
 &nbsp;<sub><sup> University of Oxford, Master of Science in Computer Science, 2019</sup></sub>
 * <h3 class="archive__item-title" itemprop="headline"><a href="https://hanshanley.github.io/files/DPSelect.pdf">DPSelect: A Differential Privacy Based Guard Relay Selection Algorithm for Tor</a></h3>
-&nbsp;<sub><sup>Princeton University, BSE Electrical Engineering, 2018</sup></sub>
+&nbsp;<small>Princeton University, BSE Electrical Engineering, 2018</small>
 
 Talks
 ======
