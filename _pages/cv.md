@@ -18,7 +18,7 @@ Education
 
 Work experience
 ======
-* Summer 2021: Digital Forensic Research Lab Intern\
+* Summer 2021: Digital Forensic Research Lab Intern
 Atlantic Council\ 
 Washington DC\
 
