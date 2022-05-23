@@ -19,24 +19,24 @@ Education
 Work experience
 ======
 * Summer 2021: Digital Forensic Research Lab Intern\
-  Atlantic Council\ 
-  Washington DC\
+Atlantic Council\ 
+Washington DC\
 
 * Summer 2018: Data Engine Software Intern\
-  Microsoft\
-  Seattle, WA\
+Microsoft\
+Seattle, WA\
 
 * Summer 2017: Gmail Security Software Intern\
-  Google\
-  Sunnyvale, CA\
+Google\
+Sunnyvale, CA\
 
 * Summer 2016: Google Docs and Drive Security Software Intern\
-  Google\
-  New York, NY\
+Google\
+New York, NY\
 
 * Summer 2015: NSF REU Declarative Programming\
-  Texas Tech\
-  Lubbock, TX\
+Texas Tech\
+Lubbock, TX\
   
 Skills
 ======
