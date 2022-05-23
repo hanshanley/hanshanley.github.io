@@ -52,9 +52,9 @@ Publications
   
 Dissertations
 ======
-* [GENerateZ: Automatic De Novo Design of Anticancer Drugs using Transcriptomic Data, Genetic Algorithms, and Variational Autoencoders](https://hanshanley.github.io/files/generatez_dissertation.pdf)\ 
+* [GENerateZ: Automatic De Novo Design of Anticancer Drugs using Transcriptomic Data, Genetic Algorithms, and Variational Autoencoders](https://hanshanley.github.io/files/generatez_dissertation.pdf)\
 University of Oxford, Master of Science in Statistcal Science 
-* [PROMISE: Provably RObust Malware detectIon uSing diffErential privacy](https://hanshanley.github.io/files/dpnetwork.pdf)\ 
+* [PROMISE: Provably RObust Malware detectIon uSing diffErential privacy](https://hanshanley.github.io/files/dpnetwork.pdf)\
 University of Oxford, Master of Science in Computer Science
 * [DPSelect: A Differential Privacy Based Guard Relay Selection Algorithm for Tor](https://hanshanley.github.io/files/DPSelect.pdf)\
 Princeton University, BSE Electrical Engineering
