@@ -10,5 +10,5 @@ location: "Oxford, England"
 
 This work focuses on utilizing Transformer and CNN machine translation models to learn contextualized word representations for use in sentiment classification.
 
-[Poster here](http://hanshanley.github.io/files/cove.pdf)
+[Poster here](https://www.hanshanley.com/files/cove.pdf)
 
