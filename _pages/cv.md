@@ -52,7 +52,7 @@ Publications
   
 Dissertations
 ======
-*<h3 class="archive__item-title" itemprop="headline",href=https://hanshanley.github.io/files/generatez_dissertation.pdf>GENerateZ: Automatic De Novo Design of Anticancer Drugs using Transcriptomic Data, Genetic Algorithms, and Variational Autoencoders </h3>
+* <h3 class="archive__item-title" itemprop="headline",href=https://hanshanley.github.io/files/generatez_dissertation.pdf>GENerateZ: Automatic De Novo Design of Anticancer Drugs using Transcriptomic Data, Genetic Algorithms, and Variational Autoencoders </h3>
 
 University of Oxford, Master of Science in Statistcal Science 
 * [PROMISE: Provably RObust Malware detectIon uSing diffErential privacy](https://hanshanley.github.io/files/dpnetwork.pdf)\
