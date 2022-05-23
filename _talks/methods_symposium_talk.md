@@ -7,5 +7,7 @@ date: 2022-04-06
 type: "Talk"
 location: "Stanford, CA"
 ---
-[Talk Recording](https://www.youtube.com/watch?v=LWl5PYrDra8&list=PLqYw1C4YGfr3uC5jPER2dXiYEF2P_dG-5&index=11)
 In this work, we study the relationships between five prominent conspiracy theories (QAnon, COVID, UFO/Aliens, 9/11, and Flat-Earth) and the role that misinformation and political polarization play in spreading these conspiracies.
+
+[Talk Recording](https://www.youtube.com/watch?v=LWl5PYrDra8&list=PLqYw1C4YGfr3uC5jPER2dXiYEF2P_dG-5&index=11)
+
