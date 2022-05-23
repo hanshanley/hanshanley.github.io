@@ -53,12 +53,12 @@ Publications
 Dissertations
 ======
 * <h3 class="archive__item-title" itemprop="headline"><a href="https://hanshanley.github.io/files/generatez_dissertation.pdf">GENerateZ: Automatic De Novo Design of Anticancer Drugs using Transcriptomic Data, Genetic Algorithms, and Variational Autoencoders</a></h3>
-&nbsp;&nbsp;&nbsp;&nbsp;<p>University of Oxford, Master of Science in Statistcal Science, 2020</p>
+&nbsp;&nbsp;&nbsp;&nbsp; <p>University of Oxford, Master of Science in Statistcal Science, 2020</p>
 
 * <h3 class="archive__item-title" itemprop="headline"><a href="https://hanshanley.github.io/files/dpnetwork.pdf">PROMISE: Provably RObust Malware detectIon uSing diffErential privacy</a></h3>
-&nbsp;&nbsp;&nbsp;&nbsp;<p>University of Oxford, Master of Science in Computer Science, 2019</p>
+&nbsp;&nbsp;&nbsp;&nbsp; <p>University of Oxford, Master of Science in Computer Science, 2019</p>
 * <h3 class="archive__item-title" itemprop="headline"><a href="https://hanshanley.github.io/files/DPSelect.pdf">DPSelect: A Differential Privacy Based Guard Relay Selection Algorithm for Tor</a></h3>
-&nbsp;&nbsp;&nbsp;&nbsp;<p>Princeton University, BSE Electrical Engineering,2020</p>
+&nbsp;&nbsp;&nbsp;&nbsp; <p>Princeton University, BSE Electrical Engineering,2020</p>
 
 Talks
 ======
