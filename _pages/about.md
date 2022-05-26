@@ -16,7 +16,7 @@ Outside of research, I do disinformation reporting with the [Atlantic Council's 
 I also have a blog [The Margin of Error](https://www.themarginoferror.com/) where I talk about my research, computational looks at different economic and political issues, and a ton of other topics! [You can subscribe here.](https://docs.google.com/forms/d/e/1FAIpQLSeHPhVHdJ0xdCYq3wDYjkOIxgVdErP4qszNOBQYrnyzTz3xyQ/viewform)
 
 
-News
+Updates
 ======
-* Preprint of [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit]
+* Preprint of [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit](https://www.hanshanley.com/files/happenstance.pdf)
 * New short video presentation for paper [No Calm in the Storm: Investigating QAnon Website Relationships](https://www.youtube.com/watch?v=TH_pRn6c3X8) 
