@@ -6,3 +6,4 @@ paperurl: 'https://www.hanshanley.com/files/happenstance.pdf'
 collection: publications
 excerpt: 'In Submission'
 ---
+[https://www.hanshanley.com/files/happenstance.pdf](https://www.hanshanley.com/files/happenstance.pdf)
