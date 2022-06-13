@@ -81,4 +81,8 @@ Service and leadership
 ======
 * 25th ACM CSCW Reviewer (2022)
 * 17th AAAI ICWSM Reviewer (2022)
+* Stanford CS Grad Mentor (2021-22)
+* Daniel M. Sachs Global Scholarship Interviewer (2021)
+* Stanford Undergraduate Research Association (SURA) Mentor (2020)
+* Stanford Center for Teaching and Learning Engineering Learning Consultant (2020-2022)
 * National Society of Black Engineers 
