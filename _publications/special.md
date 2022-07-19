@@ -1,5 +1,5 @@
 ---
-title: "'A Special Operation': A Quantitative Approach to Dissecting and Comparing Different Media Ecoystems' Coverage of the Russo-Ukrainian War"
+title: ""A Special Operation": A Quantitative Approach to Dissecting and Comparing Different Media Ecoystems' Coverage of the Russo-Ukrainian War"
 permalink: /publication/special-operation
 date: 2023-06-01
 collection: publications
