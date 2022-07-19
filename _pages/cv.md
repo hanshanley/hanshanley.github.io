@@ -71,8 +71,8 @@ Selected Honors
 ======
 * Stanford University Computer Science EDGE Fellow
 * University of Oxford Worcester College Prize for Academic Excellence 2019 & 2020
-* Daniel M. Sachs Class of 1960 Graduating Scholarship at Worcester College, Oxford University
-* Princeton University Jame Hayes-Edgar Palmer Prize in Engineering
+* [Daniel M. Sachs Class of 1960 Graduating Scholarship at Worcester College, Oxford University](https://www.princeton.edu/news/2017/12/11/princeton-seniors-hanley-and-silver-oxford-graduate-student-barnett-named-sachs)
+* [Princeton University Jame Hayes-Edgar Palmer Prize in Engineering](https://engineering.princeton.edu/news/2018/06/05/class-day-awards-celebrate-graduates-contributions-research-and-service)
 * Princeton University Electrical Engineering Charles Ira Young Memorial Tablet & Medal
 * National Science Foundation Graduate Fellowship Winner
 * National Merit Scholar for Academic Excellence
