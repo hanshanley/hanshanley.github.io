@@ -18,5 +18,7 @@ I also have a blog [The Margin of Error](https://www.themarginoferror.com/) wher
 
 Updates
 ======
+* [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit](https://www.hanshanley.com/files/happenstance.pdf) was accepted to ICWSM 2023
+* [‘A Special Operation’: A Quantitative Approach to Dissecting and Comparing Different Media Ecoystems’ Coverage of the Russo-Ukrainian War] was accepted to ICWSM 2023
 * Preprint of [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit](https://www.hanshanley.com/files/happenstance.pdf)
 * New short video presentation for paper [No Calm in the Storm: Investigating QAnon Website Relationships](https://www.youtube.com/watch?v=TH_pRn6c3X8) 
