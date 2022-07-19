@@ -14,7 +14,7 @@ Education
 * PhD in Computer Science, Stanford University, 2025 (expected)
 * MSc in Statistical Science, University of Oxford, 2020, Distinction (Highest Honors)
 * MSc in Advanced Computer Science, University of Oxford, 2019, Distinction (Highest Honors)
-* BSE. in Electrical Engineering,  Princeton University, 2018, Highest Honors
+* BSE in Electrical Engineering,  Princeton University, 2018, Highest Honors
 
 Work experience
 ======
@@ -79,6 +79,7 @@ Selected Honors
   
 Service and leadership
 ======
+* 26th ACM CSCW Reviewer (2023)
 * 25th ACM CSCW Reviewer (2022)
 * 17th AAAI ICWSM Reviewer (2022)
 * Stanford's Journal of Science, Tech, and Society Peer Reviewer (2022)
