@@ -12,9 +12,9 @@ redirect_from:
 Education
 ======
 * PhD in Computer Science, Stanford University, 2025 (expected)
-* MSc in Statistical Science, University of Oxford, 2020, Distinction, Highest Honors
-* MSc in Advanced Computer Science, University of Oxford, 2019, Distinction, Highest Honors
-* B.S.E. in Electrical Engineering,  Princeton University, 2018, Highest Honors
+* MSc in Statistical Science, University of Oxford, 2020, Distinction (Highest Honors)
+* MSc in Advanced Computer Science, University of Oxford, 2019, Distinction (Highest Honors)
+* BSE. in Electrical Engineering,  Princeton University, 2018, Highest Honors
 
 Work experience
 ======
