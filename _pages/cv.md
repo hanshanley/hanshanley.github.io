@@ -6,7 +6,7 @@ author_profile: true
 redirect_from:
   - /cv
 ---
-[Download Full Academic CV](https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf)
+[Download Full Academic CV Here](https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf)
 
 {% include base_path %}
 
