@@ -3,7 +3,6 @@ title: Partial Mobilization: Isolating and Tracking Multilingual Russian Informa
 permalink: /publication/partial-mob
 date: 2023-06-02
 collection: publications
-
 excerpt: 'In this work, we study how 17 Russian media outlets have interacted with and utilized 732 Telegram channels throughout 2022.'
 citation: 'Hanley, Hans WA, and Zakir Durumeric. "Partial Mobilization: Isolating and Tracking Multilingual Russian Information Flows Across Different Platforms." 2023.'
 ---
