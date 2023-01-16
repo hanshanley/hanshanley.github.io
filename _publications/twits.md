@@ -4,7 +4,7 @@ permalink: /publication/twits
 date: 2023-10-02
 collection: publications
 excerpt: 'Within this work, we explore the role that political ideology plays in contributing to toxicity both on an individual user level and a topic level on Twitter.'
-citation: 'Hans W. A. Hanley and Zakir Durumeric. "Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram." (2023).'
+citation: 'Hans W. A. Hanley and Zakir Durumeric. "Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter." (2023).'
 ---
 Social media platforms are often blamed for exacerbating political polarization and worsening public dialogue. Many claim hyperpartisan users post pernicious content, slanted to their political views encouraging raucous and otherwise toxic conversations. However, what factors, actually contribute to increased online toxicity and negative interactions? 
 
