@@ -1,6 +1,6 @@
 ---
 title: "Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter"
-permalink: /publication/partial-mob
+permalink: /publication/twits
 date: 2023-10-02
 collection: publications
 excerpt: 'Within this work, we explore the role that political ideology plays in contributing to toxicity both on an individual user level and a topic level on Twitter.'
