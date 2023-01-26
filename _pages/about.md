@@ -22,8 +22,6 @@ Updates
 ======
 * Preprint of [A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet](https://www.hanshanley.com/files/A_Golden_Age.pdf)
 * Preprint of [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/Partial_Mobilization.pdf)
-* Preprint of [‘A Special Operation’: A Quantitative Approach to Dissecting and Comparing Different Media Ecoystems’ Coverage of the Russo-Ukrainian War](https://www.hanshanley.com/files/ICWSM_Eluosi.pdf)
 * [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit](https://www.hanshanley.com/files/happenstance.pdf) was accepted to ICWSM 2023!
 * [‘A Special Operation’: A Quantitative Approach to Dissecting and Comparing Different Media Ecoystems’ Coverage of the Russo-Ukrainian War](https://www.hanshanley.com/files/ICWSM_Eluosi.pdf) was accepted to ICWSM 2023!
-* Preprint of [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit](https://www.hanshanley.com/files/happenstance.pdf)
 * New short video presentation for paper [No Calm in the Storm: Investigating QAnon Website Relationships](https://www.youtube.com/watch?v=TH_pRn6c3X8) 
