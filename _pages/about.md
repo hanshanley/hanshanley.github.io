@@ -20,6 +20,7 @@ I also have a blog [The Margin of Error](https://www.themarginoferror.com/) wher
 
 Updates
 ======
+* Preprint of [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf)
 * Preprint of [A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet](https://www.hanshanley.com/files/A_Golden_Age.pdf)
 * Preprint of [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/Partial_Mobilization.pdf)
 * [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit](https://www.hanshanley.com/files/happenstance.pdf) was accepted to ICWSM 2023!
