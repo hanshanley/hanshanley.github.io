@@ -4,6 +4,7 @@ permalink: /publication/methods
 excerpt: 'In submission'
 date: 2023-10-01
 collection: publications
+venue: 'The 26th ACM Conference On Computer-Supported Cooperative Work And Social Computing (CSCW)'
 excerpt: 'In this work, we study the relationships between five prominent conspiracy theories (QAnon, COVID, UFO/Aliens, 9/11, and Flat-Earth) and the role that misinformation and political polarization play in spreading these conspiracies.'
 paperurl: 'https://www.hanshanley.com/files/A_Golden_Age.pdf'
 citation: 'Hanley, Hans W. A., Deepak Kumar, and Zakir Durumeric. "A Golden Age: Conspiracy Theories’ Relationship with Misinformation Outlets, News Media, and the Wider Internet." (2023).'
