@@ -22,11 +22,10 @@ Updates
 ======
 * Awarded [Meta PhD Research Fellowship in Computational Social Science](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/)
 * [A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet](https://www.hanshanley.com/files/A_Golden_Age.pdf) was accepted to CSCW 2023!
-* Will be giving [2023 Key Note Commencement Address at Montverde Academy](https://montverde.org/montverde-academy-announces-hans-hanley-as-commencement-keynote-speaker/)
+* Will be giving [2023 Keynote Commencement Address at Montverde Academy](https://montverde.org/montverde-academy-announces-hans-hanley-as-commencement-keynote-speaker/)
 * Poster accepted on  Narrative Strains across Different Language Ecoystems around the Russia-Ukrainian conflict accepted at [40th annual meeting of the Political Methodology Society](https://polmeth2023.sites.stanford.edu/)
 * Will be on the Panel "Mechanisms of Domination?: State Sponsored Information and Media Ecosystems" at 119th American Political Science Association Annual Meeting.
 * Preprint of [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf)
-* Preprint of [A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet](https://www.hanshanley.com/files/A_Golden_Age.pdf)
 * Preprint of [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/Partial_Mobilization.pdf)
 * [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit](https://www.hanshanley.com/files/happenstance.pdf) was accepted to ICWSM 2023!
 * [‘A Special Operation’: A Quantitative Approach to Dissecting and Comparing Different Media Ecoystems’ Coverage of the Russo-Ukrainian War](https://www.hanshanley.com/files/ICWSM_Eluosi.pdf) was accepted to ICWSM 2023!
