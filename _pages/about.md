@@ -20,6 +20,7 @@ I also have a blog [The Margin of Error](https://www.themarginoferror.com/) wher
 
 Updates
 ======
+* Preprint of [Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on Misinformation and Mainstream News Websites](https://www.hanshanley.com/files/machine_made.pdf)
 * Awarded [Meta PhD Research Fellowship in Computational Social Science](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/)
 * [A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet](https://www.hanshanley.com/files/A_Golden_Age.pdf) was accepted to CSCW 2023!
 * Gave [2023 Keynote Commencement Address at Montverde Academy](https://www.youtube.com/watch?v=eBTGQ9LIsDY)
