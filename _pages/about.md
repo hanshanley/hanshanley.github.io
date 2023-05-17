@@ -27,6 +27,6 @@ Updates
 * Poster accepted on  Narrative Strains across Different Language Ecoystems around the Russia-Ukrainian conflict accepted at [40th annual meeting of the Political Methodology Society](https://polmeth2023.sites.stanford.edu/)
 * Will be on the Panel "Mechanisms of Domination?: State Sponsored Information and Media Ecosystems" at 119th American Political Science Association Annual Meeting.
 * Preprint of [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf)
-* Preprint of [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/Partial_Mobilization.pdf)
+* Preprint of [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf)
 * [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit](https://www.hanshanley.com/files/happenstance.pdf) was accepted to ICWSM 2023!
 * [‘A Special Operation’: A Quantitative Approach to Dissecting and Comparing Different Media Ecoystems’ Coverage of the Russo-Ukrainian War](https://www.hanshanley.com/files/ICWSM_Eluosi.pdf) was accepted to ICWSM 2023!
