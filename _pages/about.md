@@ -24,7 +24,7 @@ Updates
 * Awarded [Meta PhD Research Fellowship in Computational Social Science](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/)
 * [A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet](https://www.hanshanley.com/files/A_Golden_Age.pdf) was accepted to CSCW 2023!
 * Gave [2023 Keynote Commencement Address at Montverde Academy](https://www.youtube.com/watch?v=eBTGQ9LIsDY)
-* Poster [Narrative Strains across Different Language Ecosystems around the Russia-Ukrainian conflict] accepted at [40th annual meeting of the Political Methodology Society](https://polmeth2023.sites.stanford.edu/)
+* Poster ``Narrative Strains across Different Language Ecosystems around the Russia-Ukrainian conflict'' accepted at [40th annual meeting of the Political Methodology Society](https://polmeth2023.sites.stanford.edu/)
 * Will be on the Panel "Mechanisms of Domination?: State Sponsored Information and Media Ecosystems" at 119th American Political Science Association Annual Meeting.
 * Preprint of [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf)
 * Preprint of [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf)
