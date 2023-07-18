@@ -20,6 +20,7 @@ I also have a blog [The Margin of Error](https://www.themarginoferror.com/) wher
 
 Updates
 ======
+* [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf) accepted to ICWSM 2024!
 * Preprint of [Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on Misinformation and Mainstream News Websites](https://www.hanshanley.com/files/machine_made.pdf). Github at [https://github.com/hanshanley/machine-made-media](https://github.com/hanshanley/machine-made-media)
 * Awarded [Meta PhD Research Fellowship in Computational Social Science](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/)
 * [A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet](https://www.hanshanley.com/files/A_Golden_Age.pdf) was accepted to CSCW 2023!
@@ -27,6 +28,5 @@ Updates
 * Poster ``Narrative Strains across Different Language Ecosystems around the Russia-Ukrainian conflict'' accepted at [40th annual meeting of the Political Methodology Society](https://polmeth2023.sites.stanford.edu/)
 * Will be on the Panel "Mechanisms of Domination?: State Sponsored Information and Media Ecosystems" at 119th American Political Science Association Annual Meeting.
 * Preprint of [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf)
-* Preprint of [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf)
 * [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit](https://www.hanshanley.com/files/happenstance.pdf) was accepted to ICWSM 2023!
 * [‘A Special Operation’: A Quantitative Approach to Dissecting and Comparing Different Media Ecoystems’ Coverage of the Russo-Ukrainian War](https://www.hanshanley.com/files/ICWSM_Eluosi.pdf) was accepted to ICWSM 2023!
