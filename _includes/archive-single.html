@@ -43,8 +43,10 @@
         {% elsif post.collection == 'publications' %}
           <p><span style="color:rgb(0, 119, 181); font-size:22px"><b>{{title}}</b></span>
           <br>{{ post.authors }}
-          <br>In <i>{{ post.venue }}</i>}
-           {% if post.paperurl %}
+          {% if post.paperurl %}
+            <br>In <i>{{ post.venue }}</i>}
+          {% endif %}
+          {% if post.paperurl %}
           <br><a href="{{ post.paperurl }}" target="_blank" class="btn btn--success" role="button" style="background-color: red; color: white;">Paper</a>
           {% endif %}
            {% if post.papersummary %}
