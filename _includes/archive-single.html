@@ -46,7 +46,7 @@
               <br><a href="{{ post.paperurl }}" target="_blank" class="btn btn--success" role="button" sytle="background-color:red; color:white">Paper</a>
             {% endif %}
             {% if post.venue %}
-                <p> <i>{{ post.venue }}</i> {{ post.date | default: "1900-01-01" | date: "%Y" }}, {{ post.excerpt | markdownify }} </p>
+                <p> <i>{{ post.venue }}</i> {{ post.date | default: "1900-01-01" | date: "%Y" }}, {{ post.excerpt }} </p>
             {% endif %} 
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
