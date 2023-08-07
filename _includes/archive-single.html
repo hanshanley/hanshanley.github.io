@@ -45,8 +45,10 @@
           <br>{{ post.authors }}
           {% if post.paperurl %}
             <br>In <i>{{ post.venue }}</i>}
+          {% elif post.excerpt %}
+            <br>In <i>{{ post.venue }}.</i> post.excerpt }
           {% endif %}
-          {% if post.paperurl %}
+          {% elif post.paperurl %}
           <br><a href="{{ post.paperurl }}" target="_blank" class="btn btn--success" role="button" style="background-color: #8B0000; color: white;">Paper</a>
           {% endif %}
            {% if post.papersummary %}
@@ -75,19 +77,6 @@
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
-    {% endif %}
-    
-    {% if post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }} </p>
-    {% elsif post.paperurl %}
-      <!--<a href="{{ post.paperurl }}" class="btn">{{"pdf" }}</a>-->
-    {% endif %}
 
   </article>
 </div>
