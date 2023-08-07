@@ -1,7 +1,7 @@
 ---
 title: "Online Information Flows and Ecosystems: Understanding the Role of Misinformation and AI-Generated Media"
 collection: talks
-permalink: /talks/ucl-ai-gen-talk
+permalink: /talks/oii-ai-gen-talk
 venue: "University of Oxford, Oxford Internet Institute"
 date: 2023-06-13
 type: "Talk"
