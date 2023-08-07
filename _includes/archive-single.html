@@ -43,7 +43,7 @@
         {% elsif post.collection == 'publications' %}
           <p><span style="color:rgb(0, 119, 181); font-size:22px"><b>{{title}}</b></span>
           <br>{{ post.authors }}
-          {% if post.paperurl %}
+          {% if post.venue %}
             <br>In <i>{{ post.venue }}</i>}
           {% elif post.excerpt %}
             <br>In <i>{{ post.venue }}.</i> post.excerpt }
