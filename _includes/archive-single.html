@@ -41,12 +41,14 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          <p><span style="color:rgb(0, 0, 139); font-size:22px"><b>{{title}}</b></span>
+          <a href="{{ post.link }}" target="_blank" style="text-decoration: none; color: inherit;">
+            <p><span style="color:rgb(0, 0, 139); font-size:22px"><b>{{title}}</b></span>
+          </a>
           <br>{{ post.authors }}
           {% if post.venue %}
-            <br>In <i>{{ post.venue }}.</i>
+            <br>In <i>{{ post.venue }}.</i> {{ post.excerpt }}
           {% elsif post.excerpt %}
-            <br><i>{{ post.venue }}.</i> {{ post.excerpt }}
+            <br>{{ post.excerpt }}
           {% endif %}
           {% if post.paperurl %}
           <br><a href="{{ post.paperurl }}" target="_blank" class="btn btn--success" role="button" style="background-color: #8B0000; color: white;">Paper</a>
