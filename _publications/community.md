@@ -3,6 +3,7 @@ title: "Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polar
 permalink: /publication/community
 date: 2023-10-01
 collection: publications
+authors: <b>Hans W.A. Hanley</b> and Zakir Durumeric
 excerpt: "In this work, we examine the role of online misinformation in sparking political incivility and toxicity on the social media platform Reddit's online communities or subreddits."
 paperurl: 'https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf'
 citation: 'Hans W. A. Hanley and Zakir Durumeric. "Sub-Standards and Mal-Practices: Misinformations Role in Insular, Polarized, and Toxic Interactions." (2023).'
