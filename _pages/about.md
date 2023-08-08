@@ -22,7 +22,7 @@ Updates
 ======
 * Preprint of [Specious Sites: Tracking the Spread and Sway of Spurious News Stories at Scale](https://www.hanshanley.com/files/Specious_Sites.pdf)
 * Preprint of [Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter](https://www.hanshanley.com/files/CSCW_Twits.pdf)
-* [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf) accepted to ICWSM 2024!
+* [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf) was accepted to ICWSM 2024!
 * Preprint of [Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on Misinformation and Mainstream News Websites](https://www.hanshanley.com/files/machine_made.pdf). Github at [https://github.com/hanshanley/machine-made-media](https://github.com/hanshanley/machine-made-media)
 * Awarded [Meta PhD Research Fellowship in Computational Social Science](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/)
 * [A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet](https://www.hanshanley.com/files/A_Golden_Age.pdf) was accepted to CSCW 2023!
