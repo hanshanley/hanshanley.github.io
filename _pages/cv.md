@@ -70,6 +70,7 @@ Talks
   
 Selected Honors
 ======
+* [Meta PhD Research Fellow in Computational Social Science](https://research.facebook.com/fellows/hanley-hans-william-alexander/)
 * [Stanford University Computer Science EDGE Fellow](https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2020)
 * University of Oxford Worcester College Prize for Academic Excellence 2019 & 2020
 * [Daniel M. Sachs Class of 1960 Graduating Scholarship at Worcester College, Oxford University](https://www.princeton.edu/news/2017/12/11/princeton-seniors-hanley-and-silver-oxford-graduate-student-barnett-named-sachs)
