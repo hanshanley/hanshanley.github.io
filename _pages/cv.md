@@ -81,12 +81,14 @@ Selected Honors
   
 Service and leadership
 ======
+* 27th ACM CSCW Reviewer (2024)
 * 26th ACM CSCW Reviewer (2023)
+* 17th AAAI ICWSM Program Committee (2022)
+* 17th AAAI ICWSM Reviewer (2023)
 * 25th ACM CSCW Reviewer (2022)
-* 17th AAAI ICWSM Reviewer (2022)
 * Stanford's Journal of Science, Tech, and Society Peer Reviewer (2022)
 * Stanford CS Grad Mentor (2021-22)
 * Daniel M. Sachs Global Scholarship Interviewer (2021)
 * Stanford Undergraduate Research Association (SURA) Mentor (2020)
 * Stanford Center for Teaching and Learning Engineering Learning Consultant (2020-2022)
-* National Society of Black Engineers 
+* National Society of Black Engineers, Princeton University Chapter, President 
