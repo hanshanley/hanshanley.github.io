@@ -5,6 +5,7 @@ date: 2023-06-01
 collection: publications
 paperurl: https://www.hanshanley.com/files/ICWSM_Eluosi.pdf
 venue: 17th International AAAI Conference on Web and Social Media
+authors: <b>Hans W.A. Hanley</b>, Deepak Kumar, and Zakir Durumeric
 excerpt: 'In this work, we present a quantitative analysis of the differences in coverage of the Russo-Ukrainian War amongst three different news ecosystems (Western, Chinese, Russian).'
 citation: 'Hanley, Hans W. A., Deepak Kumar, and Zakir Durumeric. ""A Special Operation": A Quantitative Approach to Dissecting and Comparing Different Media Ecoystems’ Coverage of the Russo-Ukrainian War." Proceedings of the International AAAI Conference on Web and Social Media. Vol. 17. 2023.'
 ---
