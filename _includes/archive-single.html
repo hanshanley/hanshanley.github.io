@@ -47,7 +47,7 @@
           {% elsif post.excerpt %}
             <br>In <i>{{ post.venue }}.</i> {{ post.excerpt }}
           {% endif %}
-          {% elif post.paperurl %}
+          {% if post.paperurl %}
           <br><a href="{{ post.paperurl }}" target="_blank" class="btn btn--success" role="button" style="background-color: #8B0000; color: white;">Paper</a>
           {% endif %}
            {% if post.papersummary %}
