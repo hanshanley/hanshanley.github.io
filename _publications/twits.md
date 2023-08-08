@@ -3,6 +3,7 @@ title: "Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polari
 permalink: /publication/twits
 date: 2023-10-02
 collection: publications
+authors: <b>Hans W.A. Hanley</b> and Zakir Durumeric
 paperurl: 'https://www.hanshanley.com/files/CSCW_Twits.pdf'
 excerpt: 'Within this work, we explore the role that political ideology plays in contributing to toxicity both on an individual user level and a topic level on Twitter.'
 citation: 'Hans W. A. Hanley and Zakir Durumeric. "Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter." (2023).'
