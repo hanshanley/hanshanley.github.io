@@ -4,6 +4,7 @@ permalink: /publication/machine-made
 date: 2024-10-02
 collection: publications
 paperurl: 'https://www.hanshanley.com/files/machine_made.pdf'
+authors: <b>Hans W.A. Hanley</b> and Zakir Durumeric
 excerpt: 'In this work, we study the increase in machine-made/synthetic news articles across 3,074 news websites.'
 citation: 'Hans W. A. Hanley and Zakir Durumeric. "Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on Misinformation and Mainstream News Websites." (2023).'
 ---
