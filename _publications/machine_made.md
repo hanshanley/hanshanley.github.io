@@ -3,6 +3,7 @@ title: "Machine-Made Media: Monitoring the Mobilization of Machine-Generated Art
 permalink: /publication/machine-made
 date: 2024-10-02
 collection: publications
+code: https://github.com/hanshanley/machine-made-media
 paperurl: 'https://www.hanshanley.com/files/machine_made.pdf'
 authors: <b>Hans W.A. Hanley</b> and Zakir Durumeric
 excerpt: 'In this work, we study the increase in machine-made/synthetic news articles across 3,074 news websites.'
