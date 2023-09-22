@@ -17,7 +17,7 @@ Outside of research, I do disinformation reporting with the [Atlantic Council's 
 
 I also have a blog [The Margin of Error](https://www.themarginoferror.com/) where I talk about my research, computational looks at different economic and political issues, and a ton of other topics! [You can subscribe here.](https://docs.google.com/forms/d/e/1FAIpQLSeHPhVHdJ0xdCYq3wDYjkOIxgVdErP4qszNOBQYrnyzTz3xyQ/viewform)
 
-If you are an undergrad at Stanford and are interested in doing research in misinformation space, please email me at hhanley at stanford dot edu.
+If you are an undergrad or master's student at Stanford and are interested in doing research in misinformation space, please email me at hhanley at stanford dot edu.
 
 
 Updates
