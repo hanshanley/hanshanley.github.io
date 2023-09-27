@@ -5,6 +5,7 @@ date: 2023-06-01
 collection: publications
 authors: <b>Hans W.A. Hanley</b>, Deepak Kumar, and Zakir Durumeric
 venue: 17th International AAAI Conference on Web and Social Media (ICWSM 2023)
+recording: https://youtu.be/BYsgLDY6eG8
 excerpt: 'In this work, we study the coordinated information campaign to understand the most prominent disinformation narratives touted by the Russian government to English-speaking audiences.'
 paperurl: 'https://www.hanshanley.com/files/happenstance.pdf'
 citation: 'Hanley, Hans W. A., Deepak Kumar, and Zakir Durumeric. "Happenstance: Utilizing Semantic Search to Track Russian State Media Narrative about the Russo-Ukrainian War on Reddit." Proceedings of the International AAAI Conference on Web and Social Media. Vol. 17. 2023.'
