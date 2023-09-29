@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/no-calm-in-the-storm
 excerpt: "This paper concerns QAnon's role on the Internet and its connection to mainstream and alternative news sources."
 date: 2022-06-09
+code: https://github.com/hanshanley/no-calm
 recording: https://www.youtube.com/watch?v=TH_pRn6c3X8
 authors: <b>Hans W.A. Hanley</b>, Deepak Kumar, and Zakir Durumeric
 venue: '16th International AAAI Conference on Web and Social Media (ICWSM 2022)'
