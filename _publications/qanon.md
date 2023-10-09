@@ -6,7 +6,7 @@ excerpt: "This paper concerns QAnon's role on the Internet and its connection to
 date: 2022-06-09
 code: https://github.com/hanshanley/no-calm
 recording: https://www.youtube.com/watch?v=TH_pRn6c3X8
-authors: <b>Hans W.A. Hanley</b>, Deepak Kumar, and Zakir Durumeric
+authors: <b>Hans W. A. Hanley</b>, Deepak Kumar, and Zakir Durumeric
 venue: '16th International AAAI Conference on Web and Social Media (ICWSM 2022)'
 paperurl: 'https://www.hanshanley.com/files/No_Calm_In_the_Storm.pdf'
 citation: 'Hanley, Hans W. A., Deepak Kumar, and Zakir Durumeric. "No Calm in The Storm: Investigating QAnon Website Relationships." Proceedings of the International AAAI Conference on Web and Social Media. Vol. 16. 2022.'
