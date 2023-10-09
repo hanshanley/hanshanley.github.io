@@ -5,7 +5,7 @@ date: 2024-12-02
 collection: publications
 paperurl: 'https://www.hanshanley.com/files/Specious_Sites.pdf'
 code: https://github.com/hanshanley/specious-sites
-authors: <b>Hans W.A. Hanley</b>, Deepak Kumar, and Zakir Durumeric
+authors: <b>Hans W. A. Hanley</b>, Deepak Kumar, and Zakir Durumeric
 excerpt: "In this work, we perform narrative analysis on 2.1M different articles across 1,404 different unreliable news websites, tracking the spread  of 55,301 different stories throughout 2022."
 citation: 'Hans W. A. Hanley, Deepak Kumar, and Zakir Durumeric. "Specious Sites: Tracking the Spread and Sway of Spurious News Stories at Scale." (2023).'
 ---
