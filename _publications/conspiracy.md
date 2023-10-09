@@ -6,7 +6,7 @@ date: 2023-10-01
 collection: publications
 code: https://github.com/hanshanley/Golden-Age
 recording: https://www.youtube.com/watch?v=LWl5PYrDra8&list=PLqYw1C4YGfr3uC5jPER2dXiYEF2P_dG-5&index=11
-authors: <b>Hans W.A. Hanley</b>, Deepak Kumar, and Zakir Durumeric
+authors: <b>Hans W. A. Hanley</b>, Deepak Kumar, and Zakir Durumeric
 venue: 'The 26th ACM Conference On Computer-Supported Cooperative Work And Social Computing (CSCW 2023)'
 excerpt: 'In this work, we study the relationships between five prominent conspiracy theories (QAnon, COVID, UFO/Aliens, 9/11, and Flat-Earth) and the role that misinformation and political polarization play in spreading these conspiracies.'
 paperurl: 'https://www.hanshanley.com/files/A_Golden_Age.pdf'
