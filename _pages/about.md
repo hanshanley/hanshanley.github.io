@@ -11,7 +11,8 @@ redirect_from:
 
 I'm a Computer Science Ph.D. candidate at Stanford University supervised by [Professor Zakir Durumeric](https://zakird.com/) and researching in the [Empirical Security Research Group](https://esrg.stanford.edu/). I am supported by the [Meta PhD Research Fellowship](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/), the [National Science Foundation Graduate Research Fellowship](https://www.nsfgrfp.org/) and the [Stanford University EDGE Fellowship](https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate/details). I am broadly interested in disinformation, computer security, networks, and natural language processing. I completed two Masters’ degrees in Computer Science and in Statistics with the [Daniel M. Sachs Scholarship](https://sachs.princeton.edu/) at the University of Oxford. I completed my undergraduate degree in Electrical Engineering at Princeton University.
 
-[Download Full Academic CV Here](https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf)
+[Download Resume](https://www.hanshanley.com/files/HansWAHanley_Resume.pdf)
+[Download Full Academic CV](https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf)
 
 Outside of research, I do disinformation reporting with the [Atlantic Council's Digital Forensic Research Lab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/). For fun, I enjoy performing stand-up comedy, listening to UK rhythm and blues music, marathon running, and learning Mandarin Chinese (HSK4).
 
