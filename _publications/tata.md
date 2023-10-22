@@ -6,6 +6,7 @@ collection: publications
 venue: The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023)
 authors: <b>Hans W. A. Hanley</b> and Zakir Durumeric
 excerpt: 'In this work, we utilize contrastive learning with a triplet loss and synthetic data to engineer topic-aware and topic-agnostic embedding layers for performing stance detection.'
+code: https://github.com/hanshanley/tata
 paperurl: 'https://www.hanshanley.com/files/tata.pdf'
 citation: 'Hans W. A. Hanley and Zakir Durumeric. "TATA: Stance Detection via Topic-Agnostic and Topic-Aware Embeddings." The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023)'
 ---
