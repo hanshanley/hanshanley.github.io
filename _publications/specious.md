@@ -3,7 +3,7 @@ title: "Specious Sites: Tracking the Spread and Sway of Spurious News Stories at
 permalink: /publication/specious
 date: 2024-12-02
 collection: publications
-venue: 45th IEEE Symposium on Security and Privacy
+venue: 45th IEEE Symposium on Security and Privacy (IEEE S&P 2024)
 paperurl: 'https://www.hanshanley.com/files/Specious_Sites.pdf'
 code: https://github.com/hanshanley/specious-sites
 authors: <b>Hans W. A. Hanley</b>, Deepak Kumar, and Zakir Durumeric
