@@ -1,5 +1,5 @@
 ---
-title: "Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian Wa"
+title: "Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War"
 collection: talks
 permalink: /talks/tada_zhongguo_media
 venue: "TADA: New Directions in Analyzing Text as Data 2023"
