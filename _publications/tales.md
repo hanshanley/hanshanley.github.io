@@ -1,6 +1,6 @@
 ---
 title: "Tall and True Tales: Thoroughly Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites"
-permalink: /publication/specious
+permalink: /publication/tales
 date: 2025-01-02
 collection: publications
 authors: <b>Hans W. A. Hanley</b>, Emily Ito Okabe, and Zakir Durumeric
