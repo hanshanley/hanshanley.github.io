@@ -1,7 +1,7 @@
 ---
 title: "Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War"
 permalink: /publication/narratives
-date: 2025-01-02
+date: 2025-01-01
 collection: publications
 authors: <b>Hans W. A. Hanley</b>, Yingdan Lu, and Jennifer Pan
 excerpt: "By comparing narratives about the 2022 Russo-Ukrainian War circulating on Chinese social media with narratives found in over 24 million articles from 10,000 Chinese, Russian, Ukrainian, and U.S.-based news websites, we find that Russian news websites are the largest originators and influencers of narratives related to the Russo-Ukrainian War found on Weibo, followed closely by Ukrainian news websites and more distantly by Chinese and U.S. news websites."
