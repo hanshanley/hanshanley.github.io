@@ -23,6 +23,7 @@ If you are an undergrad or master's student at Stanford and are interested in do
 
 Updates
 ======
+* [Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War] accepted for In-Person Presentation at [74th ICA Conference](https://www.icahdq.org/mpage/ica24)!
 * [Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on Misinformation and Mainstream News Websites](https://www.hanshanley.com/files/machine_made.pdf) accepted to ICWSM 2024!
 * [Specious Sites: Tracking the Spread and Sway of Spurious News Stories at Scale](https://www.hanshanley.com/files/Specious_Sites.pdf) accepted to [45th IEEE Symposium on Security and Privacy](https://sp2024.ieee-security.org/)!
 * [TATA: Stance Detection via Topic-Agnostic and Topic-Aware Embeddings](https://www.hanshanley.com/files/tata.pdf) accepted to the Main Proceedings of [EMNLP 2023](https://2023.emnlp.org/)! See you in Singapore!
