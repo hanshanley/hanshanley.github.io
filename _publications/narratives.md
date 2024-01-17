@@ -1,6 +1,6 @@
 ---
 title: "Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War"
-permalink: /publication/tales
+permalink: /publication/narratives
 date: 2025-01-02
 collection: publications
 authors: <b>Hans W. A. Hanley</b>, Yingdan Lu, and Jennifer Pan
