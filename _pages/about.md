@@ -28,15 +28,7 @@ Updates
 * [Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War]() accepted for In-Person Presentation at [74th ICA Conference](https://www.icahdq.org/mpage/ica24)!
 * [Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on Misinformation and Mainstream News Websites](https://www.hanshanley.com/files/machine_made.pdf) accepted to ICWSM 2024!
 * [Specious Sites: Tracking the Spread and Sway of Spurious News Stories at Scale](https://www.hanshanley.com/files/Specious_Sites.pdf) accepted to [45th IEEE Symposium on Security and Privacy](https://sp2024.ieee-security.org/)!
-* [TATA: Stance Detection via Topic-Agnostic and Topic-Aware Embeddings](https://www.hanshanley.com/files/tata.pdf) accepted to the Main Proceedings of [EMNLP 2023](https://2023.emnlp.org/)! See you in Singapore!
-* I am TAing [CS265: Randomized Algorithms and Probabilistic Analysis at Stanford.](https://web.stanford.edu/class/cs265/)
 * Preprint of [Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter](https://www.hanshanley.com/files/CSCW_Twits.pdf)
 * [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf) was accepted to ICWSM 2024! 
 * Awarded [Meta PhD Research Fellowship in Computational Social Science](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/)
-* [A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet](https://www.hanshanley.com/files/A_Golden_Age.pdf) was accepted to CSCW 2023!
-* Gave [2023 Keynote Commencement Address at Montverde Academy](https://www.youtube.com/watch?v=eBTGQ9LIsDY)
-* Poster ``[Narrative Strains across Different Language Ecosystems around the Russia-Ukrainian conflict''](https://www.hanshanley.com/files/foreign_narratives.pdf) accepted at [40th annual meeting of the Political Methodology Society](https://polmeth2023.sites.stanford.edu/)
-* Will be on the Panel "Mechanisms of Domination?: State Sponsored Information and Media Ecosystems" at 119th American Political Science Association Annual Meeting.
 * Preprint of [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf)
-* [Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War On Reddit](https://www.hanshanley.com/files/happenstance.pdf) was accepted to ICWSM 2023!
-* [‘A Special Operation’: A Quantitative Approach to Dissecting and Comparing Different Media Ecoystems’ Coverage of the Russo-Ukrainian War](https://www.hanshanley.com/files/ICWSM_Eluosi.pdf) was accepted to ICWSM 2023!
