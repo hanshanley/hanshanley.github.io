@@ -23,6 +23,8 @@ If you are an undergrad or master's student at Stanford and are interested in do
 
 Updates
 ======
+* Accepted a position working with Marcin Sieniek as a Student Researcher at Google for Summer 2024!
+* Will be a panelist for the [The Future of Computational Message Science: Theoretical Advances, Computational Frontiers, and Grand Societal Challenges]() ICA Pre-Conference at Queensland University of Technology in Brisbane!
 * [Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War]() accepted for In-Person Presentation at [74th ICA Conference](https://www.icahdq.org/mpage/ica24)!
 * [Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on Misinformation and Mainstream News Websites](https://www.hanshanley.com/files/machine_made.pdf) accepted to ICWSM 2024!
 * [Specious Sites: Tracking the Spread and Sway of Spurious News Stories at Scale](https://www.hanshanley.com/files/Specious_Sites.pdf) accepted to [45th IEEE Symposium on Security and Privacy](https://sp2024.ieee-security.org/)!
