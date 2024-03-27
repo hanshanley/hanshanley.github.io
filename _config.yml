@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hans Hanley"
+  name             : "Hans W. A. Hanley"
   avatar           : "hanshanley_2022.jpg"
   bio              : "Computer Science Ph.D. \n Stanford University \n Disinformation, Networks, NLP"
   location         : "Stanford, CA"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=CcnT5qMAAAAJ"
-  email            : "hhanley@stanford.edu"
+  email            : "hhanley@cs.stanford.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "hans-hanley-0694a180"
-  orcid            : 
+  orcid            : "0000-0002-4291-5896"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
