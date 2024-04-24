@@ -23,7 +23,7 @@ If you are an undergrad or master's student at Stanford and are interested in do
 
 Updates
 ======
-* Tall and True Tales accepted for Oral Talk at [IC^2S^2](https://ic2s2-2024.org/)!
+* Tall and True Tales accepted for Oral Talk at [IC<sup>2</sup>S<sup>2</sup>](https://ic2s2-2024.org/)!
 * Narratives of Foreign Media Ecosystems in Chinese Social Media accepted for Oral Talk at [IC^2S^2](https://ic2s2-2024.org/)!
 * Accepted a position working with Marcin Sieniek as a Student Researcher at Google for Summer 2024!
 * Will be a panelist for the [The Future of Computational Message Science: Theoretical Advances, Computational Frontiers, and Grand Societal Challenges]() ICA Pre-Conference at Queensland University of Technology in Brisbane!
