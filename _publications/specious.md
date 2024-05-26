@@ -5,6 +5,7 @@ date: 2024-12-02
 collection: publications
 venue: 45th IEEE Symposium on Security and Privacy (IEEE S&P 2024)
 paperurl: 'https://www.hanshanley.com/files/Specious_Sites.pdf'
+recording: https://www.youtube.com/watch?v=xTl6P6jf31Y
 code: https://github.com/hanshanley/specious-sites
 authors: <b>Hans W. A. Hanley</b>, Deepak Kumar, and Zakir Durumeric
 excerpt: "In this work, we perform narrative analysis on 1.9M different articles across 1,334 different unreliable news websites, tracking the spread  of 52,036 different stories throughout 2022."
