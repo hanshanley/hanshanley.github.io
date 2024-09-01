@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+Major Update: I am on the job market! If you think I might be a good fit, pleas send me an email! You can find my [CV here.](https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf)
 
 I'm a Computer Science Ph.D. candidate at Stanford University researching in the [Empirical Security Research Group](https://esrg.stanford.edu/). I am supported by the [Meta PhD Research Fellowship](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/), the [National Science Foundation Graduate Research Fellowship](https://www.nsfgrfp.org/) and the [Stanford University EDGE Fellowship](https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate/details). I am broadly interested in disinformation, computer security, networks, and natural language processing. I completed two Masters’ degrees in Computer Science and in Statistics with the [Daniel M. Sachs Scholarship](https://sachs.princeton.edu/) at the University of Oxford. I completed my undergraduate degree in Electrical Engineering at Princeton University.
 
