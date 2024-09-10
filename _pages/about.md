@@ -23,6 +23,7 @@ I am not currently taking any new students for projects, but if you are an under
 
 Updates
 ======
+* Rising Start in Data Science 2024, [University of Chicago, Stanford University, UCSD](https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars/)
 * Tall and True Tales accepted for Oral Talk at [IC<sup>2</sup>S<sup>2</sup>](https://ic2s2-2024.org/)!
 * Narratives of Foreign Media Ecosystems in Chinese Social Media accepted for Oral Talk at [IC<sup>2</sup>S<sup>2</sup>](https://ic2s2-2024.org/)!
 * Accepted a position working with Marcin Sieniek as a Student Researcher at Google for Summer 2024!
