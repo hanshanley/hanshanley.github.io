@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-### I will be starting as a Research Scientist at Meta in 2025! 
+### I will be starting a position as a Research Scientist at Meta in New York in 2025! 
 
 I'm a Computer Science Ph.D. candidate at Stanford University researching in the [Empirical Security Research Group](https://esrg.stanford.edu/). I am supported by the [Meta PhD Research Fellowship](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/), the [National Science Foundation Graduate Research Fellowship](https://www.nsfgrfp.org/) and the [Stanford University EDGE Fellowship](https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate/details). I am broadly interested in disinformation, computer security, networks, and natural language processing. I completed two Masters’ degrees in Computer Science and in Statistics with the [Daniel M. Sachs Scholarship](https://sachs.princeton.edu/) at the University of Oxford. I completed my undergraduate degree in Electrical Engineering at Princeton University.
 
