@@ -1,5 +1,5 @@
 ---
-title: "Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions"
+title: "Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit"
 permalink: /publication/community
 date: 2023-10-01
 collection: publications
