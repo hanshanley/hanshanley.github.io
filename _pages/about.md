@@ -34,4 +34,4 @@ Updates
 * Preprint of [Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter](https://www.hanshanley.com/files/CSCW_Twits.pdf)
 * [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf) was accepted to ICWSM 2024! 
 * Awarded [Meta PhD Research Fellowship in Computational Social Science](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/)
-* Preprint of [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf)
+* Preprint of [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf)
