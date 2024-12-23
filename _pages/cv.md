@@ -21,6 +21,10 @@ Education
 
 Work experience
 ======
+* Summer 2024: Google Research Student Researcher\
+Google Research\
+Mountain View
+
 * Summer 2021: Digital Forensic Research Lab Intern\
 Atlantic Council\
 Washington DC
@@ -43,7 +47,7 @@ Lubbock, TX
   
 Skills
 ======
-* Mandarin Chinese (HSK 4)
+* Mandarin Chinese (HSK 5)
 * Proficient Programming Languages: Java, Python, C, Go, R, Git, TensorFlow, PyTorch
 * Experienced Programming Languages: MATLAB, C#, Answer Set Prolog (ASP)
 
@@ -72,6 +76,8 @@ Talks
   
 Selected Honors
 ======
+* [Rising Star in Data Science 2024](https://datascience.ucsd.edu/rising-stars-in-data-science/)
+* [AAAI Doctoral Consortium for PhD Dissertation](https://aaai.org/conference/aaai/aaai-25/)
 * [Meta PhD Research Fellow in Computational Social Science](https://research.facebook.com/fellows/hanley-hans-william-alexander/)
 * [Stanford University Computer Science EDGE Fellow](https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2020)
 * University of Oxford Worcester College Prize for Academic Excellence 2019 & 2020
