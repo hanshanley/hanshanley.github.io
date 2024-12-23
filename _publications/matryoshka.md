@@ -1,6 +1,6 @@
 ---
 title: "Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings"
-permalink: /publication/tales
+permalink: /publication/matryoshka
 date: 2024-12-31
 collection: publications
 authors: <b>Hans W. A. Hanley</b> and Zakir Durumeric
