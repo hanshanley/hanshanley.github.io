@@ -90,8 +90,8 @@ Selected Honors
 Service and leadership
 ======
 * AAAI Program Committee (2025)
-* ICWSM Program Committee (2026)
-* ACL Reviewer (2024)
+* ICWSM Program Committee (2025)
+* ACL Reviewer (2025)
 * 28th ACM CSCW Reviewer (2025)
 * 27th ACM CSCW Reviewer (2024)
 * 26th ACM CSCW Reviewer (2023)
