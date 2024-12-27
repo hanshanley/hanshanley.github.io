@@ -5,6 +5,7 @@ date: 2024-06-01
 collection: publications
 venue: 18th International AAAI Conference on Web and Social Media (ICWSM 2024)
 paperurl: 'https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf'
+recording: https://www.youtube.com/watch?v=W8V3UD_u9hQ
 authors: <b>Hans W. A. Hanley</b> and Zakir Durumeric
 excerpt: 'In this work, we study how 16 Russian media outlets have interacted with and utilized 732 Telegram channels throughout 2022.'
 citation: 'Hans W. A. Hanley and Zakir Durumeric. "Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram." Proceedings of the International AAAI Conference on Web and Social Media. Vol. 18. 2024.'
