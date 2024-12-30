@@ -3,6 +3,7 @@ title: "Across the Firewall: Foreign Media's Role in Shaping Chinese Social Medi
 permalink: /publication/narratives
 date: 2025-01-01
 collection: publications
+paperurl: 'https://www.pnas.org/doi/10.1073/pnas.2420607122'
 authors: <b>Hans W. A. Hanley</b>, Yingdan Lu, and Jennifer Pan
 venue: Proceedings of the National Academy of Sciences
 code: https://github.com/hanshanley/narrative-influence
