@@ -24,7 +24,7 @@ I am not currently taking any new students for projects, but if you are an under
 Updates
 ======
 * [Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites]() accepted to USENIX Security 2025!
-* [Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War]() accepted as Brief Report to PNAS!
+* [Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War](https://www.pnas.org/doi/10.1073/pnas.2420607122) accepted as Brief Report to PNAS!
 * Thesis accepted to the [Twenty-Seventh AAAI/SIGAI  20205 Doctoral Consortium](https://aaai.org/conference/aaai/aaai-25/doctoral-consortium-call/). See you in D.C.!
 * Rising Star in Data Science 2024, [University of Chicago, Stanford University, UCSD](https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars/)
 * Tall and True Tales accepted for Oral Talk at [IC<sup>2</sup>S<sup>2</sup>](https://ic2s2-2024.org/)!
