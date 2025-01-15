@@ -3,6 +3,7 @@ title: "Tracking the Takes and Trajectories of English-Language News Narratives 
 permalink: /publication/tracking-takes
 date: 2025-01-02
 collection: publications
+code: https://github.com/hanshanley/tracking-takes
 venue: 34th USENIX Security Symposium
 paperurl: https://www.hanshanley.com/files/Tracking_Takes.pdf
 authors: <b>Hans W. A. Hanley</b>, Emily Ito Okabe, and Zakir Durumeric
