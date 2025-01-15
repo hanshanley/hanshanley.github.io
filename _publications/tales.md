@@ -4,6 +4,7 @@ permalink: /publication/tracking-takes
 date: 2025-01-02
 collection: publications
 venue: 34th USENIX Security Symposium
+paperurl: https://www.hanshanley.com/files/Tracking_Takes.pdf
 authors: <b>Hans W. A. Hanley</b>, Emily Ito Okabe, and Zakir Durumeric
 excerpt: "In this work, we perform narrative analysis on 29.0M different articles from 2022 and 2023 across 4,076 different low, mixed, and highly reliable websites."
 citation: 'Hans W. A. Hanley, Emily Ito Okabe, and Zakir Durumeric. "Tall and True Tales: Thoroughly Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites." 34th USENIX Security Symposium 2025.'
