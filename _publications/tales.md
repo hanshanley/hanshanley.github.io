@@ -1,5 +1,5 @@
 ---
-title: "Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites"
+title: "Tracking the Takes and Trajectories of English-Language News Narratives across Trustworthy and Worrisome Websites"
 permalink: /publication/tracking-takes
 date: 2025-01-02
 collection: publications
