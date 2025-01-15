@@ -1,6 +1,6 @@
 ---
 title: "Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites"
-permalink: /publication/tales
+permalink: /publication/tracking-takes
 date: 2025-01-02
 collection: publications
 venue: 34th USENIX Security Symposium
