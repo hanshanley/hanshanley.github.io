@@ -25,7 +25,7 @@ Updates
 ======
 * [Tracking the Takes and Trajectories of English-Language News Narratives across Trustworthy and Worrisome Websites](https://www.hanshanley.com/files/Tracking_Takes.pdf) accepted to USENIX Security 2025!
 * [Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War](https://www.pnas.org/doi/10.1073/pnas.2420607122) accepted as Brief Report to PNAS!
-* Thesis accepted to the [Twenty-Seventh AAAI/SIGAI  20205 Doctoral Consortium](https://aaai.org/conference/aaai/aaai-25/doctoral-consortium-call/). See you in D.C.!
+* Thesis accepted to the [Twenty-Seventh AAAI/SIGAI  20205 Doctoral Consortium](https://aaai.org/conference/aaai/aaai-25/doctoral-consortium-call/). See you in Philadelphia!
 * Rising Star in Data Science 2024, [University of Chicago, Stanford University, UCSD](https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars/)
 * Tall and True Tales accepted for Oral Talk at [IC<sup>2</sup>S<sup>2</sup>](https://ic2s2-2024.org/)!
 * Narratives of Foreign Media Ecosystems in Chinese Social Media accepted for Oral Talk at [IC<sup>2</sup>S<sup>2</sup>](https://ic2s2-2024.org/)!
