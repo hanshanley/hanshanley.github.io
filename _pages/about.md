@@ -15,7 +15,7 @@ I was formerly a Computer Science Ph.D. candidate at Stanford University researc
 [Download Resume](https://www.hanshanley.com/files/HansWAHanley_Resume.pdf)
 [Download Full Academic CV](https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf)
 
-Outside of research, I did disinformation reporting with the [Atlantic Council's Digital Forensic Research Lab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/). For fun, I enjoy performing stand-up comedy, listening to UK rhythm and blues music, marathon running, and learning Mandarin Chinese (HSK4).
+Outside of research, I did disinformation reporting with the [Atlantic Council's Digital Forensic Research Lab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/). For fun, I enjoy stand-up comedy, listening to UK rhythm and blues music, long-distance running, and learning Mandarin Chinese (HSK5).
 
 I have a blog [The Margin of Error](https://www.themarginoferror.com/) where I talk about my research, computational looks at different economic and political issues, and a ton of other topics! [You can subscribe here.](https://docs.google.com/forms/d/e/1FAIpQLSeHPhVHdJ0xdCYq3wDYjkOIxgVdErP4qszNOBQYrnyzTz3xyQ/viewform)
 
