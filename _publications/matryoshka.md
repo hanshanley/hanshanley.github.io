@@ -1,7 +1,7 @@
 ---
 title: "Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings"
 permalink: /publication/matryoshka
-date: 2024-12-31
+date: 2025-07-27
 collection: publications
 venue: The 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)
 authors: <b>Hans W. A. Hanley</b> and Zakir Durumeric
