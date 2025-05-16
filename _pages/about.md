@@ -22,6 +22,7 @@ I have a blog [The Margin of Error](https://www.themarginoferror.com/) where I t
 
 Updates
 ======
+* [Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings] accepted to ACL 2025!
 * I defended my thesis Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets!
 * [Tracking the Takes and Trajectories of English-Language News Narratives across Trustworthy and Worrisome Websites](https://www.hanshanley.com/files/Tracking_Takes.pdf) accepted to USENIX Security 2025!
 * [Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War](https://www.pnas.org/doi/10.1073/pnas.2420607122) accepted as Brief Report to PNAS!
