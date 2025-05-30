@@ -4,7 +4,7 @@ permalink: /publication/bridging
 date: 2025-05-01
 collection: publications
 authors: Patrick Gerard, Hans W. A. Hanley, Luca Luceri, Emilio Ferrara
-paperurl: 
+paperurl: 'https://www.hanshanley.com/files/bridging.pdf'
 excerpt: 'In this work, we propose a new platform-agnostic framework that enables accurate reconstruction of cross-platform social graphs by uncovering latent narratives, revealing that a small group of bridge users drives most narrative migration between platforms like Truth Social and X, with broad implications for content moderation and policy..'
 citation: 'Patrick Gerard, Hans W. A. Hanley, Luca Luceri, Emilio Ferrara."Bridging the Narrative Divide: Cross-Platform Discourse Networks in Fragmented Ecosystems." (2025)'
 ---
