@@ -25,17 +25,10 @@ Updates
 * [Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](https://www.hanshanley.com/files/matryoshka.pdf) accepted to the Main Conference at ACL 2025!
 * I defended my thesis, Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets!
 * [Tracking the Takes and Trajectories of English-Language News Narratives across Trustworthy and Worrisome Websites](https://www.hanshanley.com/files/Tracking_Takes.pdf) accepted to USENIX Security 2025!
+* [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf) accepted to CSCW 2025!
+* Preprint of [Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter](https://www.hanshanley.com/files/CSCW_Twits.pdf) accepted to CSCW 2025!
 * [Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War](https://www.pnas.org/doi/10.1073/pnas.2420607122) accepted as Brief Report to PNAS!
 * Thesis accepted to the [Twenty-Seventh AAAI/SIGAI  20205 Doctoral Consortium](https://aaai.org/conference/aaai/aaai-25/doctoral-consortium-call/). See you in Philadelphia!
 * Rising Star in Data Science 2024, [University of Chicago, Stanford University, UCSD](https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars/)
-* Tall and True Tales accepted for Oral Talk at [IC<sup>2</sup>S<sup>2</sup>](https://ic2s2-2024.org/)!
-* Narratives of Foreign Media Ecosystems in Chinese Social Media accepted for Oral Talk at [IC<sup>2</sup>S<sup>2</sup>](https://ic2s2-2024.org/)!
-* Accepted a position working with Marcin Sieniek as a Student Researcher at Google for Summer 2024!
-* Will be a panelist for the [The Future of Computational Message Science: Theoretical Advances, Computational Frontiers, and Grand Societal Challenges]() ICA Pre-Conference at Queensland University of Technology in Brisbane!
-* [Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War]() accepted for In-Person Presentation at [74th ICA Conference](https://www.icahdq.org/mpage/ica24)!
-* [Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on Misinformation and Mainstream News Websites](https://www.hanshanley.com/files/machine_made.pdf) accepted to ICWSM 2024!
-* [Specious Sites: Tracking the Spread and Sway of Spurious News Stories at Scale](https://www.hanshanley.com/files/Specious_Sites.pdf) accepted to [45th IEEE Symposium on Security and Privacy](https://sp2024.ieee-security.org/)!
-* Preprint of [Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter](https://www.hanshanley.com/files/CSCW_Twits.pdf)
-* [Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram](https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf) was accepted to ICWSM 2024! 
 * Awarded [Meta PhD Research Fellowship in Computational Social Science](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/)
-* Preprint of [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf)
+
