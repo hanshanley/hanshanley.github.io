@@ -1,7 +1,7 @@
 ---
 title: "Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter"
 permalink: /publication/twits
-date: 2024-10-02
+date: 2025-04-02
 collection: publications
 authors: <b>Hans W. A. Hanley</b> and Zakir Durumeric
 paperurl: 'https://www.hanshanley.com/files/CSCW_Twits.pdf'
