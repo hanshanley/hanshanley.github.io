@@ -26,7 +26,7 @@ Updates
 * I defended my thesis, Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets!
 * [Tracking the Takes and Trajectories of English-Language News Narratives across Trustworthy and Worrisome Websites](https://www.hanshanley.com/files/Tracking_Takes.pdf) accepted to USENIX Security 2025!
 * [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf) accepted to CSCW 2025!
-* Preprint of [Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter](https://www.hanshanley.com/files/CSCW_Twits.pdf) accepted to CSCW 2025!
+* [Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter](https://www.hanshanley.com/files/CSCW_Twits.pdf) accepted to CSCW 2025!
 * [Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War](https://www.pnas.org/doi/10.1073/pnas.2420607122) accepted as Brief Report to PNAS!
 * Thesis accepted to the [Twenty-Seventh AAAI/SIGAI  20205 Doctoral Consortium](https://aaai.org/conference/aaai/aaai-25/doctoral-consortium-call/). See you in Philadelphia!
 * Rising Star in Data Science 2024, [University of Chicago, Stanford University, UCSD](https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars/)
