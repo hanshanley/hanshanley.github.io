@@ -5,7 +5,7 @@ date: 2025-01-01
 collection: publications
 paperurl: 'https://www.pnas.org/doi/10.1073/pnas.2420607122'
 authors: <b>Hans W. A. Hanley</b>, Yingdan Lu, and Jennifer Pan
-venue: Proceedings of the National Academy of Sciences
+venue: Proceedings of the National Academy of Sciences (PNAS 2024)
 code: https://github.com/hanshanley/narrative-influence
 excerpt: "We track the origin and spread of narratives from foreign news websites onto the Chinese social media platform Weibo.\n"
 citation: "Hanley, Hans W. A., Yingdan Lu, and Jennifer Pan. 'Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War.' Proceedings of the National Academy of Sciences, National Acad Sciences, 2024."
