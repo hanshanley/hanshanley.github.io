@@ -1,7 +1,7 @@
 ---
 title: "Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit"
 permalink: /publication/community
-date: 2024-10-01
+date: 2025-04-01
 collection: publications
 authors: <b>Hans W. A. Hanley</b> and Zakir Durumeric
 excerpt: "In this work, we examine the role of online misinformation in sparking political incivility and toxicity on the social media platform Reddit's online communities or subreddits."
