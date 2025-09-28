@@ -5,6 +5,7 @@ date: 2025-04-02
 collection: publications
 authors: <b>Hans W. A. Hanley</b> and Zakir Durumeric
 paperurl: 'https://www.hanshanley.com/files/CSCW_Twits.pdf'
+code: https://github.com/hanshanley/twits
 venue: 'The 28th ACM Conference On Computer-Supported Cooperative Work And Social Computing (CSCW 2025)'
 excerpt: 'Within this work, we explore the role that political ideology plays in contributing to toxicity both on an individual user level and a topic level on Twitter.'
 citation: 'Hans W. A. Hanley and Zakir Durumeric. "Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter." The 28th ACM Conference On Computer-Supported Cooperative Work And Social Computing 2025.'
