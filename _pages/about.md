@@ -22,6 +22,7 @@ I have a blog [The Margin of Error](https://www.themarginoferror.com/) where I t
 
 Updates
 ======
+*  [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf) received [Best Paper Honorable Mention at CSCW 2025](https://programs.sigchi.org/cscw/2025/awards/honorable-mentions)
 * [Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](https://www.hanshanley.com/files/matryoshka.pdf) accepted to the Main Conference at ACL 2025!
 * I defended my thesis, Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets!
 * [Tracking the Takes and Trajectories of English-Language News Narratives across Trustworthy and Worrisome Websites](https://www.hanshanley.com/files/Tracking_Takes.pdf) accepted to USENIX Security 2025!
