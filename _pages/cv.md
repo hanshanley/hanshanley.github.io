@@ -13,7 +13,7 @@ redirect_from:
 
 Education
 ======
-* PhD in Computer Science, Stanford University, 2025 =
+* PhD in Computer Science, Stanford University, 2025
 * MS   in Computer Science, Stanford University, 2024
 * MSc in Statistical Science, University of Oxford, 2020, Distinction (Highest Honors)
 * MSc in Advanced Computer Science, University of Oxford, 2019, Distinction (Highest Honors)
@@ -22,7 +22,7 @@ Education
 Work experience
 ======
 * March 2025- Present: Meta Research Scientist\
-Meta Central Applied Science\
+Meta Central Applied Sciences\
 New York, New York
 
 * Summer 2024: Google Research Student Researcher\
