@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Scientist at Meta.  I am broadly interested in disinformation, networks, and natural language processing. 
+I am a Member of Technical Staff at Microsoft AI.  I am broadly interested in AI Safety and truthfulness, disinformation, networks, and natural language processing. 
 
 I was formerly a Computer Science Ph.D. candidate at Stanford University researching in the [Empirical Security Research Group](https://esrg.stanford.edu/) and supported by the [Meta PhD Research Fellowship](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/), the [National Science Foundation Graduate Research Fellowship](https://www.nsfgrfp.org/) and the [Stanford University EDGE Fellowship](https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate/details). I completed two Masters’ degrees in Computer Science and in Statistics with the [Daniel M. Sachs Scholarship](https://sachs.princeton.edu/) at the University of Oxford. I completed my undergraduate degree in Electrical Engineering at Princeton University.
 
