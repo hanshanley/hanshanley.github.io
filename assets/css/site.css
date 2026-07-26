@@ -416,10 +416,12 @@ a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; text-decor
   .dock__head { grid-column: 1 / -1; margin-bottom: 0.75rem; }
   .dock__thumb { margin: 0; }
   .dock ul {
-    columns: 4;
-    column-gap: 1.75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+    gap: 0.42rem 1.5rem;
+    align-content: start;
   }
-  .dock li { break-inside: avoid; margin-bottom: 0.42rem; }
+  .dock li { margin: 0; }
   .dock a { white-space: nowrap; }
 }
 @media (max-width: 30rem) {

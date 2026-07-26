@@ -138,29 +138,20 @@ redirect_from:
 <div class="prose">
   <h3>Program committees</h3>
   <ul class="cols">
-    <li>AAAI 2027 <span style="color:var(--ink-3)">(2026–2027)</span></li>
-    <li>AISI 2027 <span style="color:var(--ink-3)">(2026–2027)</span></li>
-    <li>AAAI 2026 <span style="color:var(--ink-3)">(2025–2026)</span></li>
-    <li>AISI 2026 <span style="color:var(--ink-3)">(2025–2026)</span></li>
-    <li>IEEE S&amp;P 2026 <span style="color:var(--ink-3)">(2025–2026)</span></li>
-    <li>AAAI-AISI 2025 <span style="color:var(--ink-3)">(2024–2025)</span></li>
-    <li>AAAI 2025</li>
-    <li>ICWSM 2025</li>
-    <li>ICWSM 2022</li>
+    <li>AAAI <span style="color:var(--ink-3)">— 2025, 2026, 2027</span></li>
+    <li>AAAI-AISI (AI for Social Impact) <span style="color:var(--ink-3)">— 2025, 2026, 2027</span></li>
+    <li>IEEE Symposium on Security and Privacy <span style="color:var(--ink-3)">— 2026</span></li>
+    <li>ICWSM <span style="color:var(--ink-3)">— 2022, 2025</span></li>
   </ul>
 
   <h3>Reviewing</h3>
   <ul class="cols">
-    <li>IC2S2 2025</li>
-    <li>NLP4Democracy 2025</li>
-    <li>ACL 2025</li>
-    <li>ACM CSCW 2025</li>
-    <li>IC2S2 2024</li>
-    <li>ACM CSCW 2024</li>
-    <li>ICWSM 2023</li>
-    <li>ACM CSCW 2023 <span style="color:var(--ink-3)">(2022)</span></li>
-    <li>ACM CSCW 2022</li>
-    <li>Stanford Journal of Science, Technology, and Society <span style="color:var(--ink-3)">(2022)</span></li>
+    <li>ACM CSCW <span style="color:var(--ink-3)">— 2022, 2023, 2024, 2025</span></li>
+    <li>IC2S2 <span style="color:var(--ink-3)">— 2024, 2025</span></li>
+    <li>ICWSM <span style="color:var(--ink-3)">— 2023</span></li>
+    <li>ACL <span style="color:var(--ink-3)">— 2025</span></li>
+    <li>NLP4Democracy <span style="color:var(--ink-3)">— 2025</span></li>
+    <li>Stanford Journal of Science, Technology, and Society <span style="color:var(--ink-3)">— 2022</span></li>
   </ul>
 
   <h3>Mentoring and leadership</h3>
