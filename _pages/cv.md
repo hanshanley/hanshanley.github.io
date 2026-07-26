@@ -80,21 +80,31 @@ redirect_from:
   </article>
   <article class="record">
     <div class="record__rail"><span class="record__year">2018</span><span class="record__venue">Seattle, WA</span></div>
-    <div><h3 class="record__title">Data Engine Software Intern — Microsoft</h3></div>
+    <div><h3 class="record__title">Data Engine Software Intern — Microsoft</h3>
+    <p class="record__abstract">Built a C# framework for the Business Applications Group mobile offline synchronisation tool, scaling it to twice the users while cutting sync time by 75%, and added concurrent row versioning across servers. Validated with seven load and stress tests on a 30-server group.</p></div>
   </article>
   <article class="record">
     <div class="record__rail"><span class="record__year">2017</span><span class="record__venue">Sunnyvale, CA</span></div>
-    <div><h3 class="record__title">Gmail Security Software Intern — Google</h3></div>
+    <div><h3 class="record__title">Gmail Security Software Intern — Google</h3>
+    <p class="record__abstract">Designed and shipped a security feature for Gmail Android that analyses outgoing email addresses to reduce user vulnerability, and implemented client-side logic cutting request latency and bandwidth when processing recipients against the backend.</p></div>
   </article>
   <article class="record">
     <div class="record__rail"><span class="record__year">2016</span><span class="record__venue">New York, NY</span></div>
-    <div><h3 class="record__title">Google Docs and Drive Security Software Intern — Google</h3></div>
+    <div><h3 class="record__title">Google Docs and Drive Security Software Intern — Google</h3>
+    <p class="record__abstract">Implemented an action executor in Java for the Google Sheets API v4 within randomised end-to-end security software, extending authorisation test coverage to critical new launch flows. Contributed 52 changes, including 37 unit and 55 integration tests.</p></div>
   </article>
   <article class="record">
     <div class="record__rail"><span class="record__year">2015</span><span class="record__venue">Lubbock, TX</span></div>
-    <div><h3 class="record__title">NSF REU, Declarative Programming — Texas Tech University</h3></div>
+    <div><h3 class="record__title">NSF REU, Declarative Programming — Texas Tech University</h3>
+    <p class="record__abstract">Contributed to the Texas Tech Answer Set Prolog codebase, exploring applications to AI and cybersecurity, and designed a Generate-and-Test program identifying de-anonymisation inference leakages in a k-anonymity model. Advised by Dr Rattikorn Hewett.</p></div>
   </article>
-</div>
+<  <article class="record">
+    <div class="record__rail"><span class="record__year">2014</span><span class="record__venue">Celebration, FL</span></div>
+    <div><h3 class="record__title">Software Engineering Intern — Top Gun Laparoscopic Internship</h3>
+    <p class="record__abstract">Wrote the engineering dossier for the Top Gun training instrument and presented it to the Chief Medical Officer of Lexion Medical. Built three Java programs driving a Wiimote interface to teach laparoscopic surgeons ultrasound technique.</p></div>
+  </article>
+
+/div>
 
 <h2 class="section section-anchor" id="dissertations">Dissertations</h2>
 <div class="index cv">

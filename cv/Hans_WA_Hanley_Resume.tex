@@ -73,7 +73,19 @@
 %%%% Skills Bold Formatting
 \newcommand{\hskills}[1]{\textbf{\bfseries #1}}
 %%%% Icons
-\usepackage{fontawesome5}
+%%%% Font Awesome glyphs are pulled straight out of the OTFs that ship with the
+%%%% TeX Live `fontawesome5' package, rather than via \usepackage{fontawesome5}.
+%%%% The package's font-descriptor machinery crashes some XeTeX builds (notably
+%%%% Tectonic); loading the faces directly with fontspec is equivalent, renders
+%%%% identically, and works on every XeLaTeX/LuaLaTeX engine including Overleaf.
+%%%% The macro names below match the fontawesome5 ones, so the body is unchanged.
+\newfontface\faSolidFace{FontAwesome5Free-Solid-900.otf}
+\newfontface\faBrandsFace{FontAwesome5Brands-Regular-400.otf}
+\newcommand{\faEnvelope}{{\faSolidFace\symbol{"F0E0}}}
+\newcommand{\faGlobe}{{\faSolidFace\symbol{"F0AC}}}
+\newcommand{\faPenNib}{{\faSolidFace\symbol{"F5AD}}}
+\newcommand{\faLinkedin}{{\faBrandsFace\symbol{"F08C}}}
+\newcommand{\faGithub}{{\faBrandsFace\symbol{"F09B}}}
 \usepackage{academicons}
 \usepackage{xcolor} % required by academicons
 
