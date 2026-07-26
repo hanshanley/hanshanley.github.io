@@ -34,3 +34,55 @@
   title: "The Shrinking Swing State Map"
   blurb: "The set of swing states has shrunk over recent decades — but which states swing changes with each cycle."
   url: "https://www.themarginoferror.com/p/the-shrinking-swing-state-map"
+
+# --- Earlier posts on themarginoferror.com. These carry no visible date on the
+# --- site; dated 2022 per instruction. NOTE: seven undated posts were found,
+# --- not three — check the four marked (?) and correct the year if needed.
+- year: 2022
+  date: "2022"
+  short: "2022"
+  title: "The influx of Russian misinformation on the r/russia subreddit"
+  blurb: "On 1 March 2022, five days after the Russian invasion of Ukraine, the character of the r/russia subreddit changed sharply."
+  url: "https://www.themarginoferror.com/the-influx-of-russian-misinfo-on-the-rrussia-subreddit"
+
+- year: 2022
+  date: "2022"
+  short: "2022"
+  title: "Timeline of Events in the Build-up to the Russo-Ukrainian War"
+  blurb: "A chronology of the events leading to the 24 February 2022 invasion of Ukraine."
+  url: "https://www.themarginoferror.com/timeline-of-events-in-the-build-up-to-the-russo-ukrainian-war"
+
+- year: 2022
+  date: "2022"
+  short: "2022"
+  title: "Echo chambers embedded in the structure of news media websites"
+  blurb: "How the link structure of news websites itself encodes ideological echo chambers."
+  url: "https://www.themarginoferror.com/echo-chambers-embedded-in-the-structure-of-news-media-websites"
+
+- year: 2022
+  date: "2022"
+  short: "2022 (?)"
+  title: "Are the U.S. Summit for Democracy countries actually democratic?"
+  blurb: "Examining the democratic credentials of the states invited to the U.S. Summit for Democracy."
+  url: "https://www.themarginoferror.com/us-summit-for-democracy"
+
+- year: 2022
+  date: "2022"
+  short: "2022 (?)"
+  title: "Oh Q, where art thou?"
+  blurb: "QAnon has been removed from nearly every mainstream platform. Where did it go?"
+  url: "https://www.themarginoferror.com/oh-q-where-art-thou"
+
+- year: 2022
+  date: "2022"
+  short: "2022 (?)"
+  title: "Oh Q, what art thou?"
+  blurb: "QAnon followers sell coffee, run their own blogs, and maintain their own social platforms."
+  url: "https://www.themarginoferror.com/oh-q-what-art-thou"
+
+- year: 2022
+  date: "2022"
+  short: "2022 (?)"
+  title: "My first blog post"
+  blurb: "Introducing The Margin of Error: computer science, security and privacy research, and a good deal else."
+  url: "https://www.themarginoferror.com/my-first-blog-post"
