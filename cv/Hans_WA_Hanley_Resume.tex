@@ -3,7 +3,7 @@
 %%%%%%% PREAMBLE
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%% Compile with XeLaTeX or LuaLaTeX (fontspec requires it).
-%%%%%%% Needs SourceSansPro-*.otf on the font path and Publications.bib alongside.
+%%%%%%% SourceSansPro OTFs ship with the TeX Live `sourcesanspro' package.
 %%%%%%%
 %%%%%%% CHANGED 2026-07: Microsoft AI (April 2026--present) added as current role;
 %%%%%%% Meta updated to March 2025--April 2026.
@@ -53,13 +53,6 @@
 \setlength{\tabcolsep}{0in}
 %%%% Secondary Color
 \definecolor{UI_blue}{RGB}{32, 64, 151}
-%%%% Bibliography / Name Highlighting
-\usepackage[style=nature, maxbibnames=3]{biblatex}
-\addbibresource{Publications.bib}
-\renewcommand*{\mkbibnamegiven}[1]{%
-  \ifitemannotation{highlight}{\textbf{#1}}{#1}}
-\renewcommand*{\mkbibnamefamily}[1]{%
-  \ifitemannotation{highlight}{\textbf{#1}}{#1}}
 %%%% Section Formatting
 \titleformat{\section}{
   \color{UI_blue}
@@ -149,12 +142,6 @@ I build scalable methods for interpreting and evaluating large language models, 
 \begin{zitemize}
 \item Designed LLM-based agents for structured querying and high-fidelity reasoning over large clinical datasets; implemented verification layers to detect reasoning failures under distribution shifts.
 \item Built evaluation frameworks measuring accuracy, safety, and adversarial robustness for LLM-mediated medical data interactions.
-\end{zitemize}
-
-\vspace{-0.25em}
-\subsection*{Digital Forensics Research Lab, Atlantic Council — Research Intern \hfill Summer 2021}
-\begin{zitemize}
-\item Investigated global misinformation and influence operations; authored seven reports analyzing cross-platform inauthentic behavior, foreign influence operations, and propaganda narratives (e.g., COVID-19 conspiracy networks, Iran/Russia/China operations, VPN adoption in Nigeria).
 \end{zitemize}
 
 % ==========================================================

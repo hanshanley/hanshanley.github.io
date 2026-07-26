@@ -11,7 +11,7 @@ redirect_from:
 {% include base_path %}
 
 <div class="lede">
-    <p>I am Hans Hanley (<span lang="zh-Hans">汉斯·汉隶</span>), a Member of Technical Staff at Microsoft AI. I am broadly interested in AI safety and truthfulness, disinformation, networks, and natural language processing.</p>
+    <p>My name is Hans Hanley (<span lang="zh-Hans">汉斯·汉隶</span>) and I am a Member of Technical Staff at Microsoft AI. I am broadly interested in AI safety and truthfulness, disinformation, networks, and natural language processing.</p>
 
     <p>I was formerly a Computer Science Ph.D. candidate at Stanford University researching in the <a href="https://esrg.stanford.edu/">Empirical Security Research Group</a> and supported by the <a href="https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/">Meta PhD Research Fellowship</a>, the <a href="https://www.nsfgrfp.org/">National Science Foundation Graduate Research Fellowship</a> and the <a href="https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2020">Stanford University EDGE Fellowship</a>. I completed two Masters' degrees in Computer Science and in Statistics with the <a href="https://sachs.princeton.edu/">Daniel M. Sachs Scholarship</a> at the University of Oxford. I completed my undergraduate degree in Electrical Engineering at Princeton University.</p>
 

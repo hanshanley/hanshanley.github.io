@@ -10,7 +10,7 @@ redirect_from:
 <div class="downloads">
   <a class="download" href="https://www.hanshanley.com/files/HansWAHanley_Resume.pdf">
     <span class="download__label">Résumé</span>
-    <span class="download__meta">PDF · 2 pages</span>
+    <span class="download__meta">PDF · one page</span>
   </a>
   <a class="download" href="https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf">
     <span class="download__label">Full academic CV</span>
