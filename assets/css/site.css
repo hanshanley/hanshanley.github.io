@@ -372,7 +372,10 @@ a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; text-decor
   letter-spacing: 0.11em;
   text-transform: uppercase;
   border-left: 2px solid var(--red);
-  padding: 0.15rem 0 0.15rem 0.7rem;
+  /* Right padding gives the 2px hover nudge somewhere to go. Without it the
+     shifted link overflows the padding box and Chrome shows a scrollbar
+     (setting overflow-y also forces overflow-x to `auto`). */
+  padding: 0.15rem 0.45rem 0.15rem 0.7rem;
   background: color-mix(in srgb, var(--paper) 88%, transparent);
 }
 .dock__head {
