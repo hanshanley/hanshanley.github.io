@@ -1,4 +1,5 @@
 ---
+layout: default
 permalink: /
 title: "Hans W. A. Hanley"
 excerpt: "Member of Technical Staff at Microsoft AI. AI safety and truthfulness, disinformation, networks, and natural language processing."
@@ -34,7 +35,7 @@ redirect_from:
 
 <h2 class="section">Recently</h2>
 <ul class="log">
-  {% for u in site.data.updates limit: 6 %}
+  {% for u in site.data.updates %}
   <li>
     <time{% if u.datetime %} datetime="{{ u.datetime }}"{% endif %}>{{ u.date }}</time>
     <div>

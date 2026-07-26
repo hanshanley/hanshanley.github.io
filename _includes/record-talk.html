@@ -7,6 +7,9 @@
   <div>
     <h3 class="record__title">{{ post.title }}</h3>
     {% if post.venue %}<p class="record__authors">{{ post.venue }}</p>{% endif %}
-    {% if post.excerpt %}<p class="record__abstract">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 300 }}</p>{% endif %}
+    {%- comment -%}
+      Render the talk body: it carries the slide / recording / paper links.
+    {%- endcomment -%}
+    <div class="record__abstract record__body">{{ post.content }}</div>
   </div>
 </article>
