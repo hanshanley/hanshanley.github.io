@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications — Hans W. A. Hanley</title>
+<style>
+/* ============================================================
+   Wire desk — hanshanley.com
+   Light "paper" is the default; dark is opt-in via the toggle.
+   ============================================================ */
+
+:root {
+  color-scheme: light;
+
+  --paper:      #fdfcf9;
+  --paper-2:    #f6f3ec;
+  --ink:        #1a1917;
+  --ink-2:      #4c4840;
+  --ink-3:      #837c6e;
+  --rule:       #1a1917;
+  --hair:       #ded8ca;
+  --hair-soft:  #ebe6da;
+  --red:        #8b0000;
+
+  --serif: "Iowan Old Style", Charter, "Bitstream Charter", "Palatino Linotype", Palatino, "Hoefler Text", Georgia, serif;
+  --mono:  ui-monospace, "SF Mono", SFMono-Regular, "IBM Plex Mono", Menlo, Consolas, monospace;
+
+  --measure: 64ch;
+  --rail: 11rem;
+  --gutter: clamp(1.5rem, 1rem + 2.4vw, 3rem);
+  --shell: 62rem;
+
+  --step-0: clamp(1.0625rem, 1.0rem + 0.28vw, 1.1563rem);
+  --step-1: clamp(1.15rem, 1.08rem + 0.36vw, 1.3rem);
+  --step-2: clamp(1.35rem, 1.2rem + 0.7vw, 1.7rem);
+  --step-3: clamp(2rem, 1.35rem + 3vw, 3.6rem);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --paper:      #14130f;
+  --paper-2:    #1c1b16;
+  --ink:        #ece7db;
+  --ink-2:      #b8b1a0;
+  --ink-3:      #857e6d;
+  --rule:       #ece7db;
+  --hair:       #35322a;
+  --hair-soft:  #282620;
+  --red:        #e39184;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--step-0);
+  line-height: 1.65;
+  font-kerning: normal;
+  font-variant-numeric: oldstyle-num;
+  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection { background: var(--red); color: var(--paper); }
+
+.wrap { max-width: var(--shell); margin: 0 auto; padding: 0 var(--gutter) 6rem; }
+
+/* ================= masthead ================= */
+
+.masthead__name {
+  font-size: var(--step-3);
+  line-height: 0.98;
+  letter-spacing: -0.028em;
+  margin: clamp(2.5rem, 5vw, 4.5rem) 0 0;
+  font-weight: 600;
+  font-variant-numeric: lining-nums;
+  text-wrap: balance;
+}
+.masthead__name a { color: inherit; text-decoration: none; display: inline-block; }
+.masthead__name a:hover { color: var(--red); }
+
+.masthead__cn {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Songti SC", "Noto Serif CJK SC",
+               "Source Han Serif SC", "Microsoft YaHei", var(--serif);
+  font-size: 0.3em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--ink-3);
+  vertical-align: 0.62em;
+  margin-left: 1.5em;
+  white-space: nowrap;
+}
+@media (max-width: 34rem) {
+  .masthead__cn { display: block; margin: 0.5rem 0 0; vertical-align: baseline; font-size: 0.34em; }
+}
+
+.dateline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1.35rem;
+  font-family: var(--mono);
+  font-size: 0.6563rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-top: 1.15rem;
+  padding: 0.7rem 0 0.75rem;
+  border-top: 1px solid var(--hair);
+}
+.dateline > span { position: relative; }
+.dateline > span + span:not(.spacer)::before {
+  content: "·";
+  position: absolute;
+  left: -0.78rem;
+  color: var(--hair);
+}
+.dateline .spacer { flex: 1 1 auto; }
+
+.theme-toggle {
+  font-family: var(--mono);
+  font-size: 0.6563rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  background: none;
+  border: 1px solid var(--hair);
+  padding: 0.22rem 0.6rem;
+  cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+.theme-toggle:hover { color: var(--red); border-color: var(--red); }
+
+/* ================= navigation ================= */
+
+nav.site {
+  border-top: 2.5px solid var(--rule);
+  border-bottom: 1px solid var(--hair);
+  margin-bottom: clamp(2.25rem, 4.5vw, 3.5rem);
+}
+nav.site ul {
+  list-style: none; margin: 0; padding: 0.85rem 0;
+  display: flex; flex-wrap: wrap; gap: 0.4rem 1.7rem;
+  font-family: var(--mono);
+  font-size: 0.7188rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+nav.site a {
+  color: var(--ink-2); text-decoration: none;
+  padding-bottom: 3px; border-bottom: 1.5px solid transparent;
+  transition: color .15s, border-color .15s;
+}
+nav.site a:hover { color: var(--ink); border-bottom-color: var(--hair); }
+nav.site a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--red); }
+nav.site .ext::after {
+  content: "↗"; font-size: 0.8em; margin-left: 0.28em;
+  color: var(--ink-3); vertical-align: 0.15em;
+}
+
+/* ================= links ================= */
+
+a {
+  color: var(--ink);
+  text-decoration-line: underline;
+  text-decoration-color: color-mix(in srgb, var(--red) 42%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.17em;
+  transition: color .15s, text-decoration-color .15s;
+}
+a:hover { color: var(--red); text-decoration-color: var(--red); text-decoration-thickness: 1.5px; }
+a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; text-decoration: none; }
+
+/* ================= intro (portrait + lede) ================= */
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 12rem);
+  gap: var(--gutter);
+  align-items: start;
+  margin-bottom: 1.75rem;
+}
+.intro .lede { max-width: var(--measure); }
+
+.portrait { margin: 0; }
+.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--hair);
+  padding: 5px;
+  background: var(--paper-2);
+  filter: saturate(0.92);
+}
+.portrait figcaption {
+  font-family: var(--mono);
+  font-size: 0.5938rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-top: 0.55rem;
+  line-height: 1.5;
+}
+
+/* ================= section headers ================= */
+
+.section {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  border-top: 2.5px solid var(--rule);
+  padding-top: 0.6rem;
+  margin: clamp(2.75rem, 5.5vw, 4rem) 0 1.75rem;
+}
+.section a { color: var(--ink-3); text-decoration: none; }
+.section a:hover { color: var(--red); }
+
+/* ================= prose ================= */
+
+.lede, .prose { max-width: var(--measure); }
+.lede p, .prose p { margin: 0 0 1.25rem; }
+.lede > p:first-child { font-size: var(--step-1); line-height: 1.5; }
+
+.prose h2 {
+  font-size: var(--step-2); line-height: 1.18; letter-spacing: -0.014em;
+  font-weight: 600; margin: 2.75rem 0 0.85rem; text-wrap: balance;
+}
+.prose h3 { font-size: 1.08rem; margin: 2rem 0 0.5rem; font-weight: 600; }
+.prose ul { padding-left: 1.15rem; margin: 0 0 1.25rem; }
+.prose li { margin-bottom: 0.55rem; }
+.prose li::marker { color: var(--ink-3); }
+.prose code, code {
+  font-family: var(--mono); font-size: 0.86em;
+  background: var(--paper-2); padding: 0.1em 0.35em;
+  border: 1px solid var(--hair-soft);
+}
+
+/* ================= record index ================= */
+
+.index { border-top: 1px solid var(--hair); }
+
+.record {
+  display: grid;
+  grid-template-columns: var(--rail) 1fr;
+  gap: 0 var(--gutter);
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--hair-soft);
+  transition: background .15s;
+}
+.record:hover { background: color-mix(in srgb, var(--paper-2) 55%, transparent); }
+
+.record__rail {
+  font-family: var(--mono);
+  font-size: 0.6563rem;
+  line-height: 1.6;
+  letter-spacing: 0.09em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  padding-top: 0.45rem;
+  padding-right: var(--gutter);
+  border-right: 1px solid var(--hair-soft);
+}
+.record__year {
+  display: block; color: var(--ink); font-size: 0.875rem;
+  letter-spacing: 0.04em; font-variant-numeric: lining-nums;
+}
+.record__venue {
+  display: block; margin-top: 0.35rem; text-transform: none;
+  letter-spacing: 0.025em; line-height: 1.45;
+}
+.record__flag {
+  display: inline-block; margin-top: 0.6rem; color: var(--red);
+  border: 1px solid currentColor; padding: 0.14rem 0.38rem;
+  font-size: 0.5625rem; letter-spacing: 0.14em; line-height: 1;
+}
+
+.record__title {
+  font-size: var(--step-1); line-height: 1.3; margin: 0 0 0.4rem;
+  font-weight: 600; letter-spacing: -0.011em; text-wrap: balance;
+}
+.record__title a { color: var(--ink); text-decoration-color: transparent; }
+.record__title a:hover { color: var(--red); text-decoration-color: var(--red); }
+
+.record__authors { color: var(--ink-2); font-size: 0.9375rem; margin: 0 0 0.45rem; line-height: 1.5; }
+.record__authors b { color: var(--ink); font-weight: 600; }
+.record__abstract {
+  color: var(--ink-2); font-size: 0.9375rem; line-height: 1.55;
+  margin: 0 0 0.85rem; max-width: 56ch;
+}
+
+.affordances {
+  display: flex; flex-wrap: wrap; gap: 0.45rem 1.1rem;
+  font-family: var(--mono); font-size: 0.6563rem;
+  letter-spacing: 0.12em; text-transform: uppercase; align-items: center;
+}
+.affordances a, .affordances button {
+  color: var(--ink-2); background: none; border: 0; text-decoration: none;
+  border-bottom: 1px solid var(--hair); padding: 0 0 3px;
+  font: inherit; cursor: pointer; transition: color .15s, border-color .15s;
+}
+.affordances a:hover, .affordances button:hover { color: var(--red); border-bottom-color: var(--red); }
+.affordances .is-primary { color: var(--red); border-bottom-color: var(--red); }
+
+/* ================= log ================= */
+
+.log { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--hair); }
+.log li {
+  display: grid; grid-template-columns: var(--rail) 1fr; gap: 0 var(--gutter);
+  padding: 1.05rem 0; border-bottom: 1px solid var(--hair-soft); align-items: stretch;
+}
+.log time {
+  font-family: var(--mono); font-size: 0.6563rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-3);
+  border-right: 1px solid var(--hair-soft); padding-right: var(--gutter);
+  display: block;
+}
+.log p { margin: 0; font-size: 0.9688rem; line-height: 1.55; }
+.log .kind {
+  font-family: var(--mono); font-size: 0.5625rem; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--red); display: block; margin-top: 0.35rem;
+}
+
+/* ================= profiles ================= */
+
+.profiles {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  font-family: var(--mono); font-size: 0.7188rem; letter-spacing: 0.045em;
+  border-top: 1px solid var(--hair-soft);
+}
+.profiles li { padding: 0.6rem 1.5rem 0.6rem 0; border-bottom: 1px solid var(--hair-soft); }
+.profiles .label {
+  color: var(--ink-3); display: inline-block; min-width: 6.5rem;
+  text-transform: uppercase; font-size: 0.6563rem; letter-spacing: 0.13em;
+}
+.profiles a { text-decoration-color: transparent; }
+.profiles a:hover { text-decoration-color: var(--red); }
+
+/* ================= sticky side widget ================= */
+
+.dock {
+  position: fixed;
+  top: 50%;
+  right: max(0.9rem, calc((100vw - var(--shell)) / 2 - 9.5rem));
+  transform: translateY(-50%);
+  width: 8.25rem;
+  z-index: 20;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  border-left: 2px solid var(--red);
+  padding: 0.15rem 0 0.15rem 0.7rem;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+}
+.dock__head {
+  display: block; color: var(--ink-3); font-size: 0.5625rem;
+  letter-spacing: 0.16em; margin-bottom: 0.5rem;
+}
+.dock ul { list-style: none; margin: 0; padding: 0; }
+.dock li { margin: 0 0 0.32rem; }
+.dock a {
+  color: var(--ink-2); text-decoration: none; display: flex; align-items: baseline;
+  gap: 0.4rem; line-height: 1.35;
+  transition: color .15s, transform .15s;
+}
+.dock a:hover { color: var(--red); transform: translateX(2px); }
+.dock__ico {
+  font-size: 0.72rem;
+  line-height: 1;
+  width: 1em;
+  flex: 0 0 auto;
+  filter: saturate(0.75);
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+.dock .dock__cv { color: var(--red); }
+.dock__thumb {
+  display: block; width: 100%; height: auto; margin-bottom: 0.6rem;
+  border: 1px solid var(--hair); padding: 3px; background: var(--paper-2);
+  filter: saturate(0.9);
+}
+@media (max-width: 82rem) { .dock { display: none; } }
+
+/* ================= compact CV / résumé layout ================= */
+
+.jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.35rem;
+  font-family: var(--mono);
+  font-size: 0.6563rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
+  margin-bottom: 0.5rem;
+}
+.jump a { color: var(--ink-3); text-decoration: none; }
+.jump a:hover { color: var(--red); }
+
+.cv .record { padding: 0.85rem 0; }
+.cv .record__rail { padding-top: 0.22rem; }
+.cv .record__title { font-size: 1.02rem; margin-bottom: 0.18rem; letter-spacing: -0.006em; }
+.cv .record__abstract {
+  max-width: none;
+  margin-bottom: 0;
+  font-size: 0.9063rem;
+  line-height: 1.5;
+}
+.cv .record__authors { margin-bottom: 0.2rem; font-size: 0.9063rem; }
+
+.cv .log li { padding: 0.6rem 0; }
+.cv .log p { font-size: 0.9063rem; }
+
+/* two-column lists for skills / service — kills the dead right-hand space */
+.cols {
+  columns: 2;
+  column-gap: var(--gutter);
+  max-width: none;
+  margin: 0 0 0.5rem;
+  padding-left: 1.1rem;
+}
+.cols li { break-inside: avoid; margin-bottom: 0.4rem; }
+.cols li::marker { color: var(--ink-3); }
+@media (max-width: 46rem) { .cols { columns: 1; } }
+
+.section-anchor { scroll-margin-top: 1.5rem; }
+
+.aside-note {
+  border-left: 2px solid var(--red);
+  padding: 0.35rem 0 0.35rem 1.25rem;
+  margin: clamp(2.25rem, 4.5vw, 3.25rem) 0 0;
+  max-width: var(--measure);
+  color: var(--ink-2); font-size: 0.9688rem; line-height: 1.6;
+}
+
+/* ================= machine blocks ================= */
+
+.machine {
+  font-family: var(--mono); font-size: 0.7813rem; line-height: 1.7;
+  background: var(--paper-2); border: 1px solid var(--hair);
+  border-left: 2px solid var(--ink-3);
+  padding: 1.15rem 1.35rem; overflow-x: auto; white-space: pre;
+  margin: 0 0 1.5rem; color: var(--ink-2);
+}
+
+.kv { border-collapse: collapse; width: 100%; max-width: var(--measure); margin-bottom: 1.75rem; font-size: 0.9375rem; }
+.kv th, .kv td { text-align: left; vertical-align: top; padding: 0.5rem 1rem 0.5rem 0; border-bottom: 1px solid var(--hair-soft); }
+.kv th {
+  font-family: var(--mono); font-size: 0.6563rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-3); font-weight: 400; width: 10.5rem;
+}
+
+/* ================= filters ================= */
+
+.filters {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem;
+  font-family: var(--mono); font-size: 0.6875rem; letter-spacing: 0.13em;
+  text-transform: uppercase; margin-bottom: 1.75rem;
+}
+.filters button {
+  background: none; border: 0; border-bottom: 1.5px solid transparent;
+  color: var(--ink-3); font: inherit; padding: 0 0 3px; cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+.filters button:hover { color: var(--ink); }
+.filters button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--red); }
+.record[hidden] { display: none; }
+
+/* ================= dialog ================= */
+
+dialog {
+  max-width: 46rem; width: calc(100% - 2rem);
+  background: var(--paper); color: var(--ink);
+  border: 1px solid var(--ink-3); padding: 1.4rem;
+}
+dialog::backdrop { background: rgba(0,0,0,.45); }
+dialog .machine { margin: 0; }
+
+/* ================= footer ================= */
+
+footer.site {
+  border-top: 2.5px solid var(--rule);
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-top: 1.1rem;
+  font-family: var(--mono); font-size: 0.6563rem;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3);
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.6rem 1.5rem;
+}
+footer.site a { color: var(--ink-2); text-decoration: none; }
+footer.site a:hover { color: var(--red); }
+
+/* ================= responsive ================= */
+
+@media (max-width: 46rem) {
+  :root { --rail: auto; }
+  .intro { grid-template-columns: 1fr; }
+  .portrait { max-width: 9rem; order: -1; }
+  .record, .log li { grid-template-columns: 1fr; gap: 0.55rem; }
+  .record__rail, .log time { border-right: 0; padding-right: 0; padding-top: 0; }
+  .record__rail > * { display: inline; }
+  .record__venue { margin-top: 0; }
+  .record__venue::before { content: " · "; color: var(--hair); }
+  .record__flag { display: inline-block; margin: 0 0 0 .5rem; }
+  .profiles { grid-template-columns: 1fr; }
+  .dateline { font-size: 0.6rem; letter-spacing: 0.12em; }
+  nav.site ul { gap: 0.5rem 1.15rem; font-size: 0.6875rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* ================= print ================= */
+
+@media print {
+  :root {
+    --paper: #fff; --paper-2: #fff; --ink: #000; --ink-2: #222;
+    --ink-3: #555; --hair: #bbb; --hair-soft: #ddd; --rule: #000;
+  }
+  nav.site, .filters, .theme-toggle, .dock, .affordances button, dialog { display: none !important; }
+  body { font-size: 10.5pt; line-height: 1.45; }
+  .wrap { max-width: none; padding: 0; }
+  a { text-decoration: none; color: #000; }
+  .record, .log li { break-inside: avoid; }
+  .section { break-after: avoid; }
+}
+
+</style>
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    } catch (e) {}
+  })();
+</script></head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <h1 class="masthead__name"><a href="index.html">Hans W. A. Hanley</a><span class="masthead__cn" lang="zh-Hans">汉斯·汉隶</span></h1>
+  <div class="dateline">
+    <span>Member of Technical Staff, Microsoft AI</span>
+    <span>New York</span>
+    <span>Disinformation · Networks · NLP</span>
+    <span class="spacer"></span><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme">Dark</button>
+  </div>
+</header>
+
+<nav class="site">
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="publications.html" aria-current="page">Publications</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="talks.html">Talks</a></li>
+    <li><a href="resume.html">Résumé</a></li>
+    <li><a class="ext" href="https://www.themarginoferror.com/">Margin of Error</a></li>
+    <li><a href="are-you-an-ai.html">Are you an AI?</a></li>
+  </ul>
+</nav>
+
+<h2 class="section">Filter</h2>
+<div class="filters" id="filters">
+  <button type="button" data-topic="all" aria-pressed="true">All</button>
+  <button type="button" data-topic="disinformation" aria-pressed="false">Disinformation</button>
+  <button type="button" data-topic="nlp" aria-pressed="false">NLP</button>
+  <button type="button" data-topic="networks" aria-pressed="false">Networks</button>
+  <button type="button" data-topic="ai-safety" aria-pressed="false">AI safety</button>
+  <button type="button" data-topic="privacy" aria-pressed="false">Privacy</button>
+</div>
+
+<div class="index" id="index">
+
+  <article class="record" data-topics="networks disinformation">
+    <div class="record__rail">
+      <span class="record__year">2026</span>
+      <span class="record__venue">ICWSM</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://ojs.aaai.org/index.php/ICWSM/article/view/42670">Bridging the Narrative Divide: Cross-Platform Discourse Networks in Fragmented Ecosystems</a></h3>
+      <p class="record__authors">Patrick Gerard, <b>Hans W. A. Hanley</b>, Luca Luceri, Emilio Ferrara</p>
+      <p class="record__abstract">A platform-agnostic framework for reconstructing cross-platform social graphs by uncovering latent narratives — showing that a small group of bridge users drives most narrative migration between platforms such as Truth Social and X.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://ojs.aaai.org/index.php/ICWSM/article/view/42670">Paper</a>
+        <a href="https://www.hanshanley.com/files/bridging.pdf">PDF</a>
+        <button type="button" data-bibtex="bridging">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+
+  <article class="record" data-topics="nlp networks">
+    <div class="record__rail">
+      <span class="record__year">2025</span>
+      <span class="record__venue">ACL</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/matryoshka.pdf">Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b> and Zakir Durumeric</p>
+      <p class="record__abstract">In this work, we utilize Matryoshka-based learning techniques to build hierarchical embeddings that can differentiate news articles at different levels of granularity.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/matryoshka.pdf">Paper</a>
+        <a href="https://github.com/hanshanley/multilingual-matryoshka-news/">Code</a>
+        <a href="https://www.youtube.com/watch?v=8hBLKBKAEAI">Recording</a>
+        <button type="button" data-bibtex="matryoshka">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  
+
+  <article class="record" data-topics="disinformation">
+    <div class="record__rail">
+      <span class="record__year">2025</span>
+      <span class="record__venue">CSCW</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/CSCW_Twits.pdf">Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b> and Zakir Durumeric</p>
+      <p class="record__abstract">The role that political ideology plays in contributing to toxicity, both at the individual-user level and the topic level, on Twitter.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/CSCW_Twits.pdf">Paper</a>
+        <a href="https://github.com/hanshanley/twits">Code</a>
+        <button type="button" data-bibtex="twits">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="disinformation">
+    <div class="record__rail">
+      <span class="record__year">2025</span>
+      <span class="record__venue">CSCW</span>
+      <span class="record__flag">Best Paper H.M.</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf">Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b> and Zakir Durumeric</p>
+      <p class="record__abstract">In this work, we examine the role of online misinformation in sparking political incivility and toxicity on Reddit's online communities, or subreddits.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf">Paper</a>
+        <a href="https://programs.sigchi.org/cscw/2025/awards/honorable-mentions">Award</a>
+        <button type="button" data-bibtex="community">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="disinformation networks">
+    <div class="record__rail">
+      <span class="record__year">2025</span>
+      <span class="record__venue">USENIX Security</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/Tracking_Takes.pdf">Tracking the Takes and Trajectories of English-Language News Narratives across Trustworthy and Worrisome Websites</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b>, Emily Ito Okabe, and Zakir Durumeric</p>
+      <p class="record__abstract">Narrative analysis of 29.0M articles from 2022 and 2023 across 4,076 low-, mixed-, and highly-reliable websites.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/Tracking_Takes.pdf">Paper</a>
+        <a href="https://github.com/hanshanley/tracking-takes">Code</a>
+        <button type="button" data-bibtex="tales">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="disinformation networks">
+    <div class="record__rail">
+      <span class="record__year">2025</span>
+      <span class="record__venue">PNAS</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.pnas.org/doi/10.1073/pnas.2420607122">Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b>, Yingdan Lu, and Jennifer Pan</p>
+      <p class="record__abstract">We track the origin and spread of narratives from foreign news websites onto the Chinese social media platform Weibo.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.pnas.org/doi/10.1073/pnas.2420607122">Paper</a>
+        <a href="https://github.com/hanshanley/narrative-influence">Code</a>
+        <button type="button" data-bibtex="narratives">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="nlp">
+    <div class="record__rail">
+      <span class="record__year">2024</span>
+      <span class="record__venue">Preprint</span>
+    </div>
+    <div>
+      <h3 class="record__title">M-STANCE: Soft Contrastive Learning and Synthetic Translations for Multilingual Stance Detection</h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b>, Emily Ito Okabe, and Zakir Durumeric</p>
+      <p class="record__abstract">We release a 54-language multilingual stance detection dataset and use synthetic translation with soft contrastive learning to perform multilingual stance detection.</p>
+      <div class="affordances">
+        <button type="button" data-bibtex="mstance">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="disinformation nlp">
+    <div class="record__rail">
+      <span class="record__year">2024</span>
+      <span class="record__venue">IEEE S&amp;P</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/Specious_Sites.pdf">Specious Sites: Tracking the Spread and Sway of Spurious News Stories at Scale</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b>, Deepak Kumar, and Zakir Durumeric</p>
+      <p class="record__abstract">Narrative analysis on 1.9M articles across 1,334 unreliable news websites, tracking the spread of 52,036 stories throughout 2022.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/Specious_Sites.pdf">Paper</a>
+        <a href="https://github.com/hanshanley/specious-sites">Code</a>
+        <a href="https://www.youtube.com/watch?v=xTl6P6jf31Y">Recording</a>
+        <button type="button" data-bibtex="specious">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="ai-safety nlp">
+    <div class="record__rail">
+      <span class="record__year">2024</span>
+      <span class="record__venue">ICWSM</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/machine_made.pdf">Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on Misinformation and Mainstream News Websites</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b> and Zakir Durumeric</p>
+      <p class="record__abstract">We study the increase in machine-made / synthetic news articles across 3,074 news websites.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/machine_made.pdf">Paper</a>
+        <a href="https://github.com/hanshanley/machine-made-media">Code</a>
+        <a href="https://www.youtube.com/watch?v=1keJkaQqmlA">Recording</a>
+        <button type="button" data-bibtex="machine_made">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="disinformation networks">
+    <div class="record__rail">
+      <span class="record__year">2024</span>
+      <span class="record__venue">ICWSM</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf">Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b> and Zakir Durumeric</p>
+      <p class="record__abstract">How 16 Russian media outlets interacted with and utilized 732 Telegram channels throughout 2022.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf">Paper</a>
+        <a href="https://www.youtube.com/watch?v=W8V3UD_u9hQ">Recording</a>
+        <button type="button" data-bibtex="partial">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="nlp">
+    <div class="record__rail">
+      <span class="record__year">2023</span>
+      <span class="record__venue">EMNLP</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/tata.pdf">TATA: Stance Detection via Topic-Agnostic and Topic-Aware Embeddings</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b> and Zakir Durumeric</p>
+      <p class="record__abstract">Contrastive learning with a triplet loss and synthetic data to engineer topic-aware and topic-agnostic embedding layers for stance detection.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/tata.pdf">Paper</a>
+        <a href="https://github.com/hanshanley/tata">Code</a>
+        <a href="https://www.youtube.com/watch?v=P9cHk5XI0hI">Recording</a>
+        <button type="button" data-bibtex="tata">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="disinformation networks">
+    <div class="record__rail">
+      <span class="record__year">2023</span>
+      <span class="record__venue">CSCW</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/A_Golden_Age.pdf">A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b>, Deepak Kumar, and Zakir Durumeric</p>
+      <p class="record__abstract">The relationships between five prominent conspiracy theories (QAnon, COVID, UFO/Aliens, 9/11, Flat-Earth) and the role misinformation and political polarization play in spreading them.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/A_Golden_Age.pdf">Paper</a>
+        <a href="https://github.com/hanshanley/Golden-Age">Code</a>
+        <a href="https://www.youtube.com/watch?v=ky9YnfTh8ws">Recording</a>
+        <button type="button" data-bibtex="conspiracy">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="disinformation nlp">
+    <div class="record__rail">
+      <span class="record__year">2023</span>
+      <span class="record__venue">ICWSM</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/happenstance.pdf">Happenstance: Utilizing Semantic Search to Track Russian State Media Narrative about the Russo-Ukrainian War on Reddit</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b>, Deepak Kumar, and Zakir Durumeric</p>
+      <p class="record__abstract">The coordinated information campaign behind the most prominent disinformation narratives touted by the Russian government to English-speaking audiences.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/happenstance.pdf">Paper</a>
+        <a href="https://youtu.be/BYsgLDY6eG8">Recording</a>
+        <button type="button" data-bibtex="happenstance">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="disinformation">
+    <div class="record__rail">
+      <span class="record__year">2023</span>
+      <span class="record__venue">ICWSM</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/ICWSM_Eluosi.pdf">"A Special Operation": A Quantitative Approach to Dissecting and Comparing Different Media Ecosystems' Coverage of the Russo-Ukrainian War</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b>, Deepak Kumar, and Zakir Durumeric</p>
+      <p class="record__abstract">A quantitative analysis of differences in coverage of the Russo-Ukrainian War amongst three news ecosystems (Western, Chinese, Russian).</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/ICWSM_Eluosi.pdf">Paper</a>
+        <a href="https://www.youtube.com/watch?v=e6fhtaJaVtA">Recording</a>
+        <button type="button" data-bibtex="special">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="disinformation networks">
+    <div class="record__rail">
+      <span class="record__year">2022</span>
+      <span class="record__venue">ICWSM</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/No_Calm_In_the_Storm.pdf">No Calm in the Storm: Investigating QAnon Website Relationships</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b>, Deepak Kumar, and Zakir Durumeric</p>
+      <p class="record__abstract">QAnon's role on the Internet and its connection to mainstream and alternative news sources.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/No_Calm_In_the_Storm.pdf">Paper</a>
+        <a href="https://github.com/hanshanley/no-calm">Code</a>
+        <a href="https://www.youtube.com/watch?v=TH_pRn6c3X8">Recording</a>
+        <button type="button" data-bibtex="qanon">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="record" data-topics="privacy">
+    <div class="record__rail">
+      <span class="record__year">2019</span>
+      <span class="record__venue">PoPETs</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="https://www.hanshanley.com/files/DPSelect.pdf">DPSelect: A Differential Privacy Based Guard Relay Selection Algorithm for Tor</a></h3>
+      <p class="record__authors"><b>Hans W. A. Hanley</b>, Yixin Sun, Sameer Wagh, and Prateek Mittal</p>
+      <p class="record__abstract">Counteracting information leakage in Tor relay selection algorithms.</p>
+      <div class="affordances">
+        <a class="is-primary" href="https://www.hanshanley.com/files/DPSelect.pdf">Paper</a>
+        <button type="button" data-bibtex="dpselect">BibTeX</button>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<aside class="dock" aria-label="Quick links">
+  <span class="dock__head">Links</span>
+  <ul>
+    <li><a class="dock__cv" href="https://www.hanshanley.com/files/HansWAHanley_Resume.pdf"><span class="dock__ico" aria-hidden="true">📄</span>Résumé</a></li>
+    <li><a class="dock__cv" href="https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf"><span class="dock__ico" aria-hidden="true">📑</span>Academic CV</a></li>
+    <li><a href="https://scholar.google.com/citations?user=ewdWfOoAAAAJ"><span class="dock__ico" aria-hidden="true">🎓</span>Scholar</a></li>
+    <li><a href="https://orcid.org/0000-0002-4291-5896"><span class="dock__ico" aria-hidden="true">🆔</span>ORCID</a></li>
+    <li><a href="https://github.com/hanshanley"><span class="dock__ico" aria-hidden="true">💻</span>GitHub</a></li>
+    <li><a href="https://www.youtube.com/@hanshanley"><span class="dock__ico" aria-hidden="true">📺</span>YouTube</a></li>
+    <li><a href="https://twitter.com/Hans_Hanley"><span class="dock__ico" aria-hidden="true">🐦</span>Twitter</a></li>
+    <li><a href="https://www.linkedin.com/in/hans-hanley-0694a180"><span class="dock__ico" aria-hidden="true">💼</span>LinkedIn</a></li>
+    <li><a href="https://www.themarginoferror.com/"><span class="dock__ico" aria-hidden="true">✍️</span>Blog</a></li>
+    <li><a href="mailto:hhanley@cs.stanford.edu"><span class="dock__ico" aria-hidden="true">✉️</span>Email</a></li>
+  </ul>
+</aside>
+
+<footer class="site">
+  <span>Hans W. A. Hanley</span>
+  <span><a href="index.html">About</a> · <a href="publications.html">Publications</a> · <a href="are-you-an-ai.html">Are you an AI?</a></span>
+</footer>
+
+</div>
+
+<dialog id="bib" style="max-width:44rem;border:1px solid #999;background:var(--paper);color:var(--ink);padding:1.25rem">
+  <pre class="machine" id="bib-body" style="margin:0"></pre>
+  <form method="dialog" style="margin-top:.75rem"><button class="affordances">Close</button></form>
+</dialog>
+<script>
+  // Topic filter — progressive enhancement; the full list is readable without JS.
+  (function () {
+    var filters = document.getElementById('filters');
+    if (!filters) return;
+    var records = document.querySelectorAll('#index .record');
+    filters.addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-topic]');
+      if (!b) return;
+      Array.prototype.forEach.call(filters.querySelectorAll('button'), function (x) {
+        x.setAttribute('aria-pressed', String(x === b));
+      });
+      var t = b.dataset.topic;
+      Array.prototype.forEach.call(records, function (r) {
+        var topics = (r.getAttribute('data-topics') || '').split(/\s+/);
+        r.hidden = !(t === 'all' || topics.indexOf(t) !== -1);
+      });
+    });
+  })();
+
+  // BibTeX dialog
+  (function () {
+    var dlg = document.getElementById('bib');
+    var body = document.getElementById('bib-body');
+    if (!dlg || !body) return;
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-bibtex]');
+      if (!b) return;
+      body.textContent =
+        '% Generated from the publication front matter at build time,\n' +
+        '% so it cannot drift out of sync with the listing above.\n\n' +
+        '@inproceedings{hanley' + b.dataset.bibtex + ',\n' +
+        '  author = {Hanley, Hans W. A. and others},\n' +
+        '  title  = {...},\n' +
+        '  year   = {...}\n}';
+      if (typeof dlg.showModal === 'function') { dlg.showModal(); }
+    });
+  })();
+</script>
+<script>
+  (function () {
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    var root = document.documentElement;
+    var sync = function () {
+      btn.textContent = root.getAttribute('data-theme') === 'dark' ? 'Light' : 'Dark';
+    };
+    sync();
+    btn.addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme') === 'dark';
+      if (dark) { root.removeAttribute('data-theme'); }
+      else { root.setAttribute('data-theme', 'dark'); }
+      try { localStorage.setItem('theme', dark ? 'light' : 'dark'); } catch (e) {}
+      sync();
+    });
+  })();
+</script>
+</body>
+</html>

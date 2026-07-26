@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Member of Technical Staff at Microsoft AI.  I am broadly interested in AI Safety and truthfulness, disinformation, networks, and natural language processing. 
+I am Hans Hanley (汉斯·汉隶), a Member of Technical Staff at Microsoft AI. I am broadly interested in AI Safety and truthfulness, disinformation, networks, and natural language processing. 
 
 I was formerly a Computer Science Ph.D. candidate at Stanford University researching in the [Empirical Security Research Group](https://esrg.stanford.edu/) and supported by the [Meta PhD Research Fellowship](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/), the [National Science Foundation Graduate Research Fellowship](https://www.nsfgrfp.org/) and the [Stanford University EDGE Fellowship](https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate/details). I completed two Masters’ degrees in Computer Science and in Statistics with the [Daniel M. Sachs Scholarship](https://sachs.princeton.edu/) at the University of Oxford. I completed my undergraduate degree in Electrical Engineering at Princeton University.
 
@@ -29,7 +29,7 @@ Updates
 * [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf) accepted to CSCW 2025!
 * [Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter](https://www.hanshanley.com/files/CSCW_Twits.pdf) accepted to CSCW 2025!
 * [Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War](https://www.pnas.org/doi/10.1073/pnas.2420607122) accepted as Brief Report to PNAS!
-* Thesis accepted to the [Twenty-Seventh AAAI/SIGAI  20205 Doctoral Consortium](https://aaai.org/conference/aaai/aaai-25/doctoral-consortium-call/). See you in Philadelphia!
+* Thesis accepted to the [AAAI/SIGAI 2025 Doctoral Consortium](https://aaai.org/conference/aaai/aaai-25/doctoral-consortium-call/). See you in Philadelphia!
 * Rising Star in Data Science 2024, [University of Chicago, Stanford University, UCSD](https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars/)
 * Awarded [Meta PhD Research Fellowship in Computational Social Science](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/)
 

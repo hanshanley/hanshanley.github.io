@@ -1,0 +1,222 @@
+\documentclass[a4,10pt]{article}
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% PREAMBLE
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% Compile with XeLaTeX or LuaLaTeX (fontspec requires it).
+%%%%%%% Needs SourceSansPro-*.otf on the font path and Publications.bib alongside.
+%%%%%%%
+%%%%%%% CHANGED 2026-07: Microsoft AI (April 2026--present) added as current role;
+%%%%%%% Meta updated to March 2025--April 2026.
+%%%%%%% --------------------------------------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{csquotes}
+\usepackage{tabularx}
+\usepackage[11pt]{moresize}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage[inline]{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{anyfontsize}
+%%%% Set Margins
+\usepackage[margin=1cm, top=1cm]{geometry}
+%%%% Set Fonts
+\setmainfont[
+  BoldFont=SourceSansPro-Semibold.otf,
+  ItalicFont=SourceSansPro-RegularIt.otf
+]{SourceSansPro-Regular.otf}
+\setsansfont{SourceSansPro-Semibold.otf}
+%%%% CJK family for the Chinese form of the name (XeLaTeX/LuaLaTeX only).
+%%%% If "PingFang SC" is unavailable, swap for another installed CJK font
+%%%% (e.g. "Songti SC", "Noto Serif CJK SC") or comment out both this line
+%%%% and the \cjkname use in the header below.
+\newfontfamily\cjkname{PingFang SC}
+%%%% Page Style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%%%% URL Style
+\urlstyle{same}
+%%%% Indentation / Layout
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+%%%% Secondary Color
+\definecolor{UI_blue}{RGB}{32, 64, 151}
+%%%% Bibliography / Name Highlighting
+\usepackage[style=nature, maxbibnames=3]{biblatex}
+\addbibresource{Publications.bib}
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifitemannotation{highlight}{\textbf{#1}}{#1}}
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifitemannotation{highlight}{\textbf{#1}}{#1}}
+%%%% Section Formatting
+\titleformat{\section}{
+  \color{UI_blue}
+  \scshape
+  \raggedright
+  \large
+}{}{0em}{}[\vspace{-8pt}\hrulefill\vspace{-4pt}]
+\titlespacing*{\subsection}{1pt}{0.8em}{0.5em}
+\titleformat{\subsection}{\vspace{-0.05cm}\bfseries\fontsize{11pt}{2cm}}{}{0em}{}[\vspace{-0.15cm}]
+%%%% Subtext Formatting
+\newcommand{\subtext}[1]{#1\par\vspace{-0.2cm}}
+%%%% Item Spacing
+\setlist[itemize]{align=parleft,left=0pt..1em}
+%%%% New Itemize "Zitemize" Environment
+\newenvironment{zitemize}{
+  \begin{itemize}\itemsep0pt\parskip0pt\parsep1pt}
+  {\end{itemize}\vspace{-0.4cm}}
+%%%% Skills Bold Formatting
+\newcommand{\hskills}[1]{\textbf{\bfseries #1}}
+%%%% Icons
+\usepackage{fontawesome5}
+\usepackage{academicons}
+\usepackage{xcolor} % required by academicons
+
+\begin{document}
+
+% ==========================================================
+% HEADER
+% ==========================================================
+\begin{center}
+{\Huge \textbf{Hans William Alexander Hanley}}\ {\large\color{UI_blue}\cjkname{}汉斯·汉隶}\\[2pt]
+{\large \color{UI_blue} Semantic Modeling • Natural Language Processing • LLM Safety • Multilingual Representation Learning}\\[6pt]
+
+\begin{tabular}{c c c}
+\faEnvelope\ \href{mailto:hhanley@cs.stanford.edu}{hhanley@cs.stanford.edu} &
+\faGlobe\ \href{https://www.hanshanley.com}{hanshanley.com} &
+\faPenNib\ \href{https://www.themarginoferror.com}{themarginoferror.com} \\
+\faLinkedin\ \href{https://www.linkedin.com/in/hans-hanley-0694a180}{hans-hanley-0694a180} &
+\faGithub\ \href{https://github.com/hanshanley}{github.com/hanshanley} &
+\aiGoogleScholar\ \href{https://scholar.google.com/citations?user=ewdWfOoAAAAJ&hl=en&oi=ao}{Google Scholar}
+\end{tabular}
+\end{center}
+
+% ==========================================================
+% SUMMARY
+% ==========================================================
+I build scalable methods for interpreting and evaluating large language models, including multilingual representation-learning systems, semantic modeling pipelines, and LLM-based evaluators and agents for high-fidelity reasoning and content analysis. My PhD research uncovered latent structure in massive text ecosystems, aligned LLM behavior across languages and domains, and supported safer, more reliable deployment of model-driven systems.
+
+% ==========================================================
+% EDUCATION
+% ==========================================================
+\vspace{-1.5em}
+\section{Education}
+\vspace{-0.5em}
+
+\subsection*{Stanford University \hfill PhD, Computer Science, 2025 \,|\, MS, Computer Science, 2024}
+\subtext{GPA: 4.02; Advisor: Zakir Durumeric; Meta Research PhD Fellow; NSF GRFP; Stanford EDGE Doctoral Fellow}
+
+\subsection*{University of Oxford \hfill MSc, Statistical Science, 2020 \,|\, MSc, Computer Science, 2019}
+\subtext{Distinction (Highest Honors); Daniel M.~Sachs Class of 1960 Graduating Scholar at Worcester College}
+
+\subsection*{Princeton University \hfill BSE, Electrical Engineering, 2018}
+\subtext{Highest Honors, GPA: 3.982; Information Security \& Privacy Concentration; Phi Beta Kappa; Tau Beta Pi; Sigma Xi}
+
+% ==========================================================
+% EXPERIENCE
+% ==========================================================
+\vspace{-0.8em}
+\section{Professional Experience}
+\vspace{-0.5em}
+
+\subsection*{Microsoft AI, Member of Technical Staff \hfill April 2026--Present}
+\begin{zitemize}
+\item Research and build large-scale language-model systems for AI safety and truthfulness, spanning multilingual representation learning, semantic modeling, and evaluation of model-generated content.
+\item Develop LLM-based evaluators and measurement pipelines to assess factuality, reasoning quality, and safety and integrity risks in deployed model-driven products.
+\end{zitemize}
+
+\vspace{-0.25em}
+\subsection*{Meta, Research Scientist, CAS / Central Applied Sciences \hfill March 2025--April 2026}
+\begin{zitemize}
+\item Researched, built, and deployed large-scale multilingual and multimodal LLM pipelines to model content semantics, identify creator verticals, and understand user interaction behavior across Instagram (over 3 billion users) for downstream recommender systems.
+\item Developed LLM-based evaluation methods and production metrics to assess political content quality, reply/comment impact, safety and integrity risks, and downstream effects on user experience.
+\end{zitemize}
+
+\vspace{-0.25em}
+\subsection*{Google Research, Health AI Student Researcher \hfill Summer 2024}
+\begin{zitemize}
+\item Designed LLM-based agents for structured querying and high-fidelity reasoning over large clinical datasets; implemented verification layers to detect reasoning failures under distribution shifts.
+\item Built evaluation frameworks measuring accuracy, safety, and adversarial robustness for LLM-mediated medical data interactions.
+\end{zitemize}
+
+\vspace{-0.25em}
+\subsection*{Digital Forensics Research Lab, Atlantic Council — Research Intern \hfill Summer 2021}
+\begin{zitemize}
+\item Investigated global misinformation and influence operations; authored seven reports analyzing cross-platform inauthentic behavior, foreign influence operations, and propaganda narratives (e.g., COVID-19 conspiracy networks, Iran/Russia/China operations, VPN adoption in Nigeria).
+\end{zitemize}
+
+% ==========================================================
+% RESEARCH HIGHLIGHTS & PUBLICATIONS
+% ==========================================================
+\vspace{-1em}
+\section{Research Highlights \& Selected Publications}
+\vspace{-0.5em}
+
+\subsection*{\href{https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-487-hanley.pdf}{Tracking the Takes and Trajectories of News Narratives} \hfill USENIX Security 2025}
+\begin{zitemize}
+\item Built a large-scale narrative-tracking system combining specially fine-tuned (e.g., LoRA) encoder-LLM semantic similarity models and zero-shot stance detection to track 146K narratives across 4K+ news sites and understand narrative pathways (e.g., anti-vaccine and anti-Ukraine influence campaigns).
+\end{zitemize}
+
+\vspace{-0.25em}
+\subsection*{\href{https://www.pnas.org/doi/10.1073/pnas.2420607122}{Across the Firewall: Foreign Media’s Influence on Chinese Social Media} \hfill PNAS 2025}
+\begin{zitemize}
+\item Quantified foreign-media penetration into Chinese platforms using cross-lingual alignment pipelines to detect narrative borrowing on the Russo--Ukrainian War.
+\end{zitemize}
+
+\vspace{-0.25em}
+\subsection*{\href{https://aclanthology.org/2025.acl-long.124/}{Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings} \hfill ACL 2025}
+\begin{zitemize}
+\item Proposed multilingual Matryoshka embeddings enabling controllable semantic granularity (coarse-to-fine); achieved SOTA on SemEval 2022 Task 8 and built scalable hierarchical clustering pipelines surfacing stories, narratives, and macro-themes.
+\end{zitemize}
+
+\vspace{-0.25em}
+\subsection*{\href{https://aclanthology.org/2023.emnlp-main.694/}{TATA: Stance Detection via Topic-Agnostic and Topic-Aware Embeddings} \hfill EMNLP 2023}
+\begin{zitemize}
+\item Developed contrastive embedding models for topic-agnostic and topic-aware stance detection; achieved SOTA zero-shot performance (0.771 F1 on VAST) and improved cross-topic generalization in multi-domain news corpora.
+\end{zitemize}
+
+% ==========================================================
+% SKILLS
+% ==========================================================
+\vspace{-1em}
+\section{Skills}
+\vspace{-0.5em}
+
+\begin{tabular}{p{7em} p{48em}}
+\hskills{Programming} & Python, Java, C, C++, C\#, Go, SQL, R, MATLAB; Git; PyTorch, TensorFlow, Hugging Face \\[4pt]
+\hskills{ML/LLM} & Transformers; LLM fine-tuning; multilingual modeling; interpretability; feature attribution; contrastive learning; LLM-based evaluation; safety \& robustness analysis \\[4pt]
+\hskills{Languages} & English (native); Mandarin Chinese (HSK Level 5) \\
+\end{tabular}
+
+% ==========================================================
+% AWARDS
+% ==========================================================
+\vspace{-1em}
+\section{Selected Awards \& Honors}
+\vspace{-0.5em}
+
+\begin{zitemize}
+\item \href{https://medium.com/acm-cscw/announcing-the-best-of-cscw-2025-a95517e67ba3}{CSCW 2025 Best Paper Honorable Mention} (Top 4\%).
+\item \href{https://datascience.stanford.edu/news/shining-light-emerging-talent-rising-stars-data-science-2024-recap}{Rising Stars in Data Science (Stanford/UCSD/UChicago)};
+\href{https://research.facebook.com/fellows/hanley-hans-william-alexander/}{Meta Research PhD Fellow};
+\href{https://ece.princeton.edu/news/seven-current-and-former-students-awarded-nsf-graduate-research-fellowships}{NSF Graduate Research Fellowship (GRFP)};
+\href{https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2020}{Stanford EDGE Doctoral Fellow};
+\href{https://www.worc.ox.ac.uk/about/news/hans-hanley-named-next-daniel-m-sachs-scholar-worcester}{University of Oxford Daniel M.\ Sachs Class of 1960 Graduating Scholar}.
+\item \href{https://ece.princeton.edu/news/undergraduates-honored-class-day-2018}{Charles Ira Young Memorial Tablet \& Medal};
+\href{https://engineering.princeton.edu/news/2018/06/05/class-day-awards-celebrate-graduates-contributions-research-and-service}{SEAS Hayes--Palmer Prize};
+\href{https://www.princeton.edu/news/2016/09/11/princeton-students-honored-opening-exercises}{George B.\ Wood Legacy Prize}.
+\end{zitemize}
+
+\end{document}

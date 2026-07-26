@@ -123,6 +123,7 @@ include:
   - _pages
   - files
 exclude:
+  - preview # local design prototype, not part of the published site
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
