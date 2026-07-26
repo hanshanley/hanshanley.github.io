@@ -98,13 +98,12 @@ redirect_from:
     <div><h3 class="record__title">NSF REU, Declarative Programming — Texas Tech University</h3>
     <p class="record__abstract">Contributed to the Texas Tech Answer Set Prolog codebase, exploring applications to AI and cybersecurity, and designed a Generate-and-Test program identifying de-anonymisation inference leakages in a k-anonymity model. Advised by Dr Rattikorn Hewett.</p></div>
   </article>
-<  <article class="record">
+  <article class="record">
     <div class="record__rail"><span class="record__year">2014</span><span class="record__venue">Celebration, FL</span></div>
     <div><h3 class="record__title">Software Engineering Intern — Top Gun Laparoscopic Internship</h3>
     <p class="record__abstract">Wrote the engineering dossier for the Top Gun training instrument and presented it to the Chief Medical Officer of Lexion Medical. Built three Java programs driving a Wiimote interface to teach laparoscopic surgeons ultrasound technique.</p></div>
   </article>
-
-/div>
+</div>
 
 <h2 class="section section-anchor" id="dissertations">Dissertations</h2>
 <div class="index cv">
