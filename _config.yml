@@ -308,4 +308,4 @@ compress_html:
   ignore:
     envs: development
 
-theme: jekyll-theme-slate
+# theme removed: the site now ships its own layouts in _layouts/

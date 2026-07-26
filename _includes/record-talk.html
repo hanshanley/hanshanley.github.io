@@ -1,0 +1,12 @@
+{% include base_path %}
+<article class="record">
+  <div class="record__rail">
+    <span class="record__year">{{ post.date | date: "%b %Y" }}</span>
+    {% if post.location %}<span class="record__venue">{{ post.location }}</span>{% endif %}
+  </div>
+  <div>
+    <h3 class="record__title">{{ post.title }}</h3>
+    {% if post.venue %}<p class="record__authors">{{ post.venue }}</p>{% endif %}
+    {% if post.excerpt %}<p class="record__abstract">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncate: 300 }}</p>{% endif %}
+  </div>
+</article>

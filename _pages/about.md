@@ -1,35 +1,66 @@
 ---
 permalink: /
-title: "Hey! My name is Hans"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
+title: "Hans W. A. Hanley"
+excerpt: "Member of Technical Staff at Microsoft AI. AI safety and truthfulness, disinformation, networks, and natural language processing."
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am Hans Hanley (汉斯·汉隶), a Member of Technical Staff at Microsoft AI. I am broadly interested in AI Safety and truthfulness, disinformation, networks, and natural language processing. 
+{% include base_path %}
 
-I was formerly a Computer Science Ph.D. candidate at Stanford University researching in the [Empirical Security Research Group](https://esrg.stanford.edu/) and supported by the [Meta PhD Research Fellowship](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/), the [National Science Foundation Graduate Research Fellowship](https://www.nsfgrfp.org/) and the [Stanford University EDGE Fellowship](https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate/details). I completed two Masters’ degrees in Computer Science and in Statistics with the [Daniel M. Sachs Scholarship](https://sachs.princeton.edu/) at the University of Oxford. I completed my undergraduate degree in Electrical Engineering at Princeton University.
+<div class="intro">
+  <div class="lede">
+    <p>I am Hans Hanley (<span lang="zh-Hans">汉斯·汉隶</span>), a Member of Technical Staff at Microsoft AI. I am broadly interested in AI safety and truthfulness, disinformation, networks, and natural language processing.</p>
 
-[Download Resume](https://www.hanshanley.com/files/HansWAHanley_Resume.pdf)
-[Download Full Academic CV](https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf)
+    <p>I was formerly a Computer Science Ph.D. candidate at Stanford University researching in the <a href="https://esrg.stanford.edu/">Empirical Security Research Group</a> and supported by the <a href="https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/">Meta PhD Research Fellowship</a>, the <a href="https://www.nsfgrfp.org/">National Science Foundation Graduate Research Fellowship</a> and the <a href="https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate/details">Stanford University EDGE Fellowship</a>. I completed two Masters' degrees in Computer Science and in Statistics with the <a href="https://sachs.princeton.edu/">Daniel M. Sachs Scholarship</a> at the University of Oxford. I completed my undergraduate degree in Electrical Engineering at Princeton University.</p>
 
-Outside of research, I did disinformation reporting with the [Atlantic Council's Digital Forensic Research Lab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/). For fun, I enjoy stand-up comedy, listening to UK rhythm and blues music, long-distance running, and learning Mandarin Chinese (HSK5).
+    <p>Outside of research, I did disinformation reporting with the <a href="https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/">Atlantic Council's Digital Forensic Research Lab</a>.</p>
 
-I have a blog [The Margin of Error](https://www.themarginoferror.com/) where I talk about my research, computational looks at different economic and political issues, and a ton of other topics! [You can subscribe here.](https://docs.google.com/forms/d/e/1FAIpQLSeHPhVHdJ0xdCYq3wDYjkOIxgVdErP4qszNOBQYrnyzTz3xyQ/viewform)
+    <p>I have a blog, <a href="https://www.themarginoferror.com/">The Margin of Error</a>, where I talk about my research, computational looks at different economic and political issues, and a ton of other topics. <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHPhVHdJ0xdCYq3wDYjkOIxgVdErP4qszNOBQYrnyzTz3xyQ/viewform">You can subscribe here.</a></p>
+  </div>
 
+  <figure class="portrait">
+    <img src="{{ base_path }}/images/portrait.jpg" alt="Hans W. A. Hanley" width="626" height="720">
+    <figcaption>Hans W. A. Hanley</figcaption>
+  </figure>
+</div>
 
-Updates
-======
-*  [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf) received [Best Paper Honorable Mention at CSCW 2025](https://programs.sigchi.org/cscw/2025/awards/honorable-mentions)
-* [Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](https://www.hanshanley.com/files/matryoshka.pdf) accepted to the Main Conference at ACL 2025!
-* I defended my thesis, Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets!
-* [Tracking the Takes and Trajectories of English-Language News Narratives across Trustworthy and Worrisome Websites](https://www.hanshanley.com/files/Tracking_Takes.pdf) accepted to USENIX Security 2025!
-* [Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit](https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf) accepted to CSCW 2025!
-* [Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter](https://www.hanshanley.com/files/CSCW_Twits.pdf) accepted to CSCW 2025!
-* [Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War](https://www.pnas.org/doi/10.1073/pnas.2420607122) accepted as Brief Report to PNAS!
-* Thesis accepted to the [AAAI/SIGAI 2025 Doctoral Consortium](https://aaai.org/conference/aaai/aaai-25/doctoral-consortium-call/). See you in Philadelphia!
-* Rising Star in Data Science 2024, [University of Chicago, Stanford University, UCSD](https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars/)
-* Awarded [Meta PhD Research Fellowship in Computational Social Science](https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/)
+<div class="affordances" style="margin-top:1.6rem">
+  <a class="is-primary" href="https://www.hanshanley.com/files/HansWAHanley_Resume.pdf">Résumé (PDF)</a>
+  <a href="https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf">Academic CV (PDF)</a>
+  <a href="https://scholar.google.com/citations?user=ewdWfOoAAAAJ">Google Scholar</a>
+</div>
 
+<h2 class="section">Recently</h2>
+<ul class="log">
+  {% for u in site.data.updates limit: 6 %}
+  <li>
+    <time{% if u.datetime %} datetime="{{ u.datetime }}"{% endif %}>{{ u.date }}</time>
+    <div>
+      <p>{{ u.text }}</p>
+      {% if u.kind %}<span class="kind">{{ u.kind }}</span>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="section">Selected work <a href="{{ base_path }}/publications/">All publications →</a></h2>
+<div class="index">
+  {% assign featured = site.publications | where: "featured", true | sort: "date" | reverse %}
+  {% for post in featured %}
+    {% include record-publication.html %}
+  {% endfor %}
+</div>
+
+<h2 class="section">Elsewhere</h2>
+<ul class="profiles">
+  {% for l in site.data.links.elsewhere %}
+  <li><span class="label">{{ l.label }}</span><a href="{{ l.url }}">{{ l.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="aside-note">
+  For fun, I enjoy stand-up comedy, listening to UK rhythm and blues music, long-distance running,
+  and learning Mandarin Chinese (HSK5).
+</div>
