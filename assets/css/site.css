@@ -20,6 +20,7 @@
   --mono:  ui-monospace, "SF Mono", SFMono-Regular, "IBM Plex Mono", Menlo, Consolas, monospace;
 
   --measure: 64ch;
+  --measure-wide: 82ch;
   --rail: 11rem;
   --gutter: clamp(1.5rem, 1rem + 2.4vw, 3rem);
   --shell: 62rem;
@@ -175,7 +176,7 @@ a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; text-decor
 /* ================= intro (portrait + lede) ================= */
 
 .intro { margin-bottom: 1.75rem; }
-.intro .lede { max-width: var(--measure); }
+.intro .lede { max-width: var(--measure-wide); }
 
 /* Inline portrait is a fallback: above 82rem the dock carries the photo instead. */
 .portrait {
@@ -231,7 +232,8 @@ a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; text-decor
 
 /* ================= prose ================= */
 
-.lede, .prose { max-width: var(--measure); }
+.prose { max-width: var(--measure); }
+.lede { max-width: var(--measure-wide); }
 .lede p, .prose p { margin: 0 0 1.25rem; }
 .lede > p:first-child { font-size: var(--step-1); line-height: 1.5; }
 
@@ -413,8 +415,12 @@ a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; text-decor
   }
   .dock__head { grid-column: 1 / -1; margin-bottom: 0.75rem; }
   .dock__thumb { margin: 0; }
-  .dock ul { columns: 2; column-gap: 1.75rem; }
+  .dock ul {
+    columns: 4;
+    column-gap: 1.75rem;
+  }
   .dock li { break-inside: avoid; margin-bottom: 0.42rem; }
+  .dock a { white-space: nowrap; }
 }
 @media (max-width: 30rem) {
   .dock { grid-template-columns: 1fr; }

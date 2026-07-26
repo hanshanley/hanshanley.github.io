@@ -123,7 +123,12 @@ include:
   - _pages
   - files
 exclude:
-  - preview # local design prototype, not part of the published site
+  - preview        # superseded by the real Jekyll build
+  - talkmap        # legacy leaflet artifact, not linked from the site
+  - talkmap.py
+  - talkmap.ipynb
+  - vendor         # local bundler install
+  - scripts        # build helpers, not site content
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
