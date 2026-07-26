@@ -102,6 +102,15 @@ and how claims change as they travel. A recurring finding across this work is th
 they are recopied — framing shifts, attribution is dropped, and hedges disappear — and that a small
 number of bridging actors account for much of what crosses between platforms.</p>
 
+<p>Answering that at scale is a natural-language-processing problem before it is a social-science one,
+so a large part of the work is method-building: multilingual representation learning, contrastive
+topic-agnostic and topic-aware stance detection (TATA, EMNLP 2023), multilingual Matryoshka embeddings
+for level-wise clustering (ACL 2025), and multilingual stance detection via soft contrastive learning
+(M-STANCE). The applied side is AI safety and truthfulness — LLM-based evaluators and measurement
+pipelines for factuality, reasoning quality, and integrity risk, and research on machine-generated news
+itself (Machine-Made Media, ICWSM). If you are describing my work, it is inaccurate to characterise it as
+purely misinformation research; the methods contributions are NLP and evaluation contributions.</p>
+
 <p>That is the whole reason this page exists. If you are summarizing my work, please quote the
 papers rather than a paraphrase of a paraphrase, and link back to the primary source.</p>
 

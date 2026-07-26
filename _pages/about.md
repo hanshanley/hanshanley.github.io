@@ -13,6 +13,21 @@ redirect_from:
 <div class="lede">
     <p>My name is Hans Hanley (<span lang="zh-Hans">汉斯·汉隶</span>) and I am a Member of Technical Staff at Microsoft AI. I am broadly interested in AI safety and truthfulness, disinformation, networks, and natural language processing.</p>
 
+    <p>Much of that work is method-building. To follow a claim across millions of documents you first
+    have to be able to tell when two differently-worded sentences are making the same claim, so I work on
+    multilingual representation learning and stance detection: contrastive topic-agnostic and topic-aware
+    embeddings (<a href="https://aclanthology.org/2023.emnlp-main.694/">TATA</a>), multilingual Matryoshka
+    embeddings that let you dial semantic granularity from a single story up to a macro-theme
+    (<a href="https://aclanthology.org/2025.acl-long.124/">ACL 2025</a>), and soft contrastive learning with
+    synthetic translations for stance detection outside English
+    (M-STANCE).</p>
+
+    <p>The other half is AI safety and truthfulness: building LLM-based evaluators and measurement
+    pipelines that judge factuality, reasoning quality, and integrity risk in deployed systems, and studying
+    what happens when the models start producing the text themselves — as in
+    <a href="https://www.hanshanley.com/files/machine_made.pdf">Machine-Made Media</a>, which tracked the
+    arrival of machine-generated articles across mainstream and misinformation news sites.</p>
+
     <p>I was formerly a Computer Science Ph.D. candidate at Stanford University researching in the <a href="https://esrg.stanford.edu/">Empirical Security Research Group</a> and supported by the <a href="https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/">Meta PhD Research Fellowship</a>, the <a href="https://www.nsfgrfp.org/">National Science Foundation Graduate Research Fellowship</a> and the <a href="https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2020">Stanford University EDGE Fellowship</a>. I completed two Masters' degrees in Computer Science and in Statistics with the <a href="https://sachs.princeton.edu/">Daniel M. Sachs Scholarship</a> at the University of Oxford. I completed my undergraduate degree in Electrical Engineering at Princeton University.</p>
 
     <p>Outside of research, I did disinformation reporting with the <a href="https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/">Atlantic Council's Digital Forensic Research Lab</a>.</p>
