@@ -1,31 +1,61 @@
 ---
-layout: compress
 ---
+{% include base_path %}<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title | strip_html }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 180 }}">
 
-{% include base_path %}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link href="{{ base_path }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/site.css">
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+<script>
+  (function () {
+    try {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (e) {}
+  })();
+</script>
 
-  <body>
+{% include json-ld.html %}
+{% if page.collection == 'publications' %}{% include citation-meta.html %}{% endif %}
+{% include analytics.html %}
+</head>
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+<body>
+<div class="wrap">
 
-    {{ content }}
+  {% include masthead.html %}
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
+  {{ content }}
 
-    {% include scripts.html %}
+  {% include dock.html %}
+  {% include site-footer.html %}
 
-  </body>
+</div>
+
+<script>
+  (function () {
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    var root = document.documentElement;
+    var sync = function () {
+      btn.textContent = root.getAttribute('data-theme') === 'dark' ? 'Light' : 'Dark';
+    };
+    sync();
+    btn.addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme') === 'dark';
+      if (dark) { root.removeAttribute('data-theme'); }
+      else { root.setAttribute('data-theme', 'dark'); }
+      try { localStorage.setItem('theme', dark ? 'light' : 'dark'); } catch (e) {}
+      sync();
+    });
+  })();
+</script>
+</body>
 </html>

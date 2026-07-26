@@ -1,0 +1,11 @@
+# Short facts shown in the masthead dateline. Edit here, appears site-wide.
+name_en: "Hans W. A. Hanley"
+name_zh: "汉斯·汉隶"
+pinyin: "Hànsī Hànlì"
+role: "Member of Technical Staff, Microsoft AI"
+location: "New York"
+orcid: "0000-0002-4291-5896"
+dateline:
+  - "Member of Technical Staff, Microsoft AI"
+  - "New York"
+  - "Disinformation · Networks · NLP"

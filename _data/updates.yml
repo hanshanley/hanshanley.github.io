@@ -1,0 +1,46 @@
+# Add a new item at the top. `kind` is one of: paper, award, note, talk.
+# The front page shows the first `site.updates_shown` entries.
+- date: "Oct 2025"
+  datetime: "2025-10"
+  kind: Award
+  text: '<a href="https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf">Sub-Standards and Mal-Practices</a> received a <a href="https://programs.sigchi.org/cscw/2025/awards/honorable-mentions">Best Paper Honorable Mention at CSCW 2025</a>.'
+
+- date: "Jul 2025"
+  datetime: "2025-07"
+  kind: Paper
+  text: '<a href="https://www.hanshanley.com/files/matryoshka.pdf">Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings</a> accepted to the Main Conference at ACL 2025.'
+
+- date: "Jun 2025"
+  datetime: "2025-06"
+  kind: Note
+  text: 'I defended my thesis, <em>Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets</em>.'
+
+- date: "Apr 2025"
+  datetime: "2025-04"
+  kind: Paper
+  text: '<a href="https://www.hanshanley.com/files/CSCW_Twits.pdf">Twits, Toxic Tweets, and Tribal Tendencies</a> accepted to CSCW 2025.'
+
+- date: "Jan 2025"
+  datetime: "2025-01"
+  kind: Paper
+  text: '<a href="https://www.hanshanley.com/files/Tracking_Takes.pdf">Tracking the Takes and Trajectories of English-Language News Narratives</a> accepted to USENIX Security 2025.'
+
+- date: "Dec 2024"
+  datetime: "2024-12"
+  kind: Paper
+  text: '<a href="https://www.pnas.org/doi/10.1073/pnas.2420607122">Across the Firewall</a> accepted as a Brief Report to PNAS.'
+
+- date: "Dec 2024"
+  datetime: "2024-12"
+  kind: Note
+  text: 'Thesis accepted to the <a href="https://aaai.org/conference/aaai/aaai-25/doctoral-consortium-call/">AAAI/SIGAI 2025 Doctoral Consortium</a>.'
+
+- date: "2024"
+  datetime: "2024-09"
+  kind: Award
+  text: 'Named a <a href="https://datascience.stanford.edu/news/shining-light-emerging-talent-rising-stars-data-science-2024-recap">Rising Star in Data Science</a> — Stanford / UC San Diego / University of Chicago.'
+
+- date: "Apr 2023"
+  datetime: "2023-04"
+  kind: Award
+  text: 'Awarded the <a href="https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/">Meta PhD Research Fellowship in Computational Social Science</a>.'
