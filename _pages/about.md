@@ -10,8 +10,7 @@ redirect_from:
 
 {% include base_path %}
 
-<div class="intro">
-  <div class="lede">
+<div class="lede">
     <p>I am Hans Hanley (<span lang="zh-Hans">汉斯·汉隶</span>), a Member of Technical Staff at Microsoft AI. I am broadly interested in AI safety and truthfulness, disinformation, networks, and natural language processing.</p>
 
     <p>I was formerly a Computer Science Ph.D. candidate at Stanford University researching in the <a href="https://esrg.stanford.edu/">Empirical Security Research Group</a> and supported by the <a href="https://research.facebook.com/blog/2023/4/announcing-the-2023-meta-research-phd-fellowship-award-winners/">Meta PhD Research Fellowship</a>, the <a href="https://www.nsfgrfp.org/">National Science Foundation Graduate Research Fellowship</a> and the <a href="https://vpge.stanford.edu/fellowships-funding/enhancing-diversity-graduate/details">Stanford University EDGE Fellowship</a>. I completed two Masters' degrees in Computer Science and in Statistics with the <a href="https://sachs.princeton.edu/">Daniel M. Sachs Scholarship</a> at the University of Oxford. I completed my undergraduate degree in Electrical Engineering at Princeton University.</p>
@@ -19,12 +18,6 @@ redirect_from:
     <p>Outside of research, I did disinformation reporting with the <a href="https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/">Atlantic Council's Digital Forensic Research Lab</a>.</p>
 
     <p>I have a blog, <a href="https://www.themarginoferror.com/">The Margin of Error</a>, where I talk about my research, computational looks at different economic and political issues, and a ton of other topics. <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHPhVHdJ0xdCYq3wDYjkOIxgVdErP4qszNOBQYrnyzTz3xyQ/viewform">You can subscribe here.</a></p>
-  </div>
-
-  <figure class="portrait">
-    <img src="{{ base_path }}/images/portrait.jpg" alt="Hans W. A. Hanley" width="626" height="720">
-    <figcaption>Hans W. A. Hanley</figcaption>
-  </figure>
 </div>
 
 <div class="affordances" style="margin-top:1.6rem">

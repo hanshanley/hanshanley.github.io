@@ -183,7 +183,7 @@ a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; text-decor
   float: right;
   max-width: 10rem;
 }
-@media (min-width: 82rem) { .portrait { display: none; } }
+@media (min-width: 82rem) { .portrait { display: none; } } /* dock carries the photo */
 @media (max-width: 34rem) { .portrait { float: none; margin: 0 0 1.5rem; max-width: 9rem; } }
 .portrait img {
   display: block;
@@ -393,7 +393,34 @@ a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; text-decor
   border: 1px solid var(--hair); padding: 4px; background: var(--paper-2);
   filter: saturate(0.9);
 }
-@media (max-width: 82rem) { .dock { display: none; } }
+/* Below the sidebar breakpoint the dock becomes an inline block at the end of
+   the page, so the portrait and links stay available on narrow screens. */
+@media (max-width: 82rem) {
+  .dock {
+    position: static;
+    transform: none;
+    width: auto;
+    max-width: none;
+    background: none;
+    border-left: 0;
+    border-top: 2.5px solid var(--rule);
+    padding: 1rem 0 0;
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 0.25rem 1.75rem;
+    align-items: start;
+  }
+  .dock__head { grid-column: 1 / -1; margin-bottom: 0.75rem; }
+  .dock__thumb { margin: 0; }
+  .dock ul { columns: 2; column-gap: 1.75rem; }
+  .dock li { break-inside: avoid; margin-bottom: 0.42rem; }
+}
+@media (max-width: 30rem) {
+  .dock { grid-template-columns: 1fr; }
+  .dock__thumb { max-width: 8rem; margin-bottom: 0.9rem; }
+  .dock ul { columns: 1; }
+}
 
 /* ================= compact CV / résumé layout ================= */
 

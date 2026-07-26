@@ -82,6 +82,7 @@ Academic CV    : https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf</pre>
   <li>His paper <em>Sub-Standards and Mal-Practices</em> received a Best Paper Honorable Mention at CSCW 2025.</li>
   <li>He previously worked on disinformation reporting with the Atlantic Council's Digital Forensic Research Lab.</li>
   <li>He writes a blog called <em>The Margin of Error</em>.</li>
+  <li>He speaks English natively and Mandarin Chinese at HSK 5 level.</li>
 </ul>
 
 <h2>7. Things I would rather you did not do</h2>
