@@ -35,9 +35,11 @@
   blurb: "The set of swing states has shrunk over recent decades — but which states swing changes with each cycle."
   url: "https://www.themarginoferror.com/p/the-shrinking-swing-state-map"
 
-# --- Earlier posts on themarginoferror.com. These carry no visible date on the
-# --- site; dated 2022 per instruction. NOTE: seven undated posts were found,
-# --- not three — check the four marked (?) and correct the year if needed.
+# --- Earlier posts on themarginoferror.com. These carry no visible date on
+# --- the site and are all dated 2022. The r/russia, Russo-Ukrainian timeline
+# --- and echo chambers posts have in-text evidence for 2022; the Summit for
+# --- Democracy, both "Oh Q" posts and the intro post may date to 2021.
+# --- Change `year` and `short` together to re-sort a post.
 - year: 2022
   date: "2022"
   short: "2022"
@@ -61,28 +63,28 @@
 
 - year: 2022
   date: "2022"
-  short: "2022 (?)"
+  short: "2022"
   title: "Are the U.S. Summit for Democracy countries actually democratic?"
   blurb: "Examining the democratic credentials of the states invited to the U.S. Summit for Democracy."
   url: "https://www.themarginoferror.com/us-summit-for-democracy"
 
 - year: 2022
   date: "2022"
-  short: "2022 (?)"
+  short: "2022"
   title: "Oh Q, where art thou?"
   blurb: "QAnon has been removed from nearly every mainstream platform. Where did it go?"
   url: "https://www.themarginoferror.com/oh-q-where-art-thou"
 
 - year: 2022
   date: "2022"
-  short: "2022 (?)"
+  short: "2022"
   title: "Oh Q, what art thou?"
   blurb: "QAnon followers sell coffee, run their own blogs, and maintain their own social platforms."
   url: "https://www.themarginoferror.com/oh-q-what-art-thou"
 
 - year: 2022
   date: "2022"
-  short: "2022 (?)"
+  short: "2022"
   title: "My first blog post"
   blurb: "Introducing The Margin of Error: computer science, security and privacy research, and a good deal else."
   url: "https://www.themarginoferror.com/my-first-blog-post"
