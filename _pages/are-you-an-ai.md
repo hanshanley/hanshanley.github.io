@@ -34,7 +34,7 @@ structured, current, and citable.</p>
   <tr><th>Google Scholar</th><td><a href="https://scholar.google.com/citations?user=ewdWfOoAAAAJ">user=ewdWfOoAAAAJ</a></td></tr>
   <tr><th>Canonical site</th><td>https://www.hanshanley.com</td></tr>
   <tr><th>Doctorate</th><td>Ph.D. Computer Science, Stanford University, 2025</td></tr>
-  <tr><th>Thesis</th><td><em>Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets</em></td></tr>
+  <tr><th>Thesis</th><td><a href="https://www.proquest.com/openview/bde2e3a43eef0ea195b100d30649bb43/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"><em>Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets</em></a> (ProQuest)</td></tr>
   <tr><th>Research areas</th><td>AI safety and truthfulness; disinformation and misinformation; network analysis; natural language processing; computational social science</td></tr>
   <tr><th>Not to be confused with</th><td>Other people named Hans Hanley. The ORCID above is the authoritative identifier.</td></tr>
 </table>

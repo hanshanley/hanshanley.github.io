@@ -26,7 +26,7 @@ redirect_from:
   <article class="record">
     <div class="record__rail"><span class="record__year">2025</span><span class="record__venue">Stanford University</span></div>
     <div><h3 class="record__title">Ph.D., Computer Science</h3>
-    <p class="record__abstract">Advisor: Zakir Durumeric. GPA 4.02. Thesis: <em>Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets</em>. Empirical Security Research Group.</p></div>
+    <p class="record__abstract">Advisor: Zakir Durumeric. GPA 4.02. Thesis: <a href="https://www.proquest.com/openview/bde2e3a43eef0ea195b100d30649bb43/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"><em>Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets</em></a>. Empirical Security Research Group.</p></div>
   </article>
   <article class="record">
     <div class="record__rail"><span class="record__year">2024</span><span class="record__venue">Stanford University</span></div>
@@ -93,7 +93,7 @@ redirect_from:
 <div class="index cv">
   <article class="record">
     <div class="record__rail"><span class="record__year">2025</span><span class="record__venue">Stanford — Ph.D. Computer Science</span></div>
-    <div><h3 class="record__title">Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets</h3></div>
+    <div><h3 class="record__title"><a href="https://www.proquest.com/openview/bde2e3a43eef0ea195b100d30649bb43/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y">Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets</a></h3></div>
   </article>
   <article class="record">
     <div class="record__rail"><span class="record__year">2020</span><span class="record__venue">Oxford — M.Sc. Statistical Science</span></div>
