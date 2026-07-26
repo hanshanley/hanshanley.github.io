@@ -1,10 +1,17 @@
 ---
-layout: archive
+layout: default
 title: "Talks"
 permalink: /talks/
-author_profile: true
 ---
+{% include base_path %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+<div class="lede">
+  <p>Invited talks, conference presentations, and posters.</p>
+</div>
+
+<div class="index" style="margin-top:2rem">
+  {% assign talks = site.talks | sort: "date" | reverse %}
+  {% for post in talks %}
+    {% include record-talk.html %}
+  {% endfor %}
+</div>

@@ -1,0 +1,20 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hans W. A. Hanley",
+  "alternateName": ["Hans William Alexander Hanley", "汉斯·汉隶"],
+  "jobTitle": "Member of Technical Staff",
+  "worksFor": { "@type": "Organization", "name": "Microsoft AI" },
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "image": "{{ site.url }}{{ site.baseurl }}/images/portrait.jpg",
+  "identifier": "https://orcid.org/{{ site.data.profile.orcid }}",
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Stanford University" },
+    { "@type": "CollegeOrUniversity", "name": "University of Oxford" },
+    { "@type": "CollegeOrUniversity", "name": "Princeton University" }
+  ],
+  "knowsAbout": ["AI safety", "disinformation", "network analysis", "natural language processing", "computational social science"],
+  "sameAs": [{% for l in site.data.links.elsewhere %}{% unless l.url contains "mailto" %}"{{ l.url }}"{% unless forloop.last %}, {% endunless %}{% endunless %}{% endfor %}]
+}
+</script>

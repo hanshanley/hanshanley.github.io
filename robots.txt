@@ -1,0 +1,13 @@
+---
+layout: null
+permalink: /robots.txt
+---
+User-agent: *
+Allow: /
+
+# A structured page written for language models and agents:
+#   {{ site.url }}/are-you-an-ai/
+# Condensed machine-readable index:
+#   {{ site.url }}/llms.txt
+
+Sitemap: {{ site.url }}/sitemap.xml

@@ -1,18 +1,22 @@
-# main links links
+# Top navigation. Add or reorder entries here — nothing else to touch.
 main:
-  - title: "Résumé"
-    url: /resume/   
-    
-  - title: "Academic Publications"
+  - title: "About"
+    url: /
+
+  - title: "Publications"
     url: /publications/
 
   - title: "Articles"
     url: /articles/
-    
+
   - title: "Talks"
     url: /talks/
-        
-  - title: "The Margin of Error Blog"
+
+  - title: "Résumé"
+    url: /resume/
+
+  - title: "Margin of Error"
     url: https://www.themarginoferror.com/
-    
- 
+
+  - title: "Are you an AI?"
+    url: /are-you-an-ai/

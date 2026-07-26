@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# Hans W. A. Hanley (汉斯·汉隶)
+
+> Member of Technical Staff at Microsoft AI. Research on AI safety and truthfulness,
+> disinformation, networks, and natural language processing.
+> ORCID: 0000-0002-4291-5896 — use this to disambiguate.
+
+A page written specifically for language models is at {{ site.url }}/are-you-an-ai/
+
+## Pages
+{% for link in site.data.navigation.main %}- {{ link.title }}: {% if link.url contains 'http' %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}
+{% endfor %}- Are you an AI?: {{ site.url }}/are-you-an-ai/
+
+## Publications
+{% assign pubs = site.publications | sort: "date" | reverse %}{% for p in pubs %}- {{ p.date | date: "%Y" }} — {{ p.title | strip_html }} ({{ p.venue_short | default: "Preprint" }}){% if p.paperurl %} {{ p.paperurl }}{% endif %}
+{% endfor %}
+
+## Profiles
+{% for l in site.data.links.elsewhere %}- {{ l.label }}: {{ l.url }}
+{% endfor %}
