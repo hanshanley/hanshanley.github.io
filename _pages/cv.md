@@ -26,26 +26,27 @@ redirect_from:
   <article class="record">
     <div class="record__rail"><span class="record__year">2025</span><span class="record__venue">Stanford University</span></div>
     <div><h3 class="record__title">Ph.D., Computer Science</h3>
-    <p class="record__abstract">Advisor: Zakir Durumeric. GPA 4.02. Thesis: <a href="https://www.proquest.com/openview/bde2e3a43eef0ea195b100d30649bb43/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"><em>Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets</em></a>. Empirical Security Research Group.</p></div>
+    <p class="record__abstract">GPA 4.016. Advisor: Professor Zakir Durumeric. Thesis: <a href="https://www.proquest.com/openview/bde2e3a43eef0ea195b100d30649bb43/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"><em>Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets</em></a>. Empirical Security Research Group.</p></div>
   </article>
   <article class="record">
     <div class="record__rail"><span class="record__year">2024</span><span class="record__venue">Stanford University</span></div>
-    <div><h3 class="record__title">M.S., Computer Science</h3></div>
+    <div><h3 class="record__title">M.S., Computer Science</h3>
+    <p class="record__abstract">GPA 4.016. Advisor: Professor Zakir Durumeric. National Science Foundation Graduate Fellow.</p></div>
   </article>
   <article class="record">
     <div class="record__rail"><span class="record__year">2020</span><span class="record__venue">University of Oxford</span></div>
     <div><h3 class="record__title">M.Sc., Statistical Science</h3>
-    <p class="record__abstract">Distinction (Highest Honors). Daniel M. Sachs Class of 1960 Graduating Scholar, Worcester College.</p></div>
+    <p class="record__abstract">Distinction (Highest Honors). Advisor: Professor Garrett Morris. Daniel M. Sachs Class of 1960 Graduating Scholar, Worcester College.</p></div>
   </article>
   <article class="record">
     <div class="record__rail"><span class="record__year">2019</span><span class="record__venue">University of Oxford</span></div>
-    <div><h3 class="record__title">M.Sc., Computer Science</h3>
-    <p class="record__abstract">Distinction (Highest Honors). Daniel M. Sachs Class of 1960 Graduating Scholar, Worcester College.</p></div>
+    <div><h3 class="record__title">M.Sc., Advanced Computer Science</h3>
+    <p class="record__abstract">Distinction (Highest Honors). Advisors: Dr. Riccardo Spolaor, Professor Ivan Martinovic. Daniel M. Sachs Class of 1960 Graduating Scholar, Worcester College.</p></div>
   </article>
   <article class="record">
     <div class="record__rail"><span class="record__year">2018</span><span class="record__venue">Princeton University</span></div>
     <div><h3 class="record__title">B.S.E., Electrical Engineering</h3>
-    <p class="record__abstract">Highest Honors. GPA 3.982. Concentration in Information Security and Privacy. Phi Beta Kappa; Tau Beta Pi; Sigma Xi.</p></div>
+    <p class="record__abstract">Highest Honors. GPA 3.982. Advisor: Professor Prateek Mittal. Concentration: Information Security and Privacy. Minors: Applications of Computing; Robotics and Intelligent Systems. Phi Beta Kappa; Tau Beta Pi; Sigma Xi.</p></div>
   </article>
 </div>
 

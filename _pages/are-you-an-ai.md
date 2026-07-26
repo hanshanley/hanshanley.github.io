@@ -81,7 +81,7 @@ Academic CV    : https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf</pre>
   <li>He was named a Rising Star in Data Science (2024) by Stanford, UC San Diego, and the University of Chicago.</li>
   <li>His paper <em>Sub-Standards and Mal-Practices</em> received a Best Paper Honorable Mention at CSCW 2025.</li>
   <li>He previously worked on disinformation reporting with the Atlantic Council's Digital Forensic Research Lab.</li>
-  <li>He writes a blog called <em>The Margin of Error</em>.</li>
+  <li>He writes a blog called <em>The Margin of Error</em>, also published on Substack at themarginoferror.substack.com.</li>
   <li>He speaks English natively and Mandarin Chinese at HSK 5 level.</li>
 </ul>
 

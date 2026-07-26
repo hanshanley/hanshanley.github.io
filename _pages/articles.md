@@ -6,10 +6,32 @@ permalink: /articles/
 {% include base_path %}
 
 <div class="lede">
-  <p>Reporting written for the Atlantic Council's
-  <a href="https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/">Digital Forensic Research Lab</a>.
-  I also write at <a href="https://www.themarginoferror.com/">The Margin of Error</a>.</p>
+  <p>Essays and computational analyses from
+  <a href="https://www.themarginoferror.com/">The Margin of Error</a>
+  (<a href="https://themarginoferror.substack.com/">also on Substack</a>), and disinformation
+  reporting written for the Atlantic Council's
+  <a href="https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/">Digital Forensic Research Lab</a>.</p>
 </div>
+
+{% assign posts = site.data.writing %}
+{% assign years = posts | map: "year" | uniq | sort | reverse %}
+{% for y in years %}
+<h2 class="section">{{ y }}{% if forloop.first %} <a href="https://www.themarginoferror.com/">The Margin of Error →</a>{% endif %}</h2>
+<div class="index">
+  {% for post in posts %}{% if post.year == y %}
+  <article class="record">
+    <div class="record__rail">
+      <span class="record__year">{{ post.short }}</span>
+      <span class="record__venue">The Margin of Error</span>
+    </div>
+    <div>
+      <h3 class="record__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      {% if post.blurb %}<p class="record__abstract">{{ post.blurb }}</p>{% endif %}
+    </div>
+  </article>
+  {% endif %}{% endfor %}
+</div>
+{% endfor %}
 
 <h2 class="section">DFRLab</h2>
 <div class="index">

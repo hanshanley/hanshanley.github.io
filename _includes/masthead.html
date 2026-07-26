@@ -1,11 +1,6 @@
 {% include base_path %}
 <header class="masthead">
   <h1 class="masthead__name"><a href="{{ base_path }}/">{{ site.title }}</a><span class="masthead__cn" lang="zh-Hans">汉斯·汉隶</span></h1>
-  <div class="dateline">
-    {% for bit in site.data.profile.dateline %}<span>{{ bit }}</span>{% endfor %}
-    <span class="spacer"></span>
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme">Dark</button>
-  </div>
 </header>
 
 <nav class="site">
@@ -17,5 +12,8 @@
         <li><a href="{{ base_path }}{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
       {% endif %}
     {% endfor %}
+    <li class="nav__toggle">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme">Dark</button>
+    </li>
   </ul>
 </nav>

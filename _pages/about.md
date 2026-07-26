@@ -17,7 +17,7 @@ redirect_from:
 
     <p>Outside of research, I did disinformation reporting with the <a href="https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/">Atlantic Council's Digital Forensic Research Lab</a>.</p>
 
-    <p>I have a blog, <a href="https://www.themarginoferror.com/">The Margin of Error</a>, where I talk about my research, computational looks at different economic and political issues, and a ton of other topics. <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHPhVHdJ0xdCYq3wDYjkOIxgVdErP4qszNOBQYrnyzTz3xyQ/viewform">You can subscribe here.</a></p>
+    <p>I have a blog, <a href="https://www.themarginoferror.com/">The Margin of Error</a>, where I talk about my research, computational looks at different economic and political issues, and a ton of other topics. <a href="https://themarginoferror.substack.com/">Subscribe on Substack</a>, or <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHPhVHdJ0xdCYq3wDYjkOIxgVdErP4qszNOBQYrnyzTz3xyQ/viewform">via this form</a>.</p>
 </div>
 
 <div class="affordances" style="margin-top:1.6rem">

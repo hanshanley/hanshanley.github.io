@@ -15,25 +15,10 @@
   kind: Note
   text: 'I defended my thesis, <a href="https://www.proquest.com/openview/bde2e3a43eef0ea195b100d30649bb43/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"><em>Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets</em></a>.'
 
-- date: "Apr 2025"
-  datetime: "2025-04"
-  kind: Paper
-  text: '<a href="https://www.hanshanley.com/files/CSCW_Twits.pdf">Twits, Toxic Tweets, and Tribal Tendencies</a> accepted to CSCW 2025.'
-
-- date: "Jan 2025"
-  datetime: "2025-01"
-  kind: Paper
-  text: '<a href="https://www.hanshanley.com/files/Tracking_Takes.pdf">Tracking the Takes and Trajectories of English-Language News Narratives</a> accepted to USENIX Security 2025.'
-
 - date: "Dec 2024"
   datetime: "2024-12"
   kind: Paper
   text: '<a href="https://www.pnas.org/doi/10.1073/pnas.2420607122">Across the Firewall</a> accepted as a Brief Report to PNAS.'
-
-- date: "Dec 2024"
-  datetime: "2024-12"
-  kind: Note
-  text: 'Thesis accepted to the <a href="https://aaai.org/conference/aaai/aaai-25/doctoral-consortium-call/">AAAI/SIGAI 2025 Doctoral Consortium</a>.'
 
 - date: "2024"
   datetime: "2024-09"

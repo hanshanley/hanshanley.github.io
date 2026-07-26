@@ -1,42 +1,49 @@
 %=======================================================================
-% Hans William Alexander Hanley — Academic CV
+% Hans William Alexander Hanley (汉斯·汉隶) — Full Academic CV
 %
-% Build:  pdflatex Hans_WA_Hanley_CV.tex   (run twice for the page count)
-% or:     latexmk -pdf Hans_WA_Hanley_CV.tex
-% Also compiles as-is on Overleaf (pdfLaTeX).
+% Build:  scripts/build-cv.sh cv
+%   or:   tectonic -X compile Hans_WA_Hanley_CV.tex
 %
-% Only standard TeX Live packages are used — no custom classes.
+% FONTS: typeset with XeTeX (Tectonic uses XeTeX by default) so the Chinese
+% form of the name renders. The CJK family is "Songti SC", which ships with
+% macOS. On another machine or on Overleaf, change \newfontfamily\cjk below
+% to an installed CJK font ("Noto Serif CJK SC", "PingFang SC", "SimSun"),
+% or comment out the \newfontfamily line and the \cjkname use in the header.
+% pdfLaTeX will NOT work: fontspec requires XeTeX or LuaTeX.
 %
-% Updated 2026-07: Meta (Mar. 2025 - Apr. 2026), Microsoft AI (Apr. 2026 - present).
+% This merges the long-form CV (through Jan 2025) with current facts:
+% Microsoft AI from Apr 2026; Meta Mar 2025-Apr 2026; papers formerly "in
+% submission" now published; HSK 5; talks and service through 2026.
 %=======================================================================
 \documentclass[11pt,letterpaper]{article}
 
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{charter}                 % Charter: same family as the website
-\usepackage[scaled=0.86]{beramono}   % monospace for metadata
-\usepackage[
-  left=1.05in, right=1.05in, top=1.0in, bottom=1.0in
-]{geometry}
+\usepackage{fontspec}
+\usepackage{amssymb}
+\usepackage[left=1.05in, right=1.05in, top=0.95in, bottom=0.95in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage{tabularx}
 \usepackage{microtype}
+\usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
 
-%----------------------------------------------------------------------
-% Palette — carried over from the website
-%----------------------------------------------------------------------
+%---------------------------------------------------------------- fonts
+\setmainfont{Charter}[
+  BoldFont       = {Charter Bold},
+  ItalicFont     = {Charter Italic},
+  BoldItalicFont = {Charter Bold Italic},
+]
+\newfontfamily\cjk{Songti SC}
+\newcommand{\cjkname}{{\cjk 汉斯·汉隶}}
+
+%---------------------------------------------------------------- colour
 \definecolor{ink}{HTML}{1A1917}
 \definecolor{inksoft}{HTML}{4C4840}
 \definecolor{accent}{HTML}{8B0000}
 
 \hypersetup{
-  colorlinks=true,
-  linkcolor=accent,
-  urlcolor=accent,
-  citecolor=accent,
+  colorlinks=true, linkcolor=accent, urlcolor=accent, citecolor=accent,
   pdftitle={Hans William Alexander Hanley — Curriculum Vitae},
   pdfauthor={Hans William Alexander Hanley}
 }
@@ -44,126 +51,193 @@
 \color{ink}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\pagestyle{plain}
 
-%----------------------------------------------------------------------
-% Section headings: small caps, letterspaced, with a rule underneath
-%----------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L]{\small\itshape\color{inksoft}Hans W. A. Hanley}
+\fancyhead[R]{\small\color{inksoft}\thepage}
+
+%---------------------------------------------------------------- sections
 \titleformat{\section}
-  {\normalfont\scshape\large}
-  {}{0pt}
-  {}[\vspace{-0.55em}\rule{\textwidth}{0.9pt}]
-\titlespacing*{\section}{0pt}{1.5em}{0.75em}
+  {\normalfont\scshape\large}{}{0pt}{}
+  [\vspace{-0.55em}\rule{\textwidth}{0.9pt}]
+\titlespacing*{\section}{0pt}{1.3em}{0.65em}
 
-%----------------------------------------------------------------------
-% Helper macros
-%----------------------------------------------------------------------
+\titleformat{\subsection}{\normalfont\bfseries\normalsize}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{0.85em}{0.3em}
 
-% \entry{title}{right-hand date}
+%---------------------------------------------------------------- helpers
 \newcommand{\entry}[2]{%
   \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
     #1 & {\small\color{inksoft}#2}
   \end{tabularx}\par
 }
 
-% \role{position}{organisation}{location}{dates}
-\newcommand{\role}[4]{%
-  \entry{\textbf{#1}}{#4}%
-  {\small\color{inksoft}#2\ifx\relax#3\relax\else, #3\fi}\par
-  \vspace{0.55em}
+\newcommand{\role}[3]{%
+  \entry{\textbf{#1}}{#3}%
+  {\small\itshape\color{inksoft}#2}\par\vspace{0.15em}
 }
 
-% \degree{qualification}{institution}{note}{year}
 \newcommand{\degree}[4]{%
   \entry{\textbf{#1}}{#4}%
-  {\small\color{inksoft}#2\ifx\relax#3\relax\else\ --- #3\fi}\par
-  \vspace{0.55em}
+  {\small\color{inksoft}#2}\par
+  \ifx\relax#3\relax\else{\small\itshape\color{inksoft}#3}\par\fi
+  \vspace{0.45em}
 }
 
-% \pub{authors}{title}{venue}{url}
 \newcommand{\pub}[4]{%
   \item #1. \textit{#2}. #3.%
-  \ifx\relax#4\relax\else\ \href{#4}{\small[pdf]}\fi
+  \ifx\relax#4\relax\else\ \href{#4}{\small[link]}\fi
 }
 
-\newcommand{\me}{\textbf{H.~W.~A.~Hanley}}
+\newcommand{\talk}[2]{%
+  \item \textbf{#1}\\{\small\color{inksoft}#2}
+}
+
+\newcommand{\honor}[2]{%
+  \item \textbf{#1}\ifx\relax#2\relax\else\\{\small\itshape\color{inksoft}#2}\fi
+}
+
+\newcommand{\me}{\underline{H.~W.~A.~Hanley}}
 
 \newlist{tight}{itemize}{1}
-\setlist[tight]{leftmargin=1.1em, itemsep=0.18em, topsep=0.25em, parsep=0pt, label=\textcolor{inksoft}{\textbullet}}
+\setlist[tight]{leftmargin=1.1em, itemsep=0.15em, topsep=0.2em, parsep=0pt,
+                label=\textcolor{inksoft}{\textbullet}}
+
+\newlist{bullets}{itemize}{1}
+\setlist[bullets]{leftmargin=1.2em, itemsep=0.08em, topsep=0.12em, parsep=0pt,
+                  label=\textcolor{inksoft}{\scriptsize$\blacksquare$}, font=\small}
 
 \newlist{pubs}{enumerate}{1}
-\setlist[pubs]{leftmargin=1.6em, itemsep=0.42em, topsep=0.3em, parsep=0pt, label=\textcolor{inksoft}{\arabic*.}}
+\setlist[pubs]{leftmargin=1.7em, itemsep=0.36em, topsep=0.22em, parsep=0pt,
+               label=\textcolor{inksoft}{\arabic*.}}
+
+\newlist{plain}{itemize}{1}
+\setlist[plain]{leftmargin=0pt, label={}, itemsep=0.42em, topsep=0.22em, parsep=0pt}
 
 %======================================================================
 \begin{document}
 
 %---------------------------------------------------------------- header
-{\fontsize{24}{28}\selectfont\bfseries Hans William Alexander Hanley}
-%
-% To show the Chinese form of the name (汉斯 · 汉隶) you must compile with
-% XeLaTeX or LuaLaTeX -- pdfLaTeX cannot typeset CJK. To enable it:
-%   1. compile with  xelatex Hans_WA_Hanley_CV.tex
-%   2. add to the preamble:  \usepackage{fontspec}
-%                            \newfontfamily\cjkname{PingFang SC}
-%   3. uncomment the line below.
-% \ {\large\color{inksoft}\cjkname 汉斯·汉隶}
+{\fontsize{22}{26}\selectfont\bfseries Hans William Alexander Hanley}
+\ {\fontsize{15}{18}\selectfont\color{inksoft}\cjkname}
 
-\vspace{0.5em}
+\vspace{0.45em}
 \rule{\textwidth}{1.4pt}
-\vspace{0.4em}
+\vspace{0.35em}
 
 {\small\color{inksoft}
 New York, NY \quad$\cdot$\quad
 \href{mailto:hhanley@cs.stanford.edu}{hhanley@cs.stanford.edu} \quad$\cdot$\quad
-\href{https://www.hanshanley.com}{hanshanley.com}
-\par\vspace{0.2em}
+\href{https://www.hanshanley.com}{hanshanley.com} \quad$\cdot$\quad
+\href{https://www.themarginoferror.com}{themarginoferror.com}
+\par\vspace{0.15em}
 \href{https://scholar.google.com/citations?user=ewdWfOoAAAAJ}{Google Scholar} \quad$\cdot$\quad
 \href{https://orcid.org/0000-0002-4291-5896}{ORCID 0000-0002-4291-5896} \quad$\cdot$\quad
-\href{https://github.com/hanshanley}{github.com/hanshanley}
+\href{https://github.com/hanshanley}{github.com/hanshanley} \quad$\cdot$\quad
+\href{https://www.linkedin.com/in/hans-hanley-0694a180}{LinkedIn}
 }
 
-%---------------------------------------------------------------- research
+%---------------------------------------------------------------- interests
 \section{Research Interests}
 
 AI safety and truthfulness; disinformation and misinformation; network analysis;
-natural language processing; computational social science.
+natural language processing; multilingual representation learning; computational
+social science.
 
 %---------------------------------------------------------------- education
 \section{Education}
 
-\degree{Ph.D., Computer Science}{Stanford University}{%
-Advisor: Zakir Durumeric. GPA 4.02. Thesis: \textit{Narrative Networks: Investigating
-Patterns of Influence and Propaganda across International News Outlets}}{2025}
+\degree{Ph.D., Computer Science, Stanford University}%
+{GPA 4.016. Advisor: Professor Zakir Durumeric}%
+{Thesis: \href{https://www.proquest.com/openview/bde2e3a43eef0ea195b100d30649bb43/1?pq-origsite=gscholar\&cbl=18750\&diss=y}{Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets}.
+Meta PhD Research Fellow (Computational Social Science); National Science Foundation Graduate Fellow; Stanford EDGE Doctoral Fellow}{2025}
 
-\degree{M.S., Computer Science}{Stanford University}{\relax}{2024}
+\degree{M.S., Computer Science, Stanford University}%
+{GPA 4.016. Advisor: Professor Zakir Durumeric}%
+{National Science Foundation Graduate Fellow}{2024}
 
-\degree{M.Sc., Statistical Science}{University of Oxford}{Distinction (Highest Honours).
-Daniel M.~Sachs Class of 1960 Graduating Scholar, Worcester College}{2020}
+\degree{M.Sc., Statistical Science, University of Oxford}%
+{Distinction (Highest Honours). Advisor: Professor Garrett Morris}%
+{Daniel M.~Sachs Class of 1960 Graduating Scholarship, Worcester College}{2020}
 
-\degree{M.Sc., Computer Science}{University of Oxford}{Distinction (Highest Honours).
-Daniel M.~Sachs Class of 1960 Graduating Scholar, Worcester College}{2019}
+\degree{M.Sc., Advanced Computer Science, University of Oxford}%
+{Distinction (Highest Honours). Advisors: Dr.~Riccardo Spolaor, Professor Ivan Martinovic}%
+{Daniel M.~Sachs Class of 1960 Graduating Scholarship, Worcester College}{2019}
 
-\degree{B.S.E., Electrical Engineering}{Princeton University}{Highest Honours. GPA 3.982.
-Concentration in Information Security and Privacy. Phi Beta Kappa; Tau Beta Pi; Sigma Xi}{2018}
+\degree{B.S.E., Electrical Engineering, Princeton University}%
+{Highest Honours. GPA 3.982. Advisor: Professor Prateek Mittal}%
+{Concentration: Information Security and Privacy. Minors: Applications of Computing; Robotics and Intelligent Systems.
+Phi Beta Kappa; Tau Beta Pi; Sigma Xi}{2018}
 
 %---------------------------------------------------------------- experience
-\section{Experience}
+\section{Professional Experience}
 
-\role{Member of Technical Staff}{Microsoft AI}{New York, NY}{Apr.\ 2026--present}
+\role{Member of Technical Staff}{Microsoft AI, New York, NY}{Apr.\ 2026--present}
+\begin{bullets}
+  \item Research and build large-scale language-model systems for AI safety and truthfulness, spanning multilingual representation learning, semantic modelling, and evaluation of model-generated content.
+  \item Develop LLM-based evaluators and measurement pipelines assessing factuality, reasoning quality, and safety and integrity risk in deployed model-driven products.
+\end{bullets}
 
-\role{Research Scientist, Central Applied Sciences}{Meta}{New York, NY}{Mar.\ 2025--Apr.\ 2026}
+\vspace{0.45em}
+\role{Research Scientist, Central Applied Sciences}{Meta, New York, NY}{Mar.\ 2025--Apr.\ 2026}
+\begin{bullets}
+  \item Researched, built, and deployed large-scale multilingual and multimodal LLM pipelines to model content semantics, identify creator verticals, and understand user interaction behaviour across Instagram for downstream recommender systems.
+  \item Developed LLM-based evaluation methods and production metrics assessing political content quality, reply and comment impact, safety and integrity risks, and downstream effects on user experience.
+\end{bullets}
 
-\role{Health AI Student Researcher}{Google Research}{Mountain View, CA}{Summer 2024}
+\vspace{0.45em}
+\role{Health AI Student Researcher}{Google Research, Mountain View, CA}{Summer 2024}
+\begin{bullets}
+  \item Led research on how open-source LLMs such as Google's Gemma can be used as AI agents for running queries over, and understanding with high fidelity, structured health-related datasets.
+  \item Built evaluation frameworks measuring accuracy, safety, and adversarial robustness for LLM-mediated medical data interactions, with verification layers to detect reasoning failures under distribution shift.
+\end{bullets}
 
-\role{Digital Forensic Research Lab Intern}{Atlantic Council}{Washington, DC}{Summer 2021}
+\vspace{0.45em}
+\role{Digital Forensic Research Lab Research Intern}{Atlantic Council, Washington, DC}{Summer 2021}
+\begin{bullets}
+  \item Researched and wrote seven reports for the DFRLab on cross-platform inauthentic behaviour, foreign influence operations, and propaganda narratives (listed under \textit{Reporting}).
+\end{bullets}
 
-\role{Data Engine Software Intern}{Microsoft}{Seattle, WA}{Summer 2018}
+\vspace{0.45em}
+\role{Software Engineering Intern, Business Applications Group (Data Engine)}{Microsoft, Seattle, WA}{Summer 2018}
+\begin{bullets}
+  \item Implemented a new C\# framework for the mobile offline synchronisation tool, allowing it to scale to 2$\times$ the number of users while reducing synchronisation time by 75\%.
+  \item Validated the framework with seven load and stress tests across a 30-server scale group.
+  \item Created a concurrent row-versioning feature across multiple servers for more efficient data retrieval.
+\end{bullets}
 
-\role{Gmail Security Software Intern}{Google}{Sunnyvale, CA}{Summer 2017}
+\vspace{0.45em}
+\role{Software Engineering Intern, Gmail Security}{Google, Sunnyvale, CA}{Summer 2017}
+\begin{bullets}
+  \item Designed and implemented a security feature for Gmail Android analysing outgoing email addresses to reduce user vulnerability.
+  \item Implemented client security logic reducing request latency and bandwidth when processing recipient addresses against the Gmail backend.
+  \item Refactored Gmail frontend and backend code analysing outgoing recipient addresses to improve reliability and readability.
+\end{bullets}
 
-\role{Google Docs and Drive Security Software Intern}{Google}{New York, NY}{Summer 2016}
+\vspace{0.45em}
+\role{Engineering Practicum Intern, Docs and Drive Security}{Google, New York, NY}{Summer 2016}
+\begin{bullets}
+  \item Implemented an action executor in Java for the Google Sheets API v4 for randomised end-to-end security software, expanding authorisation test coverage for upcoming product launches.
+  \item Contributed 52 changes to the Google codebase, including 37 scripted unit tests and 55 integration tests across 11 new Sheets API features.
+  \item Presented the project to the Docs and Drive team in a 25-minute talk on features added, technical issues, and solutions.
+\end{bullets}
 
-\role{NSF REU, Declarative Programming}{Texas Tech University}{Lubbock, TX}{Summer 2015}
+\vspace{0.45em}
+\role{Undergraduate Researcher, NSF Research Experience for Undergraduates}{Texas Tech University, Lubbock, TX}{Summer 2015}
+\begin{bullets}
+  \item Contributed to the Texas Tech Answer Set Prolog (ASP) declarative programming codebase, exploring applications to AI and cybersecurity.
+  \item Designed an ASP program using the Generate-and-Test methodology to identify de-anonymisation inference leakage in a $k$-anonymity framework.
+  \item Presented a poster on ASP's functionality with Dr.~Rattikorn Hewett.
+\end{bullets}
+
+\vspace{0.45em}
+\role{Software Engineering Intern}{Top Gun Laparoscopic Internship, Celebration, FL}{Summer 2014}
+\begin{bullets}
+  \item Wrote the engineering dossier for the Top Gun training instrument and presented it to the Chief Medical Officer of Lexion Medical.
+  \item Built three Java programs with a Wiimote interface to teach laparoscopic surgeons and internists ultrasound technique; presented to Phillips Medical Systems for approval.
+\end{bullets}
 
 %---------------------------------------------------------------- publications
 \section{Peer-Reviewed Publications}
@@ -171,90 +245,81 @@ Concentration in Information Security and Privacy. Phi Beta Kappa; Tau Beta Pi; 
 \begin{pubs}
 
 \pub{P.~Gerard, \me{}, L.~Luceri, and E.~Ferrara}
-    {Bridging the Narrative Divide: Cross-Platform Discourse Networks in
-     Fragmented Ecosystems}
+    {Bridging the Narrative Divide: Cross-Platform Discourse Networks in Fragmented Ecosystems}
     {20th International AAAI Conference on Web and Social Media (ICWSM 2026)}
     {https://ojs.aaai.org/index.php/ICWSM/article/view/42670}
 
 \pub{\me{} and Z.~Durumeric}
     {Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings}
     {The 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)}
-    {https://www.hanshanley.com/files/matryoshka.pdf}
-
-\pub{\me{}, E.~I.~Okabe, and Z.~Durumeric}
-    {Tracking the Takes and Trajectories of English-Language News Narratives across
-     Trustworthy and Worrisome Websites}
-    {34th USENIX Security Symposium (USENIX Security 2025)}
-    {https://www.hanshanley.com/files/Tracking_Takes.pdf}
+    {https://aclanthology.org/2025.acl-long.124/}
 
 \pub{\me{} and Z.~Durumeric}
-    {Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized,
-     and Toxic Interactions on Reddit}
-    {The 28th ACM Conference on Computer-Supported Cooperative Work and Social Computing
-     (CSCW 2025). \textbf{Best Paper Honorable Mention}}
+    {Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit}
+    {The 28th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW 2025).
+     \textbf{Best Paper Honourable Mention} (top 4\%)}
     {https://www.hanshanley.com/files/Sub_Standards_and_Mal_Practices.pdf}
 
 \pub{\me{} and Z.~Durumeric}
     {Twits, Toxic Tweets, and Tribal Tendencies: Trends in Politically Polarized Posts on Twitter}
-    {The 28th ACM Conference on Computer-Supported Cooperative Work and Social Computing
-     (CSCW 2025)}
+    {The 28th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW 2025)}
     {https://www.hanshanley.com/files/CSCW_Twits.pdf}
 
+\pub{\me{}, E.~Okabe, and Z.~Durumeric}
+    {Tracking the Takes and Trajectories of English-Language News Stories from Trustworthy and Worrisome Websites}
+    {34th USENIX Security Symposium (USENIX Security 2025), August 2025}
+    {https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-487-hanley.pdf}
+
 \pub{\me{}, Y.~Lu, and J.~Pan}
-    {Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives
-     on the Russo-Ukrainian War}
-    {Proceedings of the National Academy of Sciences (PNAS), Brief Report}
+    {Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War}
+    {Proceedings of the National Academy of Sciences (PNAS), January 2025}
     {https://www.pnas.org/doi/10.1073/pnas.2420607122}
 
-\pub{\me{}, D.~Kumar, and Z.~Durumeric}
-    {Specious Sites: Tracking the Spread and Sway of Spurious News Stories at Scale}
-    {45th IEEE Symposium on Security and Privacy (IEEE S\&P 2024)}
-    {https://www.hanshanley.com/files/Specious_Sites.pdf}
-
 \pub{\me{} and Z.~Durumeric}
-    {Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on
-     Misinformation and Mainstream News Websites}
-    {18th International AAAI Conference on Web and Social Media (ICWSM 2024)}
+    {Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on Misinformation and Mainstream News Websites}
+    {18th International AAAI Conference on Web and Social Media (ICWSM 2024), June 2024}
     {https://www.hanshanley.com/files/machine_made.pdf}
 
 \pub{\me{} and Z.~Durumeric}
-    {Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media
-     Outlets and Telegram}
-    {18th International AAAI Conference on Web and Social Media (ICWSM 2024)}
+    {Partial Mobilization: Tracking Multilingual Information Flows Amongst Russian Media Outlets and Telegram}
+    {18th International AAAI Conference on Web and Social Media (ICWSM 2024), June 2024}
     {https://www.hanshanley.com/files/ICWSM_Partial_Mobilization.pdf}
+
+\pub{\me{}, D.~Kumar, and Z.~Durumeric}
+    {Specious Sites: Tracking the Spread and Sway of Spurious News Stories at Scale}
+    {45th IEEE Symposium on Security and Privacy (Oakland 2024), May 2024}
+    {https://www.hanshanley.com/files/Specious_Sites.pdf}
 
 \pub{\me{} and Z.~Durumeric}
     {TATA: Stance Detection via Topic-Agnostic and Topic-Aware Embeddings}
-    {The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023)}
-    {https://www.hanshanley.com/files/tata.pdf}
+    {The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023), December 2023}
+    {https://aclanthology.org/2023.emnlp-main.694/}
 
 \pub{\me{}, D.~Kumar, and Z.~Durumeric}
-    {A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets,
-     News Media, and the Wider Internet}
-    {The 26th ACM Conference on Computer-Supported Cooperative Work and Social Computing
-     (CSCW 2023)}
+    {A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet}
+    {26th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW 2023), October 2023}
     {https://www.hanshanley.com/files/A_Golden_Age.pdf}
 
 \pub{\me{}, D.~Kumar, and Z.~Durumeric}
-    {Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives
-     about the Russo-Ukrainian War on Reddit}
-    {17th International AAAI Conference on Web and Social Media (ICWSM 2023)}
+    {Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War on Reddit}
+    {17th International AAAI Conference on Web and Social Media (ICWSM 2023), June 2023.
+     Invited paper, American Political Science Association (APSA) full-paper panel,
+     ``Mechanisms of Domination?: State Sponsored Information and Media Ecosystems,'' September 2023}
     {https://www.hanshanley.com/files/happenstance.pdf}
 
 \pub{\me{}, D.~Kumar, and Z.~Durumeric}
-    {``A Special Operation'': A Quantitative Approach to Dissecting and Comparing
-     Different Media Ecosystems' Coverage of the Russo-Ukrainian War}
-    {17th International AAAI Conference on Web and Social Media (ICWSM 2023)}
+    {``A Special Operation'': A Quantitative Approach to Dissecting and Comparing Different Media Ecosystems' Coverage of the Russo-Ukrainian War}
+    {17th International AAAI Conference on Web and Social Media (ICWSM 2023), June 2023}
     {https://www.hanshanley.com/files/ICWSM_Eluosi.pdf}
 
 \pub{\me{}, D.~Kumar, and Z.~Durumeric}
     {No Calm in the Storm: Investigating QAnon Website Relationships}
-    {16th International AAAI Conference on Web and Social Media (ICWSM 2022)}
+    {16th International AAAI Conference on Web and Social Media (ICWSM 2022), June 2022}
     {https://www.hanshanley.com/files/No_Calm_In_the_Storm.pdf}
 
 \pub{\me{}, Y.~Sun, S.~Wagh, and P.~Mittal}
     {DPSelect: A Differential Privacy Based Guard Relay Selection Algorithm for Tor}
-    {19th Privacy Enhancing Technologies Symposium (PoPETs 2019)}
+    {19th Privacy Enhancing Technologies Symposium (PoPETs 2019), July 2019}
     {https://www.hanshanley.com/files/DPSelect.pdf}
 
 \end{pubs}
@@ -263,137 +328,234 @@ Concentration in Information Security and Privacy. Phi Beta Kappa; Tau Beta Pi; 
 \section{Preprints and Work in Progress}
 
 \begin{pubs}
-
-\pub{\me{}, E.~I.~Okabe, and Z.~Durumeric}
-    {M-STANCE: Soft Contrastive Learning and Synthetic Translations for
-     Multilingual Stance Detection}
-    {Preprint}
+\pub{\me{}, E.~Okabe, and Z.~Durumeric}
+    {M-STANCE: Soft Contrastive Learning and Synthetic Translations for Multilingual Stance Detection}
+    {Preprint. Releases a 54-language multilingual stance detection dataset}
     {\relax}
-
 \end{pubs}
 
 %---------------------------------------------------------------- dissertations
 \section{Dissertations}
 
-\entry{\href{https://www.proquest.com/openview/bde2e3a43eef0ea195b100d30649bb43/1?pq-origsite=gscholar\&cbl=18750\&diss=y}{\textbf{Narrative Networks: Investigating Patterns of Influence
-and Propaganda across International News Outlets}}}{2025}
-{\small\color{inksoft}Stanford University, Ph.D. in Computer Science}\par
-\vspace{0.55em}
+\begin{plain}
+\item \href{https://www.proquest.com/openview/bde2e3a43eef0ea195b100d30649bb43/1?pq-origsite=gscholar\&cbl=18750\&diss=y}{\textbf{Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets}}\\
+{\small\color{inksoft}H.~W.~A.~Hanley and Z.~Durumeric. Stanford University, Ph.D.\ dissertation, Computer Science, 2025}
 
-\entry{\href{https://www.hanshanley.com/files/generatez_dissertation.pdf}{\textbf{GENerateZ:
-Automatic De Novo Design of Anticancer Drugs using Transcriptomic Data, Genetic
-Algorithms, and Variational Autoencoders}}}{2020}
-{\small\color{inksoft}University of Oxford, M.Sc. in Statistical Science}\par
-\vspace{0.55em}
+\item \href{https://www.hanshanley.com/files/generatez_dissertation.pdf}{\textbf{GENerateZ: Automatic De Novo Design of Anticancer Drugs using Transcriptomic Data, Genetic Algorithms, and Variational Autoencoders}}\\
+{\small\color{inksoft}H.~Hanley and G.~Morris. University of Oxford, M.Sc.\ thesis, Statistical Science, 2020}
 
-\entry{\href{https://www.hanshanley.com/files/dpnetwork.pdf}{\textbf{PROMISE: Provably
-RObust Malware detectIon uSing diffErential privacy}}}{2019}
-{\small\color{inksoft}University of Oxford, M.Sc. in Advanced Computer Science}\par
-\vspace{0.55em}
+\item \href{https://www.hanshanley.com/files/dpnetwork.pdf}{\textbf{PROMISE: Provably RObust Malware detectIon uSing diffErential privacy}}\\
+{\small\color{inksoft}H.~Hanley, R.~Spolaor, and I.~Martinovic. University of Oxford, M.Sc.\ thesis, Advanced Computer Science, 2019}
 
-\entry{\href{https://www.hanshanley.com/files/DPSelect.pdf}{\textbf{DPSelect: A Differential
-Privacy Based Guard Relay Selection Algorithm for Tor}}}{2018}
-{\small\color{inksoft}Princeton University, B.S.E. in Electrical Engineering}\par
-
-%---------------------------------------------------------------- honors
-\section{Selected Honours and Awards}
-
-\begin{tight}
-  \item \href{https://medium.com/acm-cscw/announcing-the-best-of-cscw-2025-a95517e67ba3}{\textbf{Best Paper Honorable Mention}}, ACM CSCW, 2025 (top 4\%)
-  \item \href{https://datascience.stanford.edu/news/shining-light-emerging-talent-rising-stars-data-science-2024-recap}{Rising Star in Data Science}, Stanford / UC San Diego / University of Chicago, 2024
-  \item \href{https://aaai.org/conference/aaai/aaai-25/}{AAAI Doctoral Consortium}, 2025
-  \item \href{https://research.facebook.com/fellows/hanley-hans-william-alexander/}{Meta Ph.D. Research Fellowship} in Computational Social Science, 2023
-  \item \href{https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2020}{Stanford University EDGE Doctoral Fellowship}, 2020
-  \item \href{https://ece.princeton.edu/news/seven-current-and-former-students-awarded-nsf-graduate-research-fellowships}{National Science Foundation Graduate Research Fellowship (GRFP)}, 2020
-  \item University of Oxford, Worcester College Prize for Academic Excellence, 2019 and 2020
-  \item \href{https://www.worc.ox.ac.uk/about/news/hans-hanley-named-next-daniel-m-sachs-scholar-worcester}{Daniel M.~Sachs Class of 1960 Graduating Scholarship}, Worcester College, University of Oxford, 2018
-  \item \href{https://engineering.princeton.edu/news/2018/06/05/class-day-awards-celebrate-graduates-contributions-research-and-service}{James Hayes--Edgar Palmer Prize in Engineering}, Princeton University, 2018
-  \item \href{https://ece.princeton.edu/news/undergraduates-honored-class-day-2018}{Charles Ira Young Memorial Tablet and Medal}, Princeton University Electrical Engineering, 2018
-  \item \href{https://www.princeton.edu/news/2016/09/11/princeton-students-honored-opening-exercises}{George B.~Wood Legacy Prize}, Princeton University, 2016
-  \item Phi Beta Kappa; Tau Beta Pi; Sigma Xi
-  \item National Merit Scholar for Academic Excellence
-\end{tight}
+\item \href{https://www.hanshanley.com/files/DPSelect.pdf}{\textbf{DPSelect: A Differential Privacy Based Guard Relay Selection Algorithm for Tor}}\\
+{\small\color{inksoft}H.~Hanley, Y.~Sun, S.~Wagh, and P.~Mittal. Princeton University, B.S.E.\ thesis, Electrical Engineering, 2018}
+\end{plain}
 
 %---------------------------------------------------------------- talks
-\section{Selected Invited Talks and Presentations}
+\section{Invited Talks and Posters}
+
+\begin{plain}
+\talk{Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets}
+     {IDeaS Center Seminar Series, Carnegie Mellon University. April 7, 2026. Pittsburgh, PA}
+\talk{Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets}
+     {Google DeepMind Research Talk. February 25, 2026. London, UK}
+\talk{Investigating Patterns of Influence and Propaganda across International News Outlets}
+     {Weizenbaum Institute for the Networked Society. November 24, 2025. Berlin, Germany}
+\talk{Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets}
+     {Workshop on The Future of Social Media Research, Oxford Internet Institute. November 19, 2025. Oxford, UK}
+\talk{Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets}
+     {UC Santa Cruz Security Seminar. October 8, 2025. Santa Cruz, CA}
+\talk{Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites}
+     {University of California, San Diego, Rising Stars in Data Science Workshop. November 14, 2024. San Diego, CA}
+\talk{Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites}
+     {University of Cambridge, Computer Laboratory Security Seminar. November 8, 2024. Cambridge, UK}
+\talk{Thoroughly Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites}
+     {Stanford University, Trust and Safety Conference. September 26, 2024. Stanford, CA}
+\talk{Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites}
+     {Meta Computational Social Science Group. August 20, 2024. San Jose, CA}
+\talk{Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War}
+     {10th International Conference on Computational Social Science (IC2S2). June 18, 2024. Philadelphia, PA}
+\talk{Tall and True Tales: Thoroughly Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites}
+     {10th International Conference on Computational Social Science (IC2S2). June 18, 2024. Philadelphia, PA}
+\talk{Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War}
+     {74th Annual Conference of the International Communication Association. June 20, 2024. Gold Coast, Australia}
+\talk{The Future of Computational Message Science: Theoretical Advances, Computational Frontiers, and Grand Societal Challenges (panellist)}
+     {74th ICA Pre-Conference, Queensland University of Technology. June 19, 2024. Brisbane, Australia}
+\talk{Thoroughly Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites}
+     {University of Chicago, People and Tech Seminar. April 5, 2024. Chicago, IL}
+\talk{Thoroughly Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites}
+     {New York University, Center for Social Media and Politics. February 14, 2024. New York, NY}
+\talk{Influence of Foreign and Domestic Media Ecosystems on Chinese Social Media}
+     {TADA: New Directions in Analyzing Text as Data, University of Massachusetts Amherst. November 9, 2023. Boston, MA}
+\talk{Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War}
+     {Politics and Computational Social Science (PaCSS) 2023, UCLA. August 30, 2023. Los Angeles, CA}
+\talk{Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War on Reddit}
+     {119th American Political Science Association Annual Meeting. September 1, 2023. Los Angeles, CA}
+\talk{Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War}
+     {40th Annual Meeting of the Society for Political Methodology. July 9, 2023. Stanford, CA}
+\talk{Online Information Flows and Ecosystems: Understanding the Role of Misinformation and AI-Generated Media}
+     {University of Oxford, Oxford Internet Institute. June 13, 2023. Oxford, UK}
+\talk{Online Information Flows and Ecosystems: Understanding the Role of Misinformation and AI-Generated Media}
+     {University College London Information Security Seminar. June 12, 2023. London, UK}
+\talk{Tracking the Influence of Russian State Media Narratives about the Russo-Ukrainian War}
+     {University of Florida. September 6, 2022. Gainesville, FL}
+\talk{Tracking the Influence of Russian State Media Narratives about the Russo-Ukrainian War}
+     {University of Central Florida. August 16, 2022. Orlando, FL}
+\talk{Happenstance: Utilizing Semantic Search to Track Russian State Media Narratives about the Russo-Ukrainian War on Reddit}
+     {Stanford Security Lunch. May 11, 2022. Stanford, CA}
+\talk{Methods in the Madness: From QAnon to COVID-19, Conspiracy Theories' Relationship with Misinformation, the News Media, and the Wider Internet}
+     {Stanford Computer Forum. April 6, 2022. Stanford, CA}
+\talk{No Calm in the Storm}
+     {Stanford Security Lunch. September 8, 2021. Stanford, CA}
+\talk{Why Graduate School? My Experience in Graduate School}
+     {Princeton University. June 29, 2021. Princeton, NJ}
+\talk{GENerateZ: Automatic De Novo Design of Anticancer Drugs using Transcriptomic Data, Genetic Algorithms, and Variational Autoencoders}
+     {3rd RSC-BMCS/RSC-CICAG Artificial Intelligence in Chemistry. September 1, 2020. London, UK}
+\talk{An Exploration of Contextualized Word Vectors for Sentiment Analysis}
+     {Oxford Computer Science Conference. April 1, 2019. Oxford, UK}
+\talk{DPSelect: A Differential Privacy Based Guard Relay Selection Algorithm for Tor}
+     {Oxford Computer Science Conference. April 1, 2019. Oxford, UK}
+\end{plain}
+
+%---------------------------------------------------------------- reporting
+\section{Reporting}
+
+All published by the Atlantic Council's Digital Forensic Research Lab (DFRLab).
 
 \begin{tight}
-  \item \textit{Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets} --- IDeaS Center Seminar Series, Carnegie Mellon University, Pittsburgh, PA, 2026
-  \item \textit{Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets} --- Google DeepMind Research Talk, London, UK, 2026
-  \item \textit{Investigating Patterns of Influence and Propaganda across International News Outlets} --- Weizenbaum Institute for the Networked Society, Berlin, Germany, 2025
-  \item \textit{Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets} --- Workshop on The Future of Social Media Research, Oxford Internet Institute, Oxford, UK, 2025
-  \item \textit{Narrative Networks: Investigating Patterns of Influence and Propaganda across International News Outlets} --- UC Santa Cruz Security Seminar, Santa Cruz, CA, 2025
-  \item \textit{Tracking the Takes and Trajectories of News Narratives from Trustworthy and Worrisome Websites} --- University of Cambridge Security Group Meeting, Cambridge, UK, 2024
-  \item \textit{Narratives of Foreign Media Ecosystems in Chinese Social Media Discussions of the Russo-Ukrainian War} --- TADA: New Directions in Analyzing Text as Data, Boston, MA, 2023
-  \item \textit{Happenstance: Tracking Russian State Media Narratives on Reddit} --- 119th American Political Science Association Annual Meeting, Los Angeles, CA, 2023
-  \item \textit{Influence of Foreign and Domestic Media Ecosystems on Chinese Social Media} --- Politics and Computational Social Science (PaCSS), Los Angeles, CA, 2023
-  \item \textit{Narratives of Foreign Media Ecosystems in Chinese Social Media} --- 40th Annual Meeting of the Society for Political Methodology, Stanford, CA, 2023
-  \item \textit{Online Information Flows and Ecosystems: Misinformation and AI-Generated Media} --- Oxford Internet Institute, University of Oxford, UK, 2023
-  \item \textit{Online Information Flows and Ecosystems: Misinformation and AI-Generated Media} --- Information Security Seminar, University College London, UK, 2023
-  \item \textit{Tracking the Influence of Russian State Media Narratives} --- University of Florida, Gainesville, FL, 2022
-  \item \textit{Tracking the Influence of Russian State Media Narratives} --- University of Central Florida, Orlando, FL, 2022
-  \item \textit{Happenstance: Tracking Russian State Media Narratives on Reddit} --- Stanford Security Lunch, Stanford, CA, 2022
-  \item \textit{Methods in the Madness: Conspiracy Theories, Misinformation Outlets, and the Wider Internet} --- Stanford Security Workshop, Stanford, CA, 2022
-  \item \textit{No Calm in the Storm} --- Stanford Security Lunch, Stanford, CA, 2021
-  \item \textit{GENerateZ} --- RSC-BMCS / RSC-CICAG Artificial Intelligence in Chemistry, London, UK, 2020
-  \item \textit{DPSelect} --- Oxford Computer Science Conference, Oxford, UK, 2019
-  \item \textit{An Exploration of Contextualized Word Vectors for Sentiment Analysis} --- Oxford Computer Science Conference, Oxford, UK, 2019
-\end{tight}
-
-%---------------------------------------------------------------- media
-\section{Selected Writing for the Atlantic Council DFRLab}
-
-\begin{tight}
-  \item \href{https://medium.com/dfrlab/iranian-accounts-promote-anti-israel-hashtags-in-the-wake-of-the-israel-hamas-war-c1240ec25152}{Iranian accounts promote anti-Israel hashtags in the wake of the Israel-Hamas war}
   \item \href{https://medium.com/dfrlab/new-covid-19-conspiracy-theories-gain-traction-as-old-ones-re-emerge-c28e58539198}{New COVID-19 conspiracy theories gain traction as old ones re-emerge}
   \item \href{https://medium.com/dfrlab/misinformation-regarding-frances-covid-19-health-passes-spread-on-twitter-ba344920bc16}{Misinformation regarding France's COVID-19 ``health passes'' spread on Twitter}
   \item \href{https://medium.com/dfrlab/iranian-social-media-exploit-us-based-conspiracies-regarding-uss-liberty-incident-95bc8960dcfa}{Iranian social media exploit US-based conspiracies regarding USS Liberty incident} (with A.~Kann)
   \item \href{https://medium.com/dfrlab/china-weaponizes-discovery-of-graves-at-canadian-residential-schools-to-avoid-xinjiang-criticism-6bf618a6e954}{China weaponizes discovery of graves at Canadian residential schools to avoid Xinjiang criticism}
   \item \href{https://medium.com/dfrlab/pro-kremlin-media-echo-chinese-outlets-that-covid-lab-leak-theory-is-a-u-s-disinfo-campaign-7f1bdc28f0a4}{Pro-Kremlin media echo Chinese outlets that COVID lab leak theory is a U.S. disinfo campaign}
-  \item \href{https://medium.com/dfrlab/nigerian-twitter-users-flock-to-vpns-amid-dubious-legal-threats-395101f95cd3}{Nigerian Twitter users flock to VPNs amid dubious legal threats} (with J.~Le~Roux)
+  \item \href{https://medium.com/dfrlab/iranian-accounts-promote-anti-israel-hashtags-in-the-wake-of-the-israel-hamas-war-c1240ec25152}{Iranian accounts promote anti-Israel hashtags in the wake of the Israel-Hamas war}
+  \item \href{https://medium.com/dfrlab/nigerian-twitter-users-flock-to-vpns-amid-dubious-legal-threats-395101f95cd3}{Nigerian Twitter users flock to VPNs amid dubious legal threats} (with J.~Le~Roux; Disinfo Africa and DFRLab)
 \end{tight}
 
-%---------------------------------------------------------------- service
-\section{Service and Leadership}
+%---------------------------------------------------------------- teaching
+\section{Teaching}
 
-\textbf{Program committees}
+\role{Teaching Assistant, CS265: Randomized Algorithms and Probabilistic Analysis}{Stanford University, Professor Greg Valiant}{Fall 2023}
+\begin{bullets}
+  \item Assisted with instruction and grading; held weekly office hours.
+\end{bullets}
+
+\vspace{0.4em}
+\role{Teaching Assistant, CS224N: Natural Language Processing with Deep Learning}{Stanford University, Professor Chris Manning}{Winter 2023}
+\begin{bullets}
+  \item Led and helped design the default final project for the course.
+  \item Supervised final-project implementation for 21 student teams.
+\end{bullets}
+
+\vspace{0.4em}
+\role{Engineering Learning Consultant}{Stanford Center for Teaching and Learning}{Fall 2020--Winter 2022}
+\begin{bullets}
+  \item Designed and implemented a matching algorithm for the peer buddy accountability program.
+  \item Created and presented eight workshops for graduate students on Git, data presentation, R, and statistical methodology.
+  \item Built a D3 tool to log and visualise student attendance at workshops and study halls.
+\end{bullets}
+
+\vspace{0.4em}
+\role{Teaching Assistant, ELE 302: Building Real Systems}{Princeton University, Professors Jeffrey Thompson and Stephen Lyon}{Spring 2018}
+\begin{bullets}
+  \item Guided students five hours weekly through hardware and software projects, including a PID speed-controlled car and autonomous car control.
+\end{bullets}
+
+\vspace{0.4em}
+\role{Head Tutor, McGraw Center for Teaching and Learning}{Princeton University}{Spring 2015--Spring 2018}
+\begin{bullets}
+  \item Tutored Physics (Mechanics and E\&M) and Linear Algebra 6.5 hours weekly; ran trainings for undergraduate physics tutors.
+\end{bullets}
+
+\vspace{0.4em}
+\role{Teaching Assistant, ELE 206: Contemporary Logic Design}{Princeton University, Professor Sharad Malik}{Fall 2016, Fall 2017}
+\begin{bullets}
+  \item Taught and debugged Verilog in twice-weekly two-hour sessions; projects included Simon and a 16-instruction RISC ISA. Guided FPGA hardware programming sessions.
+\end{bullets}
+
+\vspace{0.4em}
+\role{Instructor, Princeton Splash}{``Security and Privacy in the Digital Age'' for New Jersey high-school students}{Spring 2017, Spring 2018}
+
+%---------------------------------------------------------------- service
+\section{Service, Mentorship, and Volunteering}
+
+\subsection*{Program committees}
 \begin{tight}
   \item AAAI --- 2025, 2026, 2027
   \item AAAI-AISI (AI for Social Impact) --- 2025, 2026, 2027
   \item IEEE Symposium on Security and Privacy --- 2026
-  \item ICWSM --- 2022, 2025
+  \item ICWSM --- 2023, 2024, 2025
+  \item Poster Program Committee Associate Chair, ACM CSCW --- 2024
 \end{tight}
 
-\vspace{0.5em}
-\textbf{Reviewing}
+\subsection*{Reviewing}
 \begin{tight}
   \item ACM CSCW --- 2022, 2023, 2024, 2025
+  \item ICWSM --- 2023, 2024
   \item IC2S2 --- 2024, 2025
-  \item ICWSM --- 2023
   \item ACL --- 2025
   \item NLP4Democracy --- 2025
+  \item International Communication Association (ICA) --- 2024
   \item Stanford Journal of Science, Technology, and Society --- 2022
 \end{tight}
 
-\vspace{0.5em}
-\textbf{Mentoring and leadership}
+\subsection*{Mentorship}
 \begin{tight}
-  \item Stanford Computer Science Graduate Mentor (2021--2022)
-  \item Stanford Center for Teaching and Learning, Engineering Learning Consultant (2020--2022)
-  \item Daniel M.~Sachs Global Scholarship Interviewer (2021)
-  \item Stanford Undergraduate Research Association (SURA) Mentor (2020)
-  \item President, National Society of Black Engineers, Princeton University Chapter
+  \item Graduate Mentor, Stanford CS Research Mentorship (2023--present) --- mentee: Emily Okabe
+  \item Graduate Mentor, Stanford CS Graduate--Undergraduate Mentorship Program (2022--2023) --- mentee: Jenny Duan
+  \item Mentor, Stanford CURIS summer undergraduate research program (2022) --- mentee: Jaylene Martinez
+  \item Graduate Mentor, Stanford CS Graduate--Undergraduate Mentorship Program (2021--2022) --- mentee: Jaehyon Park
+  \item Mentor, Stanford Undergraduate Research Association (SURA) (2021) --- mentee: Laura Jean Bauman
+  \item Interviewer, Daniel M.~Sachs Global Scholarship (2021)
+  \item Mentor, Princeton College Counseling, Pace Center for Civic Engagement (2014--2016)
 \end{tight}
+
+\subsection*{Leadership}
+\begin{tight}
+  \item President, National Society of Black Engineers, Princeton University chapter (2016--2017) --- organised events with Google, Deloitte, Airbnb, Microsoft, McKinsey, and Capital One; built a mentorship program for underclassmen; designed nsbe.princeton.edu
+  \item BAME Representative, Worcester College Middle Common Room, University of Oxford (2019--2020)
+  \item BSE Freshman Interactor, Princeton University (2017--2018)
+  \item Class of 2018 Representative, IEEE Princeton (2016--2017)
+\end{tight}
+
+%---------------------------------------------------------------- honours
+\section{Selected Honours and Awards}
+
+\begin{plain}
+\honor{Best Paper Honourable Mention, ACM CSCW 2025}{Top 4\% of submissions. \href{https://medium.com/acm-cscw/announcing-the-best-of-cscw-2025-a95517e67ba3}{Announcement}}
+\honor{Rising Stars in Data Science, 2024}{Hosted by UC San Diego with the University of Chicago and Stanford; celebrates and fast-tracks exceptional data scientists at the transition to postdoctoral, research scientist, or tenure-track positions. \href{https://datascience.stanford.edu/news/shining-light-emerging-talent-rising-stars-data-science-2024-recap}{Details}}
+\honor{AAAI/SIGAI Doctoral Consortium, 2025}{\href{https://aaai.org/conference/aaai/aaai-25/}{Selected for the AAAI-25 Doctoral Consortium}}
+\honor{Meta Research PhD Fellowship in Computational Social Science, 2023}{Awarded to PhD candidates conducting research on emerging topics across computer science, engineering, and behavioural science; full tuition and fees for up to two years plus a \$42,000 stipend. \href{https://research.facebook.com/fellows/hanley-hans-william-alexander/}{Announcement}}
+\honor{Stanford Enhancing Diversity in Graduate Education (EDGE) Doctoral Fellowship}{Offered to admitted Stanford doctoral students who contribute to the diversity of their field or degree program. \href{https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2020}{Details}}
+\honor{National Science Foundation Graduate Research Fellowship}{Three years of funding and a stipend for university study and research at Stanford. \href{https://ece.princeton.edu/news/seven-current-and-former-students-awarded-nsf-graduate-research-fellowships}{Announcement}}
+\honor{Daniel M.~Sachs Class of 1960 Graduating Scholarship, Worcester College, University of Oxford}{Assures two years' tenure and a stipend sufficient for university and college tuition at Oxford. \href{https://www.worc.ox.ac.uk/about/news/hans-hanley-named-next-daniel-m-sachs-scholar-worcester}{Announcement}}
+\honor{University of Oxford, Worcester College Prize for Academic Excellence}{2019 and 2020}
+\honor{Hertz Foundation Graduate Fellowship Finalist, 2018}{One of 40 candidates from a pool of 700 applicants selected as finalists after first-round interviews}
+\honor{Charles Ira Young Memorial Tablet and Medal, Princeton University}{Awarded each year to the student who excels in research in Electrical Engineering. \href{https://ece.princeton.edu/news/undergraduates-honored-class-day-2018}{Announcement}}
+\honor{James Hayes--Edgar Palmer Prize in Engineering, Princeton SEAS}{Awarded annually to a senior who has manifested excellent scholarship, a marked capacity for leadership, and promise of creative achievement in engineering. \href{https://engineering.princeton.edu/news/2018/06/05/class-day-awards-celebrate-graduates-contributions-research-and-service}{Announcement}}
+\honor{Phi Beta Kappa Society, Beta Chapter of New Jersey, Princeton University}{Membership for exceptional academic achievement in the first three undergraduate years}
+\honor{Tau Beta Pi Engineering Honor Society}{Oldest engineering honour society in the United States; membership awarded to the top eighth of the engineering class}
+\honor{Sigma Xi Scientific Research Society}{Honour society for scientists and engineers; members are elected on the basis of research achievement or potential}
+\honor{George B.~Wood Legacy Sophomore Prize, Princeton University}{For the highest distinction and recognition in sophomore academic work. \href{https://www.princeton.edu/news/2016/09/11/princeton-students-honored-opening-exercises}{Announcement}}
+\honor{Shapiro Award for Academic Excellence, Princeton University}{2015 (freshman year) and 2016 (sophomore year)}
+\honor{McGraw Center for Teaching and Learning Excellent Tutor Award, 2016}{For excellent tutoring during the 2015--2016 academic year}
+\honor{Rhodes Scholarship Finalist}{One of 14 students in the Birmingham district invited to the final round of interviews}
+\honor{Marshall Scholarship Finalist}{One of 20 students in the Atlanta district invited to the final round of interviews}
+\honor{Ron Brown CAPtain Scholar}{Invitation-only professional development programme for exceptional African-American students; awarded to the top 3\% of applicants}
+\honor{National Achievement Scholar for Academic Excellence, 2014}{\relax}
+\honor{National Merit Scholar for Academic Excellence, 2014}{\relax}
+\end{plain}
 
 %---------------------------------------------------------------- skills
 \section{Technical Skills and Languages}
 
 \begin{tight}
-  \item \textbf{Programming:} Python, Java, C, C++, C\#, Go, SQL, R, MATLAB, Git
-  \item \textbf{ML / LLM:} PyTorch, TensorFlow, Hugging Face; transformers; LLM fine-tuning;
-        multilingual modelling; interpretability and feature attribution; contrastive learning;
-        LLM-based evaluation; safety and robustness analysis
-  \item \textbf{Languages:} English (native), Mandarin Chinese (HSK 5)
+  \item \textbf{Proficient:} Python, Java, C, Go, R, Git, PyTorch, TensorFlow, Hugging Face
+  \item \textbf{Experienced:} MATLAB, C\#, C++, SQL, Answer Set Prolog (ASP)
+  \item \textbf{Methods:} transformers; LLM fine-tuning; multilingual representation learning;
+        interpretability and feature attribution; contrastive learning; LLM-based evaluation;
+        safety and robustness analysis; network analysis
+  \item \textbf{Languages:} English (native); Mandarin Chinese (HSK 5)
 \end{tight}
 
 \vfill
