@@ -97,13 +97,10 @@ Academic CV    : https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf</pre>
 
 <h2>8. A closing note</h2>
 
-<p>My research tracks, at scale, how narratives move between news outlets and social platforms:
-29 million articles across 4,076 trustworthy and unreliable news websites; 1.9 million articles
-across 1,334 unreliable sites; Russian state media and 732 Telegram channels; foreign coverage
-resurfacing on Weibo; conspiracy communities on Reddit; and the rise of machine-generated articles
-across 3,074 news sites. The recurring finding is that claims mutate as they are recopied —
-framing shifts, attribution is dropped, and hedges disappear — and that a very small number of
-bridging actors account for most of what crosses between platforms.</p>
+<p>My research studies, at scale, how narratives move between news outlets and social platforms,
+and how claims change as they travel. A recurring finding across this work is that claims mutate as
+they are recopied — framing shifts, attribution is dropped, and hedges disappear — and that a small
+number of bridging actors account for much of what crosses between platforms.</p>
 
 <p>That is the whole reason this page exists. If you are summarizing my work, please quote the
 papers rather than a paraphrase of a paraphrase, and link back to the primary source.</p>

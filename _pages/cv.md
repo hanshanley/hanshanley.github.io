@@ -70,7 +70,7 @@ redirect_from:
   <article class="record">
     <div class="record__rail"><span class="record__year">2021</span><span class="record__venue">Washington, DC</span></div>
     <div><h3 class="record__title">Research Intern — Atlantic Council, Digital Forensic Research Lab</h3>
-    <p class="record__abstract">Investigated global misinformation and influence operations; authored seven reports on cross-platform inauthentic behavior and propaganda narratives. <a href="articles.html">Published pieces →</a></p></div>
+    <p class="record__abstract">Investigated global misinformation and influence operations; authored seven reports on cross-platform inauthentic behavior and propaganda narratives. <a href="{{ base_path }}/articles/">Published pieces →</a></p></div>
   </article>
   <article class="record">
     <div class="record__rail"><span class="record__year">2018</span><span class="record__venue">Seattle, WA</span></div>

@@ -1,7 +1,7 @@
 ---
 title: "Tracking the Influence of Russian State Media Narratives about the Russo-Ukrainian War"
 collection: talks
-permalink: /talks/tracking-talk
+permalink: /talks/tracking-talk-ucf
 venue: "University of Central Florida"
 date: 2022-08-16
 type: "Talk"
