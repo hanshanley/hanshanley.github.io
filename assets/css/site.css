@@ -357,10 +357,13 @@ a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; text-decor
 
 .dock {
   position: fixed;
-  top: 50%;
-  right: max(0.9rem, calc((100vw - var(--shell)) / 2 - 9.5rem));
-  transform: translateY(-50%);
-  width: 9.25rem;
+  /* Sits below the masthead and nav rather than centred on the viewport, so it
+     never crowds the name at the top of the page. */
+  top: 16rem;
+  right: max(0.9rem, calc((100vw - var(--shell)) / 2 - 11rem));
+  max-height: calc(100vh - 18rem);
+  overflow-y: auto;
+  width: 10.5rem;
   z-index: 20;
   font-family: var(--mono);
   font-size: 0.625rem;
@@ -375,16 +378,20 @@ a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; text-decor
   letter-spacing: 0.16em; margin-bottom: 0.5rem;
 }
 .dock__standfirst {
-  margin: 0 0 0.85rem;
-  padding-bottom: 0.8rem;
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.85rem;
   border-bottom: 1px solid var(--hair);
-  font-size: 0.625rem;
-  line-height: 1.6;
-  letter-spacing: 0.09em;
+  /* Sentence-case serif: uppercase mono is unreadable at this column width. */
+  font-family: var(--serif);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  letter-spacing: 0;
+  text-transform: none;
   color: var(--ink-2);
 }
 .dock__standfirst span { display: block; }
-.dock__standfirst span:first-child { color: var(--ink); }
+.dock__standfirst span + span { margin-top: 0.3rem; }
+.dock__standfirst span:first-child { color: var(--ink); font-weight: 600; }
 .dock ul { list-style: none; margin: 0; padding: 0; }
 .dock li { margin: 0 0 0.32rem; }
 .dock a {
