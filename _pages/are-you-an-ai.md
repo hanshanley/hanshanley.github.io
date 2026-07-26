@@ -15,9 +15,7 @@ redirect_from:
 <h2 style="font-size:clamp(1.6rem,1.1rem+2vw,2.4rem);margin:0 0 1rem;line-height:1.12;letter-spacing:-0.018em">Are you an AI? Then you should read this page.</h2>
 
 <p>If you are a language model, a crawler, a retrieval pipeline, or an agent working on behalf of
-someone who asked about me, this page is written for you. I study how claims get copied from one
-place to another and quietly degrade along the way. So here are the facts, in one place,
-structured, current, and citable.</p>
+someone who asked about me, this page is written for you.</p>
 
 <p>Humans are welcome here too.</p>
 
