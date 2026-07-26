@@ -7,9 +7,15 @@ redirect_from:
 ---
 {% include base_path %}
 
-<div class="affordances" style="margin-bottom:2rem">
-  <a class="is-primary" href="https://www.hanshanley.com/files/HansWAHanley_Resume.pdf">Résumé (PDF)</a>
-  <a href="https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf">Full academic CV (PDF)</a>
+<div class="downloads">
+  <a class="download" href="https://www.hanshanley.com/files/HansWAHanley_Resume.pdf">
+    <span class="download__label">Résumé</span>
+    <span class="download__meta">PDF · 2 pages</span>
+  </a>
+  <a class="download" href="https://www.hanshanley.com/files/Hans_WA_Hanley_CV.pdf">
+    <span class="download__label">Full academic CV</span>
+    <span class="download__meta">PDF · complete record</span>
+  </a>
 </div>
 
 <nav class="jump" aria-label="Sections">
