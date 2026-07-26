@@ -2,7 +2,7 @@
 # Compile the LaTeX CV / résumé to PDF and publish into files/.
 #
 #   scripts/build-cv.sh            # build the academic CV
-#   scripts/build-cv.sh resume     # build the résumé (needs SourceSansPro fonts)
+#   scripts/build-cv.sh resume     # build the résumé
 #   scripts/build-cv.sh all
 #
 # Uses Tectonic, which downloads whatever LaTeX packages it needs and keeps

@@ -468,53 +468,48 @@ a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; text-decor
 
 /* ================= compact CV / résumé layout ================= */
 
-/* Prominent PDF downloads at the head of the CV. Typographic, not pill buttons. */
+/* PDF downloads at the head of the CV. Set as running text, not boxes:
+   the weight comes from the serif size and the rule colour, not from borders. */
 .downloads {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 0;
-  border-top: 2.5px solid var(--rule);
-  border-bottom: 1px solid var(--hair);
-  margin: 0 0 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 2.15rem;
+  margin: 0 0 2.4rem;
 }
 .download {
-  display: block;
-  padding: 1.05rem 1.25rem 1.05rem 0;
   text-decoration: none;
-  border-right: 1px solid var(--hair);
-  transition: background .15s;
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0 0.6rem;
 }
-.download:last-child { border-right: 0; }
-.download:not(:first-child) { padding-left: 1.25rem; }
-.download:hover { background: color-mix(in srgb, var(--paper-2) 70%, transparent); }
 .download__label {
-  display: block;
   font-family: var(--serif);
-  font-size: 1.22rem;
+  font-size: 1.16rem;
   font-weight: 600;
   letter-spacing: -0.012em;
   color: var(--red);
-  line-height: 1.25;
+  border-bottom: 1px solid transparent;
+  transition: border-color .15s;
 }
+.download:hover .download__label { border-bottom-color: var(--red); }
 .download__label::after {
   content: " ↓";
-  font-size: 0.82em;
+  font-size: 0.8em;
   color: var(--ink-3);
 }
 .download:hover .download__label::after { color: var(--red); }
 .download__meta {
-  display: block;
-  margin-top: 0.25rem;
   font-family: var(--mono);
   font-size: 0.625rem;
   letter-spacing: 0.13em;
   text-transform: uppercase;
   color: var(--ink-3);
+  white-space: nowrap;
 }
-@media (max-width: 34rem) {
-  .downloads { grid-template-columns: 1fr; }
-  .download { border-right: 0; border-bottom: 1px solid var(--hair); padding-left: 0 !important; }
-  .download:last-child { border-bottom: 0; }
+@media (max-width: 30rem) {
+  .downloads { flex-direction: column; gap: 0.75rem; }
 }
 
 /* Section jump list, sitting directly above the first section heading. */
