@@ -1,6 +1,13 @@
 # Blog posts from The Margin of Error (themarginoferror.com / Substack).
 # Add new posts at the top; the articles page groups them by year automatically.
 - year: 2026
+  date: "19 October 2026"
+  short: "19 Oct"
+  title: "Broken Britain: The Headwinds Battering the Island Nation"
+  blurb: "Stagnant incomes, strained public services, and fractured politics are bringing Britain to a standstill"
+  url: "https://www.themarginoferror.com/broken-britain-the-headwinds-battering-the-island-nation/"
+
+- year: 2026
   date: "11 October 2026"
   short: "11 Oct"
   title: "Floor-Letter Words: The Rise of Congressional Profanity"
