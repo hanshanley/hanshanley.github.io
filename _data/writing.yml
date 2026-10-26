@@ -1,6 +1,13 @@
 # Blog posts from The Margin of Error (themarginoferror.com / Substack).
 # Add new posts at the top; the articles page groups them by year automatically.
 - year: 2026
+  date: "26 October 2026"
+  short: "26 Oct"
+  title: "China Is Trending. Understanding China Isn't"
+  blurb: "Chinese culture is having its moment in the sun. So why are fewer Americans visiting, studying, and learning about China?"
+  url: "https://www.themarginoferror.com/china-is-trending-understanding-china/"
+
+- year: 2026
   date: "19 October 2026"
   short: "19 Oct"
   title: "Broken Britain: The Headwinds Battering the Island Nation"
