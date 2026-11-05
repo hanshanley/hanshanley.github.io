@@ -13,7 +13,7 @@
 %
 % This merges the long-form CV (through Jan 2025) with current facts:
 % Microsoft AI from Apr 2026; Meta Mar 2025-Apr 2026; papers formerly "in
-% submission" now published; HSK 5; talks and service through 2026.
+% submission" now published; HSK 2.0 Level 5; talks and service through 2026.
 %=======================================================================
 \documentclass[11pt,letterpaper]{article}
 
@@ -22,6 +22,7 @@
 \usepackage[left=1.05in, right=1.05in, top=0.95in, bottom=0.95in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
+\usepackage{needspace}
 \usepackage{xcolor}
 \usepackage{tabularx}
 \usepackage{microtype}
@@ -87,15 +88,18 @@
 }
 
 \newcommand{\pub}[4]{%
+  \Needspace{3\baselineskip}%
   \item #1. \textit{#2}. #3.%
   \ifx\relax#4\relax\else\ \href{#4}{\small[link]}\fi
 }
 
 \newcommand{\talk}[2]{%
+  \Needspace{3\baselineskip}%
   \item \textbf{#1}\\{\small\color{inksoft}#2}
 }
 
 \newcommand{\honor}[2]{%
+  \Needspace{3\baselineskip}%
   \item \textbf{#1}\ifx\relax#2\relax\else\\{\small\itshape\color{inksoft}#2}\fi
 }
 
@@ -143,8 +147,9 @@ New York, NY \quad$\cdot$\quad
 \section{Research Interests}
 
 AI safety and truthfulness; disinformation and misinformation; network analysis;
-natural language processing; multilingual representation learning; computational
-social science.
+natural language processing; multilingual representation learning; parameter-efficient
+model adaptation; synthetic data; semantic retrieval; scalable ML systems;
+computational social science.
 
 %---------------------------------------------------------------- education
 \section{Education}
@@ -177,7 +182,9 @@ Phi Beta Kappa; Tau Beta Pi; Sigma Xi}{2018}
 \role{Member of Technical Staff}{Microsoft AI, New York, NY}{Apr.\ 2026--present}
 \begin{bullets}
  \item Researched and developed rubric-based LLM-as-a-judge evaluators to assess human-AI conversations in Microsoft Copilot, measuring task completion, user intent satisfaction, reasoning complexity, response quality, and safety failures to inform model, system prompt, and product improvements.
+\Needspace{5\baselineskip}
 \item Developed LLM-based classifiers and measurement frameworks to connect real-world user feedback and behavior with offline model evaluations, identifying gaps in evaluation representativeness and failure-mode coverage; presented evaluation methodology and strategy to Microsoft AI's CEO.
+  \item Built production-scale ML signals to identify safety and product failures in Copilot using LLM-based labeling, sparse autoencoder (SAE) and embedding-based probes, and distilled classifiers to detect harmful intent (e.g., individual harm), refusal failures, policy violations, and other behavioral anomalies; evaluated approaches against production datasets and applied latent-level interpretability to investigate model failure modes.
 \end{bullets}
 
 \vspace{0.45em}
@@ -217,6 +224,7 @@ Phi Beta Kappa; Tau Beta Pi; Sigma Xi}{2018}
 \end{bullets}
 
 \vspace{0.45em}
+\Needspace{5\baselineskip}
 \role{Engineering Practicum Intern, Docs and Drive Security}{Google, New York, NY}{Summer 2016}
 \begin{bullets}
   \item Implemented an action executor in Java for the Google Sheets API v4 for randomised end-to-end security software, expanding authorisation test coverage for upcoming product launches.
@@ -253,6 +261,10 @@ Phi Beta Kappa; Tau Beta Pi; Sigma Xi}{2018}
     {Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings}
     {The 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)}
     {https://aclanthology.org/2025.acl-long.124/}
+\begin{bullets}
+  \item Developed multilingual Matryoshka embeddings with controllable semantic granularity and level-wise clustering to recover stories, topics, and themes across 54 languages; achieved Pearson $\rho=0.816$ on extended SemEval 2022 Task 8.
+  \item Made multilingual news clusters interpretable through English summaries: created 38,830 synthetic multilingual multi-document summarization examples and LoRA-fine-tuned Llama 3.1-8B-Instruct, improving ROUGE-1 from 0.332 to 0.414.
+\end{bullets}
 
 \pub{\me{} and Z.~Durumeric}
     {Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit}
@@ -269,11 +281,18 @@ Phi Beta Kappa; Tau Beta Pi; Sigma Xi}{2018}
     {Tracking the Takes and Trajectories of English-Language News Stories from Trustworthy and Worrisome Websites}
     {34th USENIX Security Symposium (USENIX Security 2025), August 2025}
     {https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-487-hanley.pdf}
+\begin{bullets}
+  \item Built a narrative-tracking system with LoRA-adapted E5/MPNet encoders and zero-shot stance detection to uncover propaganda and misinformation networks across 4,076 news websites.
+  \item GPU-accelerated DP-Means with FAISS to cluster 428M passages from 29M articles into 146K narratives.
+\end{bullets}
 
 \pub{\me{}, Y.~Lu, and J.~Pan}
     {Across the Firewall: Foreign Media's Role in Shaping Chinese Social Media Narratives on the Russo-Ukrainian War}
     {Proceedings of the National Academy of Sciences (PNAS), January 2025}
     {https://www.pnas.org/doi/10.1073/pnas.2420607122}
+\begin{bullets}
+  \item Built multilingual MPNet/FAISS retrieval and trained three bilingual mDeBERTa paraphrase models to link Weibo narratives to 8.26M articles; used NETINF to quantify Russian media's outsized influence.
+\end{bullets}
 
 \pub{\me{} and Z.~Durumeric}
     {Machine-Made Media: Monitoring the Mobilization of Machine-Generated Articles on Misinformation and Mainstream News Websites}
@@ -294,6 +313,9 @@ Phi Beta Kappa; Tau Beta Pi; Sigma Xi}{2018}
     {TATA: Stance Detection via Topic-Agnostic and Topic-Aware Embeddings}
     {The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023), December 2023}
     {https://aclanthology.org/2023.emnlp-main.694/}
+\begin{bullets}
+  \item Combined topic-aware and topic-agnostic embeddings with triplet/contrastive learning, retrieval-mined pairs, and synthetic data for unseen-topic stance detection; achieved 0.771 zero-shot macro-F1 on VAST.
+\end{bullets}
 
 \pub{\me{}, D.~Kumar, and Z.~Durumeric}
     {A Golden Age: Conspiracy Theories' Relationship with Misinformation Outlets, News Media, and the Wider Internet}
@@ -433,6 +455,7 @@ All published by the Atlantic Council's Digital Forensic Research Lab (DFRLab).
 \end{tight}
 
 %---------------------------------------------------------------- teaching
+\Needspace{7\baselineskip}
 \section{Teaching}
 
 \role{Teaching Assistant, CS265: Randomized Algorithms and Probabilistic Analysis}{Stanford University, Professor Greg Valiant}{Fall 2023}
@@ -441,6 +464,7 @@ All published by the Atlantic Council's Digital Forensic Research Lab (DFRLab).
 \end{bullets}
 
 \vspace{0.4em}
+\Needspace{5\baselineskip}
 \role{Teaching Assistant, CS224N: Natural Language Processing with Deep Learning}{Stanford University, Professor Chris Manning}{Winter 2023}
 \begin{bullets}
   \item Led and helped design the default final project for the course.
@@ -552,10 +576,12 @@ All published by the Atlantic Council's Digital Forensic Research Lab (DFRLab).
 \begin{tight}
   \item \textbf{Proficient:} Python, Java, C, Go, R, Git, PyTorch, TensorFlow, Hugging Face
   \item \textbf{Experienced:} MATLAB, C\#, C++, SQL, Answer Set Prolog (ASP)
-  \item \textbf{Methods:} transformers; LLM fine-tuning; multilingual representation learning;
-        interpretability and feature attribution; contrastive learning; LLM-based evaluation;
+  \item \textbf{Methods:} transformers; LLM fine-tuning (LoRA/PEFT); multilingual representation learning;
+        interpretability and feature attribution; contrastive learning; synthetic data;
+        semantic retrieval and FAISS; LLM agents; classifier distillation;
+        sparse autoencoders and embedding-based probes; LLM-based evaluation;
         safety and robustness analysis; network analysis
-  \item \textbf{Languages:} English (native); Mandarin Chinese (HSK 5)
+  \item \textbf{Languages:} English (native); Mandarin Chinese (HSK 2.0, Level 5)
 \end{tight}
 
 \vfill

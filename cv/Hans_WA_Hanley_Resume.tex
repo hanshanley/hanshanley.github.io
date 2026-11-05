@@ -27,7 +27,7 @@
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \usepackage{anyfontsize}
 %%%% Set Margins
-\usepackage[margin=1cm, top=1cm]{geometry}
+\usepackage[margin=1cm, top=0.85cm, bottom=0.85cm]{geometry}
 %%%% Set Fonts
 \setmainfont[
   BoldFont=SourceSansPro-Semibold.otf,
@@ -60,7 +60,7 @@
   \raggedright
   \large
 }{}{0em}{}[\vspace{-8pt}\hrulefill\vspace{-4pt}]
-\titlespacing*{\subsection}{1pt}{0.8em}{0.5em}
+\titlespacing*{\subsection}{1pt}{0.6em}{0.4em}
 \titleformat{\subsection}{\vspace{-0.05cm}\bfseries\fontsize{11pt}{2cm}}{}{0em}{}[\vspace{-0.15cm}]
 %%%% Subtext Formatting
 \newcommand{\subtext}[1]{#1\par\vspace{-0.2cm}}
@@ -96,22 +96,23 @@
 % ==========================================================
 \begin{center}
 {\Huge \textbf{Hans William Alexander Hanley}}\ {\large\color{UI_blue}\cjkname{}汉斯·汉隶}\\[2pt]
-{\large \color{UI_blue} Natural Language Processing • AI Safety • Multilingual Representation Learning}\\[6pt]
+{\large \color{UI_blue} AI Safety • Multilingual Representation Learning • Scalable ML Systems}\\[3pt]
 
 \begin{tabular}{c c c}
 \href{mailto:hhanley@cs.stanford.edu}{\faEnvelope\ hhanley@cs.stanford.edu} &
 \href{https://www.hanshanley.com}{\faGlobe\ hanshanley.com} &
-\href{https://www.themarginoferror.com}{\faPenNib\ themarginoferror.com} \\[3pt]
+\href{https://www.themarginoferror.com}{\faPenNib\ themarginoferror.com} \\[1pt]
 \href{https://www.linkedin.com/in/hans-hanley-0694a180}{\faLinkedin\ hans-hanley-0694a180} &
 \href{https://github.com/hanshanley}{\faGithub\ github.com/hanshanley} &
 \href{https://scholar.google.com/citations?user=ewdWfOoAAAAJ}{\aiGoogleScholar\ Google Scholar}
 \end{tabular}
 \end{center}
+\vspace{-4pt}
 
 % ==========================================================
 % SUMMARY
 % ==========================================================
-I research scalable methods for understanding, evaluating, and improving large language models, with expertise in multilingual representation learning, semantic modeling, and LLM-based evaluation. My research spans computational social science and AI safety, focusing on uncovering patterns in large-scale information ecosystems, measuring model behavior, and improving the reliability of AI systems.
+I research scalable methods for understanding, evaluating, and improving language models, with expertise in multilingual representation learning, semantic modeling, and LLM-based evaluation. My work spans computational social science and AI safety, analyzing information ecosystems, measuring model behavior, and improving AI reliability.
 
 % ==========================================================
 % EDUCATION
@@ -138,18 +139,18 @@ I research scalable methods for understanding, evaluating, and improving large l
 
 \subsection*{Microsoft AI, Member of Technical Staff \hfill April 2026--Present}
 \begin{zitemize}
-\item Developed rubric-based LLM-as-a-judge evaluators for Microsoft Copilot conversations, assessing task completion, intent satisfaction, reasoning complexity, response quality, and safety failures to improve models, system prompts, and products.
-\item Built LLM classifiers and measurement frameworks linking user feedback and behavior to offline evaluations, identifying representativeness and failure-mode coverage gaps; presented evaluation methodology and strategy to Microsoft AI's CEO.
+\item Built rubric-based LLM-as-a-judge evaluators for Copilot task completion, intent satisfaction, reasoning complexity, response quality, and safety failures. Linked user feedback and behavior to offline evaluations to identify representativeness and failure-mode coverage gaps; presented evaluation methodology and strategy to Microsoft AI's CEO.
+\item Built production-scale Copilot safety and product-failure signals using LLM labeling, sparse autoencoder (SAE) and embedding-based probes, and distilled classifiers to detect harmful intent (e.g., individual harm), refusal failures, policy violations, and behavioral anomalies; evaluated on production data and used latent-level interpretability to investigate model failures.
 \end{zitemize}
 
-\vspace{-0.25em}
+\vspace{0.25em}
 \subsection*{Meta, Research Scientist, CAS / Central Applied Sciences \hfill March 2025--April 2026}
 \begin{zitemize}
 \item Researched supervised fine-tuning (SFT) techniques and persona-conditioned prompting for LLM digital twins modeling individual behaviors and beliefs; used verbalized sampling to increase response diversity and reduce behavioral homogenization.
 \item Deployed large-scale multilingual and multimodal LLM pipelines for content understanding, creator classification, and political content and integrity-risk evaluation across Instagram and Threads to inform recommender systems.
 \end{zitemize}
 
-\vspace{-0.25em}
+\vspace{0.25em}
 \subsection*{Google Research, Health AI Student Researcher \hfill Summer 2024}
 \begin{zitemize}
 \item Designed LLM agents for structured querying and high-fidelity reasoning over large clinical datasets, with verification layers for failures under distribution shifts.
@@ -165,25 +166,27 @@ I research scalable methods for understanding, evaluating, and improving large l
 
 \subsection*{\href{https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-487-hanley.pdf}{Tracking the Takes and Trajectories of News Narratives} \hfill USENIX Security 2025}
 \begin{zitemize}
-\item Built a large-scale narrative-tracking system combining specially fine-tuned (e.g., LoRA) encoder-LLM semantic similarity models and zero-shot stance detection to track 146K narratives across 4K+ news sites and understand narrative pathways (e.g., anti-vaccine and anti-Ukraine influence campaigns).
+\item Built a narrative-tracking system with LoRA-adapted E5/MPNet encoders and zero-shot stance detection to uncover propaganda and misinformation networks across 4,076 news websites.
+\item GPU-accelerated DP-Means with FAISS to cluster 428M passages from 29M articles into 146K narratives.
 \end{zitemize}
 
-\vspace{-0.25em}
-\subsection*{\href{https://www.pnas.org/doi/10.1073/pnas.2420607122}{Across the Firewall: Foreign Media’s Influence on Chinese Social Media} \hfill PNAS 2025}
-\begin{zitemize}
-\item Quantified foreign-media penetration into Chinese platforms using cross-lingual alignment pipelines to detect narrative borrowing on the Russo--Ukrainian War.
-\end{zitemize}
-
-\vspace{-0.25em}
+\vspace{0.25em}
 \subsection*{\href{https://aclanthology.org/2025.acl-long.124/}{Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings} \hfill ACL 2025}
 \begin{zitemize}
-\item Proposed multilingual Matryoshka embeddings enabling controllable semantic granularity (coarse-to-fine); achieved SOTA on SemEval 2022 Task 8 and built scalable hierarchical clustering pipelines surfacing stories, narratives, and macro-themes.
+\item Developed multilingual Matryoshka embeddings with controllable semantic granularity and level-wise clustering to recover stories, topics, and themes across 54 languages; achieved Pearson $\rho=0.816$ on extended SemEval 2022 Task 8.
+\item Made multilingual news clusters interpretable through English summaries: created 38,830 synthetic multilingual multi-document summarization examples and LoRA-fine-tuned Llama 3.1-8B-Instruct, improving ROUGE-1 from 0.332 to 0.414.
 \end{zitemize}
 
-\vspace{-0.25em}
+\vspace{0.25em}
 \subsection*{\href{https://aclanthology.org/2023.emnlp-main.694/}{TATA: Stance Detection via Topic-Agnostic and Topic-Aware Embeddings} \hfill EMNLP 2023}
 \begin{zitemize}
-\item Developed contrastive embedding models for topic-agnostic and topic-aware stance detection; achieved SOTA zero-shot performance (0.771 F1 on VAST) and improved cross-topic generalization in multi-domain news corpora.
+\item Combined topic-aware and topic-agnostic embeddings with triplet/contrastive learning, retrieval-mined pairs, and synthetic data for unseen-topic stance detection; achieved 0.771 zero-shot macro-F1 on VAST.
+\end{zitemize}
+
+\vspace{0.25em}
+\subsection*{\href{https://www.pnas.org/doi/10.1073/pnas.2420607122}{Across the Firewall: Foreign Media’s Influence on Chinese Social Media} \hfill PNAS 2025}
+\begin{zitemize}
+\item Built multilingual MPNet/FAISS retrieval and trained three bilingual mDeBERTa paraphrase models to link Weibo narratives to 8.26M articles; used NETINF to quantify Russian media's outsized influence.
 \end{zitemize}
 
 % ==========================================================
@@ -194,9 +197,9 @@ I research scalable methods for understanding, evaluating, and improving large l
 \vspace{-0.5em}
 
 \begin{tabular}{p{7em} p{48em}}
-\hskills{Programming} & Python, Java, C, C++, C\#, Go, SQL, R, MATLAB; Git; PyTorch, TensorFlow, Hugging Face \\[4pt]
-\hskills{ML/LLM} & Transformers; LLM fine-tuning; multilingual modeling; interpretability; feature attribution; contrastive learning; LLM-based evaluation; safety \& robustness analysis \\[4pt]
-\hskills{Languages} & English (native); Mandarin Chinese (HSK Level 5) \\
+\hskills{Programming} & Python, Java, C, C++, C\#, Go, SQL, R, MATLAB; Git; PyTorch, TensorFlow, Hugging Face, FAISS \\[1pt]
+\hskills{ML/LLM} & LoRA/PEFT; contrastive learning; multilingual NLP; synthetic data; LLM eval; feature attribution; safety/robustness \\[1pt]
+\hskills{Languages} & English (native); Mandarin Chinese (HSK 2.0, Level 5) \\
 \end{tabular}
 
 % ==========================================================
